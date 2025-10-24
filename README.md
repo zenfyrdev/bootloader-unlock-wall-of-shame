@@ -3,6 +3,7 @@
 Keeping track of companies that "care about your data 🥺"
 
 [Switch to Russian translation](ru/README.md)
+[Switch to Burmese translation](mm/README.md)
 
 ![Terrible](https://raw.githubusercontent.com/melontini/mini-badges/v1/personal/terrible.svg)
 [![License CC BY-NC-SA](https://raw.githubusercontent.com/melontini/mini-badges/v1/licenses/cc/cc-by-nc-sa-4.0.svg)](https://github.com/melontini/bootloader-unlock-wall-of-shame/blob/main/LICENSE)

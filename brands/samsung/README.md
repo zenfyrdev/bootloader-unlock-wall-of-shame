@@ -7,6 +7,8 @@ If you have a North American device and were lucky enough not to update for a wh
 
 Until recently, international Samsung devices (e.g. ones sold in Europe or Asia) were unlockable, however, starting with One UI 8, Samsung has [completely nuked][One UI 8 Unlock] the ability to unlock their devices, regardless of model or region. If you are still on One UI 7 or earlier, **DO NOT UPDATE.** Once you update to One UI 8, bootloader unlocking is gone forever, there is no way to rollback to One UI 7.
 
+Despite the removal of bootloader unlocks in One UI 8, the Galaxy XR, Samsung's AR headset, [does have][xr bootloader unlock] an unlockable bootloader.
+
 Snapdragon phones prior to the S7/Note7 (2016) can be unlocked regardless of region, as long as it's not locked to a carrier like AT&T or Verizon. The Canadian S7 can also be unlocked as it uses an Exynos SoC, despite Canada normally being a Snapdragon region.
 
 **Be aware that unlocking a Samsung device will permanently trip Knox.** As a result, many Knox-based features will be broken. This includes, but not limited to: Samsung Pay, Pass, Flow, Health, Secure Folder, Secure Wi-Fi, Smart View. Furthermore, tripping Knox may serve as grounds for voiding your warranty.
@@ -126,3 +128,4 @@ Authored by [melontini](https://github.com/melontini).
 [KnoxPatch]:https://github.com/BlackMesa123/KnoxPatch
 [KnoxPatch#knoxpatch-enhancer]:https://github.com/BlackMesa123/KnoxPatch#knoxpatch-enhancer
 [One UI 8 Unlock]:https://xdaforums.com/t/bootloader-unlocking-option-removed-from-one-ui-8-0.4751904/
+[xr bootloader unlock]:https://www.ithome.com/0/892/132.htm

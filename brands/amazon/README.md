@@ -25,8 +25,10 @@ The following list shows all available amonet ports for Amazon devices, along wi
 - [Amazon Fire TV Stick 2nd Gen (2016)]: There are several reports of Amazon disabling **bootROM mode** on newer hardware revisions.  
 - [Amazon Fire HD 8 (2017)]: All versions are supported; Amazon never patched this device.  
 - [Amazon Fire HD 10 (2017)]: All versions are supported; Amazon never patched this device.
+- [Amazon Echo Dot 2nd Gen (2016)]: All versions are supported; Amazon never patched this device.
 - [Amazon Echo Spot 1st Gen (2017)]: All versions are supported; Amazon never patched this device.
 - [Amazon Fire TV Stick 4K 1st Gen (2018)]: Devices with serial numbers containing **VM190 or higher** are shipped with **DL-Mode** disabled in **bootROM**. However, Amazon introduced a new exploit in **FireOS 6.2.8.1**, which made it possible to unlock the device even with **DL-Mode** disabled. This exploit was later patched, but there are still ways to downgrade to a supported version.  
+- [Amazon Echo Show 5 1st Gen (2019)]: All versions are supported; Amazon hasn't patched this device.
 - [Amazon Fire HD 10 (2019)]: Only a temporary, tethered exploit is available for this device. Amazon disabled **DL-Mode** in **bootROM** on all newer hardware revisions, so only early units can use this method.  
 - [Amazon Fire TV Stick 3 and Fire TV Stick Lite (2020)]: Amazon patched the exploit in **FireOS 7.2.7.3**. There is a [hardware way to downgrade the device to a supported version], but it requires soldering and is not recommended for inexperienced users.  
 
@@ -78,3 +80,5 @@ Authored by [R0rt1z2](https://github.com/R0rt1z2), [Ivy / Lost-Entrepreneur439](
 [Fire TV Cube 1st Gen (2018) / Fire TV Pendant (2017)]:https://xdaforums.com/t/root-rooting-the-firetv-cube-and-pendant-with-firefu.3861272/  
 [Fire TV Cube 2nd Gen (2019)]:https://xdaforums.com/t/unlock-root-twrp-unbrick-firetv-2nd-gen-cube-raven-ps7242.4445971/  
 [purchasing engineering samples]:https://xdaforums.com/t/fire-hd-8-9th-generation-onyx-engineering-sample-with-root-access-full-fastboot.4121709/  
+[Amazon Echo Dot 2nd Gen (2016)]:https://xdaforums.com/t/unlock-root-twrp-unbrick-amazon-echo-dot-2nd-gen-2016-biscuit.4761416
+[Amazon Echo Show 5 1st Gen (2019)]:https://xdaforums.com/t/unlock-root-twrp-unbrick-amazon-echo-show-5-1st-gen-2019-checkers.4762900/

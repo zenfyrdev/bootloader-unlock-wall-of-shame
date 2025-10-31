@@ -8,7 +8,7 @@ Someone eventually found a way to unlock the bootloader on the Zenfone 9, and As
 
 Following Asus's false claims of a bootloader unlock eventually coming back, a UK customer sued Asus for a refund of their phone, [and Asus lost][lawsuit]. 
 
-Asus is still claiming the unlock site will come back eventuallly, but considering how long it's been closed, the anti-rollback, and them losing a lawsuit over their unlockable bootloader claims, it's safe to say it'll probably never come back.
+Asus claimed the bootloader unlock program would come back for two years, however in October 2025, upon someone asking when the unlock program will return, An Asus employee finally confirmed it's [not coming back], saying "Regarding the Bootloader Unlock Tool for mobile devices: ASUS phones released after January 2024 will no longer actively provide the Bootloader Unlock Tool. For models released in 2023 or earlier, we sincerely apologize for any inconvenience caused, as the Unlock Tool has been discontinued from the ASUS official website due to stability considerations. Thank you for your understanding and support."
 
 In addition, Chinese ROG phones sold under the Tecent ROG brand cannot be unlocked at all.
 
@@ -18,3 +18,4 @@ Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439
 
 [anti-rollback]:https://www.reddit.com/r/zenfone/comments/19f4ny3/asus_now_actively_sabotaging_attempts_to_unlock/
 [lawsuit]:https://www.androidpolice.com/asus-removed-bootloader-unlock-from-phones/
+[not coming back]:https://zentalk.asus.com/t5/zenfone-8/will-asus-ever-re-enable-zenfone-8-bootloader-unlocking-server/m-p/492219

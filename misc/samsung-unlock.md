@@ -1,7 +1,7 @@
 # 🔓️ Samsung Unlock Guide
 
-- Difficulty: **Easy 📗** (International models running One UI 7 or earlier — bootloader unlocking generally possible)
-- Bootloader unlocking: **Impossible ❌** (North American models, or devices where Samsung removed the unlock option on One UI 8+)
+- Difficulty: **Easy 📗** (International models running One UI 7 or earlier)
+- Bootloader unlocking: **Impossible ❌** (North American models, or any Samsung running One UI 8 or later)
 - Upgrade from One UI 7 → One UI 8: **Possible ⚠️** (see upgrade section below to preserve unlockability)
 
 > [!CAUTION]

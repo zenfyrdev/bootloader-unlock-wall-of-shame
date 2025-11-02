@@ -5,7 +5,7 @@
 
 If you have a North American device and were lucky enough not to update for a while, you can check out [this paid service][Paid North American Unlock] at your own risk. Exynos devices, regardless of region, can be unlocked assuming you're on One UI 7 or earlier. 
 
-Until recently, international Samsung devices (e.g. ones sold in Europe or Asia) were unlockable, however, starting with One UI 8, Samsung has [removed the straightforward bootloader-unlock option][One UI 8 Unlock]. NOTE: it is still possible in some cases to update to One UI 8, but only if you follow very specific, careful flashing rules — do not treat this as a safe or supported path.
+Until recently, international Samsung devices (e.g. ones sold in Europe or Asia) were unlockable, however, starting with One UI 8, Samsung has [completly nuked][One UI 8 Unlock] bootloader-unlock option. NOTE: it is still possible in some cases to update to One UI 8, but only if you follow very specific, careful flashing rules — do not treat this as a safe or supported path.
 
 Update procedure (if you choose to proceed)
 - Before attempting to update to One UI 8, update the following firmware packages first: AP, CP and CSC (If you have custom kernel, vbmeta or something then unpack AP and replace with your files and flash them).

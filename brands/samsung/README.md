@@ -5,7 +5,7 @@
 
 If you have a North American device and were lucky enough not to update for a while, you can check out [this paid service][Paid North American Unlock] at your own risk. Exynos devices, regardless of region, can be unlocked assuming you're on One UI 7 or earlier. 
 
-Until recently, international Samsung devices (e.g. ones sold in Europe or Asia) were unlockable, however, starting with One UI 8, Samsung has [completly nuked][One UI 8 Unlock] bootloader-unlock option. NOTE: it is still possible in some cases to update to One UI 8, but only if you follow very specific, careful flashing rules — do not treat this as a safe or supported path (see the [Unlock Guide](../../misc/samsung-unlock.md) 
+Until recently, international Samsung devices (e.g. ones sold in Europe or Asia) were unlockable, however, starting with One UI 8, Samsung has [completly nuked][One UI 8 Unlock] bootloader-unlock option. NOTE: it is still possible in some cases to update to One UI 8, but only if you have OneUI 7 and you'll follow very specific, careful flashing rules — do not treat this as a safe or supported path (see the [Unlock Guide](../../misc/samsung-unlock.md) 
 
 Despite the removal of bootloader unlocks in One UI 8, the Galaxy XR, Samsung's AR headset, [does have][xr bootloader unlock] an unlockable bootloader.
 

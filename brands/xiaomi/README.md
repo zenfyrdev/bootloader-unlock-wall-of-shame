@@ -45,7 +45,7 @@ Recent reports suggest that **no applicants have successfully passed the exam or
 - **Bootloader Bypass tools**  
   - [Xiaomi-HyperOS-BootLoader-Bypass](https://github.com/MlgmXyysd/Xiaomi-BootLoader-Questionnaire) – Original PoC (PHP, cumbersome to set up)  
   - **AQLR** – Script-based, requires running at **00:00 China time** on PC  
-  - **HyperSploit** – User-friendly program, patched as of **HyperOS 2.0.203.0**, works only on older builds  
+  - **HyperSploit** – User-friendly program, patched as of **HyperOS 2.0.203.0**, works only on older builds - Can bypass the 30 days old account requirement.  
 - These tools try to automate the Community App request step so you can continue the 7-day waiting process and then unlock with Xiaomi’s official tool.  
 - ⚠️ **Risks**: Using bypasses may get your device or account banned by Xiaomi.  
 

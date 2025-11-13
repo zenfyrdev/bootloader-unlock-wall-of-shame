@@ -47,7 +47,7 @@ If it's variation 1 or 2, your bootloader is already unlocked. If you have varia
 
 > OEM Unlock is missing or greyed out.
 
-Your device is locked to a carrier that restricts unlocking, you have an American device, or you're running One UI 8 or later.
+Your device is locked to a carrier that restricts unlocking, you have an American device, or you're running One UI 8 or later. In some edge cases (e.g. on the 2015 Galaxy Tab A 8.0) this option won't be present as the bootloader ships unlocked, but this is very rare.
 
 > When I try to hold the button combination, my phone just boots normally.
 

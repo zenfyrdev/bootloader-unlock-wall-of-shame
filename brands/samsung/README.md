@@ -101,7 +101,13 @@ If you want to unlock the bootloader, first update your phone to any firmware re
 - As the [writer of this section](https://github.com/ravindu644) of this documentation, I personally experienced this issue and lost $200.
 - [XDA Forum post regarding this exact issue](https://xdaforums.com/t/bootloop-without-access-to-recovery-need-insights-a156e-dsn.4707443/)
 
+
 ---
+ **T290/T295 bug**
+- After unlocking the bootloader of Samsung Galaxy Tab A 8.0 (2019) with bootloader version <= T290XXU3CVG3 custom images can be flashed. Bootloader versions higher do need patched vbmeta to boot custom images.
+- [Example on LineageOS wiki](https://wiki.lineageos.org/devices/gtowifi/install/#pre-install-instructions)
+---
+
 
 ## SoC level exploits
 One of the first things Samsung bootloaders do on phone bootup is check if the bootloader is unlocked, and if it is, and a bootloader unlock has not been authorized, the bootloader will automatically relock. This means SoC level exploits such as mtkclient or EDLUnlock will not work on Samsung devices, unless you reverse engineer, modify and re-flash Samsung's bootloader to stop the bootloader from re-locking. 

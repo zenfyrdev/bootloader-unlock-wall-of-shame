@@ -19,6 +19,15 @@ _*Some custom, unsigned bootloaders using onchiprom (BootROM) vulnerability can 
 
 Anything over Kirin 810, and Kirin 990 remains non-unlockable for the time being. However, couple of BootROM-based exploits for tethered unlocking are currently being worked on! (shh!)
 
+Some older Qualcomm CPU Huawei devices (such as Y6 2018) can be unlocked using a board (factory) ROM's bootloader. Tho booting requires custom kernel. 
+
+Also, if you have a really old device (Android 5, 6) you can find unlock code in:
+/dev/block/platform/hi_mci.0/by-name/nvme (on HiSilicon)
+It is located in WVLOCK section
+
+/dev/block/platform/mtk-msdc.0/by-name/boot (on MediaTek)
+It is located somewhere in first 10 lines, it has 16 symbols, numbers and uppercase letters.
+
 If you have a device with a Snapdragon 8+ Gen 1 (Mate 50, Mate 50 Pro, Mate 50 RS, P60, P60 Pro, P60 Art, Mate X3), you're on HarmonyOS 3.0 or 4.0, and you have an EDL cable or don't mind disassembling your phone, you can try using [this tool][P60 Unlock] to unlock your bootloader.
 
 Paid methods:<br/>

@@ -143,6 +143,8 @@ The following manufacturers require an online account and/or a waiting period be
 
 ### [Volla](./brands/volla/README.md)
 
+### [TP-Link/Neffos](./brands/tplink/README.md)
+
 # Misc info
 
 ## Custom AVB Keys
@@ -182,4 +184,3 @@ This: [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-
 Or this: [subut](https://unisoc-android.github.io/subut/)
 
 ***
-

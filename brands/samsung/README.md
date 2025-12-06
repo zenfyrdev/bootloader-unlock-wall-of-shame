@@ -9,6 +9,8 @@ Until recently, international Samsung devices (e.g. ones sold in Europe or Asia)
 
 > [!WARNING]
 > Once you update to One UI 8, **bootloader unlocking is gone forever** AND **will be automatically locked if already unlocked** after you flash the One UI 8 firmware through ODIN!
+>
+> There is no way to rollback to One UI 7 unless [rollback protection bit](https://samfw.com/blog/what-is-bit-binary-value) remains the same in both OneUI 7 & OneUI 8..!
 
 > [!CAUTION]
 >
@@ -29,8 +31,6 @@ Until recently, international Samsung devices (e.g. ones sold in Europe or Asia)
 > ![MTK HARD BRICK AFTER ONE UI 8](resources/MTK_UI_8_HARD_BRICK_2.png)
 > 
 > </details>
-
-There is no way to rollback to One UI 7 unless [rollback protection bit](https://samfw.com/blog/what-is-bit-binary-value) remains the same in both OneUI 7 & OneUI 8..!
 
 Despite the removal of bootloader unlocks in One UI 8, the Galaxy XR, Samsung's AR headset, [does have][xr bootloader unlock] an unlockable bootloader.
 

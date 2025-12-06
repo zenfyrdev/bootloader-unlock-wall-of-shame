@@ -5,7 +5,35 @@
 
 If you have a North American device and were lucky enough not to update for a while, you can check out [this paid service][Paid North American Unlock] at your own risk. Exynos devices, regardless of region, can be unlocked assuming you're on One UI 7 or earlier. 
 
-Until recently, international Samsung devices (e.g. ones sold in Europe or Asia) were unlockable, however, starting with One UI 8, Samsung has [completely nuked][One UI 8 Unlock] the ability to unlock their devices, regardless of model or region. If you are still on One UI 7 or earlier, **DO NOT UPDATE.** Once you update to One UI 8, bootloader unlocking is gone forever, there is no way to rollback to One UI 7.
+Until recently, international Samsung devices (e.g. ones sold in Europe or Asia) were unlockable, however, starting with One UI 8, Samsung has [completely nuked][One UI 8 Unlock] the ability to unlock their devices, regardless of model or region. If you are still on One UI 7 or earlier, **DO NOT UPDATE.**
+
+> [!WARNING]
+> Once you update to One UI 8, **bootloader unlocking is gone forever** AND **will be automatically locked if already unlocked** after you flash the One UI 8 firmware through ODIN!
+>
+> There is no way to rollback to One UI 7 unless [rollback protection bit](https://samfw.com/blog/what-is-bit-binary-value) remains the same in both OneUI 7 & OneUI 8..!
+
+> [!CAUTION]
+>
+> **🚨 HARD BRICK WARNING !!! 🚨**
+>
+> **IF YOUR DEVICE IS MTK AND YOUR BOOTLOADER IS ALREADY UNLOCKED**, AND **YOU FLASH ONE UI 8 FIRMWARE WHILE THE BOOTLOADER IS UNLOCKED**, there's a 99% chance that your device **will end up getting PERMANENTLY BRICKED !!!**
+>
+> This doesn't mean you are 100% safe if your device is NOT MTK; **But it's a good habit to re-flash One UI 7 firmware, lock the bootloader** AND **flash the One UI 8 firmware** AFTER verifying the "CURRENT BINARY:" in Download mode shows as "Official".
+>
+> As the [owner](https://github.com/ravindu644) of the Galaxy A16 Community on Telegram & writer of this warning, **3 people have reported THEIR PHONES GOT COMPLETELY HARD BRICKED** AND **HAVE NO SIGNS OF LIFE** AFTER UPDATING TO ONE UI 8 WHILE THE BOOTLOADER IS ALREADY UNLOCKED.
+>
+> ALSO: **DO NOT TRY TO SELECTIVELY FLASH BL, AP, CP & CSC files - YOU MUST FLASH ALL OF THEM IN ONE SHOT TO UPGRADE**
+> This is also a common cause of hard bricks in MTK devices!
+>
+> **There is currently no fix for this issue as of December 6, 2025.**
+>
+> <details>
+> <summary>Click to view proofs</summary>
+> 
+> ![MTK HARD BRICK AFTER ONE UI 8](resources/MTK_UI_8_HARD_BRICK_1.png)
+> ![MTK HARD BRICK AFTER ONE UI 8](resources/MTK_UI_8_HARD_BRICK_2.png)
+> 
+> </details>
 
 Despite the removal of bootloader unlocks in One UI 8, the Galaxy XR, Samsung's AR headset, [does have][xr bootloader unlock] an unlockable bootloader.
 

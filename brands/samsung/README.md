@@ -22,6 +22,9 @@ Until recently, international Samsung devices (e.g. ones sold in Europe or Asia)
 >
 > As the [owner](https://github.com/ravindu644) of the Galaxy A16 Community on Telegram & writer of this warning, **3 people have reported THEIR PHONES GOT COMPLETELY HARD BRICKED** AND **HAVE NO SIGNS OF LIFE** AFTER UPDATING TO ONE UI 8 WHILE THE BOOTLOADER IS ALREADY UNLOCKED.
 >
+> ALSO: **DO NOT TRY TO SELECTIVELY FLASH BL, AP, CP & CSC files - YOU MUST FLASH ALL OF THEM IN ONE SHOT TO UPGRADE**
+> This is also a common cause of hard bricks in MTK devices!
+>
 > **There is currently no fix for this issue as of December 6, 2025.**
 >
 > <details>

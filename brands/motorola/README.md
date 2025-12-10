@@ -96,7 +96,7 @@ For a short while, Google owned Motorola Mobility (from May 2012 to October 2014
 Devices made before Google purchased Motorola Mobility (May 2012) do not have unlockable bootloaders, the unlock command is removed from Fastboot, and you cannot get the unlock code either. For Motorola's more popular devices from this time, such as the DROID lineup, and pretty much any device with a Texas Instruments SoC, there are usually root exploits, and Hashcode's Safestrap, which allows you to get TWRP and run custom ROMs on a locked bootloader with kexec. These can vary on device to device though, you'll have to check XDA for your specific device. Old Motorola rooting tools usually won't work on modern operating systems, and will require a legacy OS such as Windows 7, OS X El Capitan or Ubuntu 14.04. 
 
 ### Motorola Solutions (radios)
-tldr, Motorola split into two companies in 2011. Motorola Mobility, which made the phones and DVRs and is now owned by Lenovo, and Motorola Solutions, who makes everything else. Solutions has recently started making radios which run Android. Not much is known about these devices, Motorola doesn't even reveal which SoC they use, so nothing is really known about these devices. This [datasheet] for the MOTOTRBO ION mentions "Root Detection: Standard", which in Moto-speak, means "this device always ships with root detection.", indicating that the bootloader is probably not unlockable on these devices. Via [this spreadsheet] from Google, you can see the MOTOTRBO ION's codename -- mkz_sdm660_64, which indicates that possibly it uses a Snapdragon 660 SoC, but the MOTOTRBO ION runs Android 13, which seems weirdly new for a 2017 SoC, no it might just be gibberish or something unrelated.
+tldr, Motorola split into two companies in 2011. Motorola Mobility, which made the phones and DVRs and is now owned by Lenovo, and Motorola Solutions, who makes everything else. Solutions has recently started making radios which run Android. Not much is known about these devices, Motorola doesn't even reveal which SoC they use. I decided to contact Motorola Solutions myself, and [their response][Solutions unlock] was that the MOTOTRBO Ion radio uses the Snapdragon 660, and the bootloader on the Ion (and most likely all other Solutions devices) isn't unlockable unless they apply to be an ADP developer. 
 
 ### MTKClient + BROM
 Most MTK-based Motorola devices **released before 2022 are susceptible to [mtkclient](https://github.com/bkerler/mtkclient) auth bypass**, and full unlock may require [chouchou](https://github.com/R0rt1z2/chouchou) / [Kaeru](https://github.com/R0rt1z2/kaeru) patches to disable automatic bootloader lock (as seen on Moto E7, codename `malta`).
@@ -106,7 +106,7 @@ Devices released before 2024 (and some released during 2024 as well) though are 
 
 ### Non-Motorola Lenovo devices, NEC devices and some Motorola tablets.
 Lenovo usually does not use the Motorola name on their tablets and gaming-oriented phones, and these are typically branded as Lenovo or NEC. While similar to Motorola's unlock process, these have to be unlocked on the [ZUI website], which requires your IMEI, serial number, and email, and they'll send you an unlock-bootloader.img which you flash to the unlock partition in Fastboot to unlock. However, similar to Xiaomi, Lenovo has a quota, which if you surpass, you cannot unlock your bootloader, @MlgmXyysd has created an [unofficial unlock portal] which may work on recent tablets like Legion Y700 4th Gen. Some Motorola tablets, such as the G62, also use the ZUI website to unlock instead of Motorola's unlock portal.
-The Lenovo Z5s (and potentially other Lenovo devices) do **not** verify the unlock-bootloader.img, and therefore you can flash the unlock-bootloader.img [from any Z5s]:[Z5s unlock] to unlock a Z5s.
+The Lenovo Z5s (and potentially other Lenovo devices) do **not** verify the unlock-bootloader.img, and therefore you can flash the unlock-bootloader.img [from any Z5s][Z5s unlock] to unlock a Z5s.
 
 > Moto used confusion! It seems pretty effective...
 
@@ -149,3 +149,4 @@ Authored by [melontini](https://github.com/melontini).
 [fogo no relock brick]:https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/issues/170
 [Z5s unlock]:https://cakestwix.github.io/ViteLenovoZ5s/guides/unlock.html
 [brick on relock]:https://xdaforums.com/t/motorola-xt2129-2-moto-g30-invalid-operating-system-after-relocking-bootloader.4751096/
+[Solutions unlock]:https://files.catbox.moe/kanfra.png

@@ -163,7 +163,7 @@ It's possible to unlock using testpoints and [PotatoNV](https://github.com/mashe
 If you own a MediaTek device exploitable by [mtkclient](https://github.com/bkerler/mtkclient) you can unlock the bootloader using that.<br/>
 If it also happens to be an OPPO/Realme device and you need to access fastboot: [lkpatcher](https://github.com/R0rt1z2/lkpatcher) ([web version](https://lkpatcher.r0rt1z2.com/))
 
-If unlocking the bootloader doesn't work using SECCFG modification (unlocking via mtkclient), you can try unlocking fastboot by writing a modified boot1 (preloader). Writing the preloader also uses mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
+If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG mod (unlocking via mtkclient), you can try unlocking fastboot by writing a modified boot1 (preloader). Writing a preloader also uses mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
 
 ### Qualcomm 
 There's no Universal Qualcomm method, unfortunately.

@@ -174,6 +174,8 @@ Kirin 620, 650, 655, 658, 659, 925, 935, 950, 960:<br/>
 Если у вас устройство на MediaTek, пригодное к использованию эксплойта [mtkclient](https://github.com/bkerler/mtkclient), вы можете использовать его для разблокировки загрузчика.<br/>
 Если же речь идёт об устройстве OPPO/Realme и вам нужно так же получить доступ к fastboot: [lkpatcher](https://github.com/R0rt1z2/lkpatcher) ([веб-версия](https://lkpatcher.r0rt1z2.com/)).
 
+Если разблокировка загрузчика не работает на устройстве Oppo Mediatek с использованием модификации SECCFG (разблокировка через mtkclient), вы можете попробовать разблокировать fastboot, записав модифицированный boot1 (preloader). Запись preloader также использует mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
+
 ### Unisoc
 Если у вас телефон с SOC'ами Unisoc ud710 или ums512, вы можете обратить внимание на этот эйсплойт: [CVE-2022-38694_unlock_bootloader](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader).
 

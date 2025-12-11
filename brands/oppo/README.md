@@ -26,8 +26,9 @@ In April-May 2023 you could unlock any Realme phone using this script [rmx3474-r
 Since then, they have forced their servers to only return "new struct" keys, which have model data attached, making the script useless.
 
 ## OPPO
+>If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG mod (unlocking via mtkclient), you can try unlocking fastboot by writing a >modified boot1 (preloader). Writing a preloader also uses mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
 
-There's not much to say about OPPO. They provide Deep Testing too, but only for Chinese models.
+There's not much else to say about OPPO. They also offer in-depth testing, but only for Chinese models
 
 ## Deep Testing
 

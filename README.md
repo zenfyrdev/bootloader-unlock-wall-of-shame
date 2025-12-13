@@ -40,8 +40,6 @@ The following manufacturers have made it completely impossible to unlock their d
 
 ### [Amazon](./brands/amazon/README.md)
 
-### [Apple](./brands/apple/README.md)
-
 ### [Asus](./brands/asus/README.md)
 
 ### [Cat](./brands/cat/README.md)
@@ -65,8 +63,6 @@ The following manufacturers have made it completely impossible to unlock their d
 ### [TCL/BlackBerry](./brands/tcl/README.md)
 
 ### [Vivo/IQOO](./brands/vivo/README.md)
-
-### [Windows phones](./brands/winphones/README.md)
 
 ### Carrier Locked Devices
 

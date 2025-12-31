@@ -104,7 +104,7 @@
 
 Если вы купили телефон где-то ещё и он не заблокирован под оператора, то можете использовать стандартный процесс, но будьте готовы ко всем проблемам, которые возникнут у вас на пути!
 
-Например, разблокировка необратимо тикнет счётчик Knox. В результате *любые* связанные с Knox'ом функции будут сломаны, *даже если бы заблокируете загрузчик обратно*. Эти функции включают, но не ограничиваются: Samsung Pay, Pass, Flow, Health, Secure Folder, Secure Wi-Fi, Smart View. Могут ли вам отказать в гарантийном обслуживании? Может быть…
+Например, разблокировка необратимо тикнет счётчик Knox. В результате *любые* связанные с Knox'ом функции будут сломаны, *даже если вы заблокируете загрузчик обратно*. Эти функции включают, но не ограничиваются: Samsung Pay, Pass, Flow, Health, Secure Folder, Secure Wi-Fi, Smart View. Могут ли вам отказать в гарантийном обслуживании? Может быть…
 Некоторые из этих функций могут быть восстановлены при помощи LsPosed модуля [KnoxPatch](https://github.com/BlackMesa123/KnoxPatch) и этого модуля Magisk: [KnoxPatch#knoxpatch-enhancer](https://github.com/BlackMesa123/KnoxPatch#knoxpatch-enhancer).
 
 К тому же некоторые базовые функции, такие как VoLTE (спасибо проприетарной реализации Samsung) и, в некоторых случаях, [даже камера](https://xdaforums.com/t/a52s-5g-sm-a528b-unlock-bootloader-camera-failed.4336007/), могут быть и, скорее всего, будут сломаны.
@@ -177,7 +177,7 @@ Kirin 620, 650, 655, 658, 659, 925, 935, 950, 960:<br/>
 Если разблокировка загрузчика не работает на устройстве Oppo Mediatek с использованием модификации SECCFG (разблокировка через mtkclient), вы можете попробовать разблокировать fastboot, записав модифицированный boot1 (preloader). Запись preloader также использует mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
 
 ### Unisoc
-Если у вас телефон с SOC'ами Unisoc ud710 или ums512, вы можете обратить внимание на этот эйсплойт: [CVE-2022-38694_unlock_bootloader](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader).
+Если у вас телефон с SOC'ами Unisoc ud710 или ums512, вы можете обратить внимание на этот эксплойт: [CVE-2022-38694_unlock_bootloader](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader).
 
 Вы можете также попробовать это: [Spectrum_UnlockBL_Tool](https://github.com/zhuofan-16/Spectrum_UnlockBL_Tool). <br/>
 Это: [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-unlock-w-unisoc-t310.4393389/). <br/>

@@ -26,6 +26,8 @@ Sony supports [Custom AVB](../../README.md#custom-avb-keys) Since 2020.
 
 You also can't unlock Japan carrier variants, for some reason - Japanese factory unlocked is unaffected.
 
+All Sony devices using the Snapdragon 835 and Snapdragon 845 can be unlocked via the [xperable exploit][xperable].
+
 ***
 Info about Japan devices provided by [madeline-yana](https://github.com/madeline-yana) and edited by [eepymeowers](https://github.com/eepymeowers)
 Additional info provided by [K4sum1](https://github.com/K4sum1).<br/>
@@ -38,3 +40,4 @@ Authored by [konradmb](https://github.com/konradmb).
 [TA patch 2019]:https://www.reddit.com/r/SonyXperia/comments/1199y1j/what_are_the_consequences_of_getting_rid_off_the/
 [TA backup]:https://together.jolla.com/question/168711/xperia-x-backup-ta-partition-before-unlocking-bootloader/
 [Bravia unlock]:https://pro-bravia.sony.net/data/bz40h/ProBRAVIA_SecurityWhitePaper.pdf
+[xperable]:https://github.com/j4nn/xperable

@@ -95,6 +95,8 @@ The following manufacturers allow unlocking under certain conditions, such as re
 
 ### [OPPO/Realme](./brands/oppo/README.md)
 
+### [Oukitel](./brands/oukitel/README.md)
+
 ### [Xiaomi/Redmi/POCO](./brands/xiaomi/README.md)
 
 ### [ZTE/nubia](./brands/zte/README.md)
@@ -128,8 +130,6 @@ The following manufacturers require an online account and/or a waiting period be
 ### [Microsoft](./brands/microsoft/README.md)
 
 ### [Nothing](./brands/nothing/README.md)
-
-### [Oukitel](./brands/oukitel/README.md)
 
 ### [Shift](./brands/shift/README.md)
 

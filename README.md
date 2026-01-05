@@ -137,13 +137,13 @@ The following manufacturers require an online account and/or a waiting period be
 
 ### [Teracube](./brands/teracube/README.md)
 
+### [TP-Link/Neffos](./brands/tplink/README.md)
+
 ### [Ulefone](./brands/ulefone/README.md)
 
 ### [Umidigi](./brands/umidigi/README.md)
 
 ### [Volla](./brands/volla/README.md)
-
-### [TP-Link/Neffos](./brands/tplink/README.md)
 
 # Misc info
 

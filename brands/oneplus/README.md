@@ -17,7 +17,7 @@ According to the [OnePlus forum](https://bbs.oneplus.com/thread/1926504022886318
 > **Note:** These restrictions currently apply only to devices sold in mainland China. However, due to the unified OPPO–OnePlus codebase, similar restrictions may be introduced for global models in the future.
 
 ## T-Mobile
-For OnePlus devices purchased from T-Mobile or an MVNO such as Metro, even if the device was later unlocked from T-Mobile, they require an [unlock token], and to get your unlock token, you need to provide original proof of purchase from T-Mobile. If you purchased the device second-hand, e.g. from eBay, you will not be able to unlock your bootloader. This does not apply to the OnePlus 6 or earlier.
+For OnePlus devices purchased from T-Mobile or an MVNO such as Metro, even if the device was later unlocked from T-Mobile, they require an [unlock token], and to get your unlock token, you need to provide original proof of purchase from T-Mobile. If you purchased the device from eBay, you will not be able to unlock your bootloader. This does not apply to the OnePlus 6 or earlier. This doesn't appear to apply to other third party sellers (such as OLX).
 
 ***
 Authored by [madeline-yana](https://github.com/madeline-yana) and [jotkauser](https://github.com/jotkauser).

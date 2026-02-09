@@ -118,7 +118,7 @@ Xiaomikey could also work on some devices.
 Devices shipping with Android One do NOT have any unlock requirements. They follow the standard Android unlock process.
 
 ***
-Updated info provided by [n1ses](https://github.com/n1ses) & [Crimson Fork/🌌🏳️‍⚧️&ΘΔ](https://cf.spaceport.nexus)<br/>
+Updated info provided by [n1ses](https://github.com/n1ses) & [Crimson Fork/🌌🏳️‍⚧️&ΘΔ](https://cf.spaceport.nexus)  & [Mluo2011](https://github.com/Mluo2011)<br/>
 Authored by [melontini](https://github.com/melontini).
 
 [hypersploit]:https://github.com/TheAirBlow/HyperSploit

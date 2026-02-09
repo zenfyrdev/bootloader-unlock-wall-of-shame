@@ -27,7 +27,7 @@ It is currently **impossible** to unlock Xiaomi phones from the China region, es
   - [Xiaomi-HyperOS-BootLoader-Bypass](https://github.com/MlgmXyysd/Xiaomi-BootLoader-Questionnaire) – Original PoC (PHP, cumbersome to set up)  
   - **AQLR** – Script-based, requires running at **00:00 China time** on PC (Doesn't work in china)
   - **HyperSploit** – User-friendly program, patched as of **HyperOS 2.0.203.0**, works only on older builds - Can bypass the 30 days old account requirement.
-  - **MlgmXyysd** - MlgmXyysd, the developer of the original bootloader bypass script, has discovered a new vulnerability in Qualcomm devices that enables bootloader unlocking on most HyperOS 2 and 3 phones. You may contact her on CoolAPK; according to some sources, she charges 600 per unlocking.
+  - **MlgmXyysd** - MlgmXyysd, the developer of the original bootloader bypass script, has discovered a new vulnerability in Qualcomm devices that enables bootloader unlocking on most HyperOS 2 and 3 phones. You may contact her on CoolAPK; according to some sources, she charges 600 per unlocking. (Not recommended)
 - These tools try to exploit a vulnerability in the Community App request step so you can continue the 7-day waiting process and then unlock with Xiaomi’s official tool.  
 - ⚠️ **Risks**: Using bypasses may get your device or account banned by Xiaomi.  
 

@@ -50,7 +50,9 @@ It is currently **impossible** to unlock Xiaomi phones from the China region, es
 ### Timeline & Reports
 - The last official day to submit unlock requests via the old form was reportedly **September 9, 2024**.  
 - Xiaomi has hinted in the Community App that the service *may return in 2025*, but similar promises have not been fulfilled in the past.  
-- Multiple forum posts suggest that **only users physically located in China, with Level 5 accounts, and valid Chinese ID can currently unlock**. Others sometimes resort to paid third-party services, though results vary.  
+- Multiple forum posts suggest that **only users physically located in China, with Level 5 accounts, and valid Chinese ID can currently unlock**. Others sometimes resort to paid third-party services, though results vary.
+- In **1/1/2026** Xiaomi offically remove the unlocking function from their community app.
+- On **2/1/2026** MlgmXyysd the devloper of the orginal bootloader bypass claim she had found a way to unlock Qualcomm devices using a unknown vulnerability
 
 
 

@@ -169,6 +169,8 @@ If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG
 
 ### Qualcomm 
 In some discussion on cookapk and XDA their seem to be Qualcomm had a universial bootloader unlock vulnerbility effecting most Qualcomm socs that has not been disclosed yet. Additionally, in the past few days, some chinese netizens comfirmed that their is a 0 day bootloader vulnerbility on most qualcomm soc. On the forum they said "This phenomenon occurs in OS 3.0.0.14 Beta (note: the discoverer believes the vulnerability has been patched in this version). It seems that repeatedly calling fastboot oem ramdump <massive character parameter>followed by fastboot oem uefilogcauses the fastboot process to freeze. Reverse engineering revealed a stack overflow at offset 0x1950 (around 6KB) of the var_18C8call stack within the ramdump function, leading to variable corruption. If exploited properly, it might be possible to modify the IsUnlockedflag? However, reverse analysis shows extensive stack integrity checks, and currently there is no reliable method to bypass them unless there is a way to read the randomly generated seed at the bottom of the stack."
+
+<br>
 [XDA](https://xdaforums.com/t/qualcomm-there-seems-to-be-a-0-day-vulnerability-that-can-be-used-to-unlock-the-bootloader.4776970/)
 
 Although some of these might work for you:

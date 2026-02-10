@@ -66,6 +66,8 @@ The following manufacturers have made it completely impossible to unlock their d
 
 ### [Vivo/IQOO](./brands/vivo/README.md)
 
+### [Vsmart](./brands/Vsmart/README.md)
+
 ### [Windows phones](./brands/winphones/README.md)
 
 ### Carrier Locked Devices

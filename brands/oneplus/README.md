@@ -7,8 +7,7 @@
 All OnePlus phones on the global market, and any Chinese models that were initially released with ColorOS 15 or older, can be easily unlocked using the [standard procedure](../../misc/generic-unlock.md). This includes devices that have since updated to ColorOS 16.0 or newer.
 
 ## Newer Chinese phones initially released with ColorOS 16.0 and above
-According to the [OnePlus forum](https://bbs.oneplus.com/thread/1926504022886318086), for phones and tablets sold in mainland China, unlocking the bootloader is **only possible via an official application to join the “Deep Testing” program**.
-
+According to the [OnePlus forum](https://bbs.oneplus.com/thread/1926504022886318086), for phones and tablets sold in mainland China, unlocking the bootloader is **only possible via an official application to join the “Deep Testing” program**. After submitting a unlock request they normally take 2 days to be approved.
 **Main requirements:**  
 - Account must be in good standing (no violations or restrictions)  
 - No application submitted in the past 30 days  

@@ -7,7 +7,7 @@ Allows unlocking on almost any non-carrier locked device, but is also a pioneer 
 
 Google is also one of the few OEMs to support [custom AVB keys](../../README.md#custom-avb-keys).
 
-Despite all of this, Google has started [disabling AI features][disabled ai] upon unlocking the bootloader on the Pixel 9 series, even if you aren't rooted, and it's not related to Play Integrity, and it's likely that in later Pixel models they'll disable more features.
+Despite all of this, Google has started [disabling AI features][disabled ai] upon unlocking the bootloader on the Pixel 9 series, even if you aren't rooted, and it's not related to Play Integrity, and it's likely that in later Pixel models they'll disable more features. Some of them can be re-enabled with an [Xposed module].
 
 ## OTAConfigNoZeroTouchPrebuilt
 OTAConfigNoZeroTouchPrebuilt is an app on Pixels that checks for a carrier lock. When a Pixel first connects to the internet, this system app will immediately check if the device is carrier locked. If it's not or is locked to a carrier that doesn't restrict unlocking, it will retrieve a token from Google's servers which will allow bootloader unlocks. If the token cannot be received, then the bootloader **cannot** be unlocked. This means if Google's servers ever go down, you will not be able to unlock your Pixel's bootloader, as it won't have the token.
@@ -21,3 +21,4 @@ Additional info provided by [Ivy / Lost-Entrepreneur439](https://github.com/Lost
 Authored by [melontini](https://github.com/melontini).
 
 [disabled ai]:https://xdaforums.com/t/pixel-screenshots-other-ai-features-dont-work-with-unlocked-bl.4688190/
+[Xposed module]:https://xdaforums.com/t/app-xposed-30-01-public-compute-services-use-aicore-features-on-rooted-devices.4775989/

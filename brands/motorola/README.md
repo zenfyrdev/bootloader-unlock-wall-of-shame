@@ -8,6 +8,8 @@ Motorola is one of the manufacturers that provide kernel source code for their d
 
 It is recommended to request and download the source code as soon as possible after the device is released to the market, as Motorola may ignore requests for older models over time. For older devices, you can usually get the kernel source by pinging the user asbraga-motorola
 
+**Motorola has done a partnership with graphene OS.** This likely means they are not going to get worse soon. It might make Motorola phones even available to set custom AVB keys. (this is just speculation, don't blame if it's wrong)
+
 Typically, source code becomes available about a month after the issue is opened in the appropriate repository.
 
 - [MTK devices](https://github.com/MotorolaMobilityLLC/kernel-mtk)

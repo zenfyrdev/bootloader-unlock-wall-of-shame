@@ -168,7 +168,7 @@ If it also happens to be an OPPO/Realme device and you need to access fastboot: 
 If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG mod (unlocking via mtkclient), you can try unlocking fastboot by writing a modified boot1 (preloader). Writing a preloader also uses mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
 
 ### Qualcomm 
-Their is a vulnerbility that can unlock basically all Qualcomm 8E5 chips by flashing a file into the EFISP partition. Their is also a vulnerbility that can unlock basically all Qualcomm devices but it has not been made public yet. Read XDA for more information.
+Their is a vulnerbility that can unlock basically all Qualcomm 8E5 chips by flashing a file into the EFISP partition mostly using 9008. Their is also a vulnerbility that can unlock basically all Qualcomm devices but it has not been made public yet. Read XDA for more information.
 
 [XDA](https://xdaforums.com/t/qualcomm-there-seems-to-be-a-0-day-vulnerability-that-can-be-used-to-unlock-the-bootloader.4776970/)
 

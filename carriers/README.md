@@ -33,3 +33,13 @@ If you buy a Sony or Sharp phone used, high chance it's going to be locked to a 
 ### [NTT Docomo/b-mobile/IIJMIO/DMM](./brands/nttdocomo/README.md)
 
 ### [SoftBank/y!mobile](./brands/softbank/README.md)
+
+## Saudi Arabia
+Safe but be aware of one carrier
+
+### [STC](./brands/STC/README.md)
+
+### [Mobily](./brands/Mobily/README.md)
+
+### [Zain](./brands/Zain/README.md)
+(Note: Zain is mostly available in the most GCC like Bahrain and Kuwait as well as STC) 

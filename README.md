@@ -162,7 +162,7 @@ Kirin 620, 650, 655, 658, 659, 925, 935, 950, 960:<br/>
 It's possible to unlock using testpoints and [PotatoNV](https://github.com/mashed-potatoes/PotatoNV) (Read the readme)
 
 ### MediaTek
-If you own a MediaTek device exploitable by [mtkclient](https://github.com/bkerler/mtkclient) you can unlock the bootloader using that.<br/>
+If you own a MediaTek device exploitable by [mtkclient](https://github.com/bkerler/mtkclient) ([fork old version](https://github.com/R0rt1z2/mtkclient)) or [Penumbra](https://github.com/shomykohai/penumbra) you can unlock the bootloader using that.<br/>
 If it also happens to be an OPPO/Realme device and you need to access fastboot: [lkpatcher](https://github.com/R0rt1z2/lkpatcher) ([web version](https://lkpatcher.r0rt1z2.com/))
 
 If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG mod (unlocking via mtkclient), you can try unlocking fastboot by writing a modified boot1 (preloader). Writing a preloader also uses mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).

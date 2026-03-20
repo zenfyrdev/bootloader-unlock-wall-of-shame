@@ -8,7 +8,9 @@ All Fairphones after 2 require you to request a code from [this][unlock-website]
 
 Not very fair in my opinion, but whatever fairs your phone.
 
-> They also [broke Verified Boot][verified-boot], lol
+They also [broke Verified Boot][verified-boot], lol
+
+With firmware FP3.6.A.040.2 on the Fairphone 3, Fairphone switched to the [standard unlock procedure]((../../misc/generic-unlock.md)), however all other Fairphone devices still require their webtsite.
 
 ***
 Authored by [melontini](https://github.com/melontini).

@@ -13,6 +13,7 @@ Keeping track of companies that "care about your data 🥺"
 - GitHub: https://github.com/melontini/bootloader-unlock-wall-of-shame
 - Codeberg: https://codeberg.org/melontini/bootloader-unlock-wall-of-shame
 - tangled: https://tangled.sh/did:plc:rjhjcb3rgdsmdr6ykywuh63z/bootloader-unlock-wall-of-shame
+Do note issues, pull requests and discussions on Codeberg and tangled are not monitored. Please use GitHub for these.
 
 </p>
 </details> 

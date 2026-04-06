@@ -102,7 +102,7 @@ The following manufacturers allow unlocking under certain conditions, such as re
 
 ### [Xiaomi/Redmi/POCO](./brands/xiaomi/README.md)
 
-### [ZTE/nubia](./brands/zte/README.md)
+### [ZTE/nubia/Redmagic](./brands/zte/README.md)
 
 ## ⚠️ Proceed with caution!
 

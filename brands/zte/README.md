@@ -1,4 +1,4 @@
-# ZTE/nubia
+# ZTE/nubia/Redmagic
 
 > 🧹 This page is missing a lot of info!
 

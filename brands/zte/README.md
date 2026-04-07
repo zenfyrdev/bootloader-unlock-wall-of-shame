@@ -19,7 +19,7 @@ Side note, on the A11 link there is a collection of apps to grant a system shell
 
 ***
 Additional info provided by [Skorpion96](https://github.com/Skorpion96).
-Authored by [melontini](https://github.com/melontini).
+Authored by [zenfyr](https://zenfyr.dev).
 
 [pre-android-8]:https://xdaforums.com/t/bootloader-unlocking-on-older-qualcomm-zte-devices-devinfo-partition-modification.4100897/
 [until-android-11-few-models]:https://xdaforums.com/t/zte-blade-a5-2019-2020-etc-root-guide-locked-bootloader-valid-for-all-unisoc-zte-models-with-an-engineering-firmware.4612391/

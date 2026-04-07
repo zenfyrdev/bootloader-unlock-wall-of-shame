@@ -55,7 +55,7 @@ Brought up by [gargargar666 on XDA][deep-testing-thread]. Download [GT5-DeepTest
 Oppo Deep Testing uses a different API endpoint to request the unlock code. Only 2 versions of Oppo Deep Testing exist: v1.0.1 and v1.1.0.
 
 ***
-Authored by [melontini](https://github.com/melontini).
+Authored by [zenfyr](https://zenfyr.dev).
 
 [rmx3474-rooting]:https://github.com/turistu/rmx3474-rooting
 [announcement]:https://c.realme.com/in/post-details/1671137365285982208

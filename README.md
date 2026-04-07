@@ -4,14 +4,14 @@ Keeping track of companies that "care about your data 🥺"
 
 [Switch to Russian translation](ru/README.md)
 
-![Terrible](https://raw.githubusercontent.com/melontini/mini-badges/v1/personal/terrible.svg)
-[![License CC BY-NC-SA](https://raw.githubusercontent.com/melontini/mini-badges/v1/licenses/cc/cc-by-nc-sa-4.0.svg)](https://github.com/melontini/bootloader-unlock-wall-of-shame/blob/main/LICENSE)
+![Terrible](https://raw.githubusercontent.com/zenfyrdev/mini-badges/v1/personal/terrible.svg)
+[![License CC BY-NC-SA](https://raw.githubusercontent.com/zenfyrdev/mini-badges/v1/licenses/cc/cc-by-nc-sa-4.0.svg)](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/blob/main/LICENSE)
 
 <details><summary>mirrors</summary>
 <p>
 
-- GitHub: https://github.com/melontini/bootloader-unlock-wall-of-shame
-- Codeberg: https://codeberg.org/melontini/bootloader-unlock-wall-of-shame
+- GitHub: https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame
+- Codeberg: https://codeberg.org/zenfyr/bootloader-unlock-wall-of-shame
 - tangled: https://tangled.sh/did:plc:rjhjcb3rgdsmdr6ykywuh63z/bootloader-unlock-wall-of-shame
 Do note issues, pull requests and discussions on Codeberg and tangled are not monitored. Please use GitHub for these.
 
@@ -25,7 +25,7 @@ While this may not affect you directly, it sets a bad precedent. You never know 
 **They've already gone after [sideloading](https://keepandroidopen.org).**<br><br>
 I thought it might be a good idea to keep track of bad companies and workarounds.
 
-If you know of specific details/unlocking methods, please PR them or drop them in the [discussions](https://github.com/melontini/bootloader-unlock-wall-of-shame/discussions)
+If you know of specific details/unlocking methods, please PR them or drop them in the [discussions](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions)
 
 # The list:
 

@@ -25,7 +25,7 @@ Models 7.2, 8.3 and 5.3 can be unlocked offline, while others may require HMD De
 ***
 Windows Phone info by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439).<br/>
 Updated info provided by [Hikari Calyx](https://github.com/HikariCalyx).<br/>
-Authored by [melontini](https://github.com/melontini).
+Authored by [zenfyr](https://zenfyr.dev).
 
 [hikari-service]:https://hikaricalyx.com/request-bootloader-unlock
 [hikari-abl]:https://fih-firmware.hikaricalyx.com/protoabl/

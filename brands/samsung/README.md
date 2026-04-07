@@ -154,7 +154,7 @@ There is an [open source VoLTE service] developed by phh, but it's incomplete an
 
 ***
 Additional info provided by [aries-ts-indo](https://github.com/aries-ts-indo), [ravindu644](https://github.com/ravindu644) and [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439).<br/>
-Authored by [melontini](https://github.com/melontini).
+Authored by [zenfyr](https://zenfyr.dev).
 
 [1]:https://www.xda-developers.com/bootloader-unlocking-no-longer-kills-galaxy-z-fold-3-cameras/
 [2]:https://www.xda-developers.com/samsung-galaxy-s22-bootloader-unlock-camera-working/

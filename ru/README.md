@@ -1,18 +1,18 @@
-![Bootloader Unlock: Wall of Shame](https://raw.githubusercontent.com/melontini/bootloader-unlock-wall-of-shame/main/ru/banner_ru.png)
+![Bootloader Unlock: Wall of Shame](https://raw.githubusercontent.com/zenfyrdev/bootloader-unlock-wall-of-shame/main/ru/banner_ru.png)
 
 Отслеживаем компании, которые «заботятся о ваших данных 🥺»
 
 [Переключиться на английский оригинал](../README.md)
 
-![Terrible](https://raw.githubusercontent.com/melontini/bootloader-unlock-wall-of-shame/main/ru/terrible_ru.svg)
-[![License CC BY-NC-SA](https://raw.githubusercontent.com/melontini/bootloader-unlock-wall-of-shame/main/ru/CC-BY-NC-SA-4.0_ru.svg)](https://github.com/melontini/bootloader-unlock-wall-of-shame/blob/main/LICENSE)
+![Terrible](https://raw.githubusercontent.com/zenfyrdev/bootloader-unlock-wall-of-shame/main/ru/terrible_ru.svg)
+[![License CC BY-NC-SA](https://raw.githubusercontent.com/zenfyrdev/bootloader-unlock-wall-of-shame/main/ru/CC-BY-NC-SA-4.0_ru.svg)](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/blob/main/LICENSE)
 
 ## Зачем?
 За последние несколько лет, подозрительное число компаний начало «заботиться о ваших данных», а точнее, блокировать/строго лимитировать возможность разблокировки загрузчика вашего *собственного* устройства.
 
 Хотя это может и не коснуться вас напрямую, это создаёт плохой прецедент. Никогда не знаешь, что пойдёт под нож следующим: Shizuku? ADB? Скачивание приложений из неизвестных источников? Я думаю, что было бы хорошей идеей отслеживать плохие компании и относящиеся к их устройствам обходные пути.
 
-Если вы знаете какие-то специфические детали/методы разблокировки, пожалуйста, создайте PR или отправьте их в раздел [дискуссий](https://github.com/melontini/bootloader-unlock-wall-of-shame/discussions).
+Если вы знаете какие-то специфические детали/методы разблокировки, пожалуйста, создайте PR или отправьте их в раздел [дискуссий](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions).
 
 # Список:
 
@@ -29,7 +29,7 @@
 В прошлом, Huawei позволяла разблокировку со специальным кодом, который можно было получить, предоставив некоторую информацию на emui.com (IMEI, серию, модель и ID продукта), но в 2018 «корпоративные ценности изменились» и сайт перестал работать. <br/>
 Хуже того, на устройствах с Андроид 10+, команду разблокировки **полностью вырезали** из меню fastboot.
 
-Некоторые устройства основанные на Kirin, могут использовать [PotatoNV](https://github.com/melontini/bootloader-unlock-wall-of-shame#kirin).
+Некоторые устройства основанные на Kirin, могут использовать [PotatoNV](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame#kirin).
 
 Платные методы:<br/>
 Я бы не рекомендовал платные методы из-за их подозрительности. Хотя один из таких методов я использовал как-то давно, он был неплох.<br/>

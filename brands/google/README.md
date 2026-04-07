@@ -18,7 +18,7 @@ While this is mostly a negative thing, an error can lead to carrier-locked devic
 
 ***
 Additional info provided by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439) and [Andrew Gunnerson](https://github.com/chenxiaolong).<br/>
-Authored by [melontini](https://github.com/melontini).
+Authored by [zenfyr](https://zenfyr.dev).
 
 [disabled ai]:https://xdaforums.com/t/pixel-screenshots-other-ai-features-dont-work-with-unlocked-bl.4688190/
 [Xposed module]:https://xdaforums.com/t/app-xposed-30-01-public-compute-services-use-aicore-features-on-rooted-devices.4775989/

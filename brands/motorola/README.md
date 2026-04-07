@@ -130,7 +130,7 @@ Unofficial ways to unlock "Moto G13/G23/G24/G24 Power" bootloader provided by [D
 Additional info for Motorola CID devices and mtkclient provided by [Shomy](https://github.com/shomykohai).<br/>
 Legal agreement info provided by [FaridZelli](https://github.com/FaridZelli).<br/>
 Lenovo branded and NEC unlock information provided by [CakesTwix](https://github.com/CakesTwix) and [Calyx Hikari](https://github.com/HikariCalyx).<br/>
-Authored by [melontini](https://github.com/melontini).
+Authored by [zenfyr](https://zenfyr.dev).
 
 [Bootloader Unlocking Legal Agreement]:https://en-us.support.motorola.com/ci/fattach/get/741421/1385047216/redirect/1/filename/Boot_revised.pdf
 [First-Sale Doctrine]:https://en.wikipedia.org/wiki/First-sale_doctrine

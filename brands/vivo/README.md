@@ -21,7 +21,7 @@ Vivo devices have kernel-level patches to block the `su` binary, so to use Magis
 \* BBK Electronics was deregistered as a company on 7 April 2023.
 
 ***
-Authored by [melontini](https://github.com/melontini).
+Authored by [zenfyr](https://zenfyr.dev).
 
 [BBK Fastboot]:https://xdaforums.com/t/how-to-unlock-bootloader-of-vivo-phones.3686690/
 [Vivo x70 Pro+]:https://xdaforums.com/t/vivo-x70-pro-bootloader-unlock-how-to-guide.4444989/

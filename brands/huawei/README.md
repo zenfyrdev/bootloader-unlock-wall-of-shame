@@ -38,7 +38,7 @@ Through HCU-client (Not everything is supported + incredible prices [hcu-client.
 However, if you feel like you need a license for whatever reason, look out for their official resellers instead of paying the full price on their website. Retailers usually sell the licenses for a better price.
 
 ***
-Authored by [melontini](https://github.com/melontini), [AntiEngineer](https://github.com/antiengineer).
+Authored by [zenfyr](https://zenfyr.dev), [AntiEngineer](https://github.com/antiengineer).
 
 [PotatoNV]:../../README.md#kirin
 [hcu-client.com]:https://hcu-client.com/buy/

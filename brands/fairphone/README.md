@@ -10,7 +10,7 @@ Not very fair in my opinion, but whatever fairs your phone.
 
 They also [broke Verified Boot][verified-boot], lol
 
-With firmware FP3.6.A.040.2 on the Fairphone 3, Fairphone switched to the [standard unlock procedure]((../../misc/generic-unlock.md)), however all other Fairphone devices still require their webtsite.
+With firmware FP3.6.A.040.2 on the Fairphone 3, Fairphone switched to the [standard unlock procedure]((../../misc/generic-unlock.md)), however all other Fairphone devices still require their website.
 
 ***
 Authored by [zenfyr](https://zenfyr.dev).

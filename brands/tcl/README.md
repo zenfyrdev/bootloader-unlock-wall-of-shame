@@ -9,6 +9,9 @@ TCL has its own fork of the fastboot utility called `authboot`, which **requires
 ## Pre-2016 BlackBerry devices
 The BlackBerry Priv and earlier were not manufactured by TCL, but by the original BlackBerry company (aka Research in Motion/RIM) in Canada. Unfortunately, even the oldest of BlackBerry's devices haven't been cracked, and with the shutdown of all services for BB10 and BlackBerry Tablet OS on January 4, 2022, it is now impossible to create apps for these platforms, restricting a potential bootloader unlock to a hardware level exploit only, as it is now basically impossible to do anything with the software. As of 2025, the only BlackBerry devices which have a bootloader unlock exploit are the Passport and Priv, which can be unlocked by flashing the bootloader from a prototype device, however this requires [desoldering the phone's eMMC][passport priv unlock] and connecting it to a flasher.
 
+## Key2 series
+The BlackBerry KEY2 series of phones were manufactured by TCL with bootloaders "secured" by BlackBerry. As usual, authboot was used, as well as unlocking being useless even if you gained access. Unfortunately they did not patch out one of the worse Qualcomm bugs (CVE-2021-1931) which was an entrypoint towards [a fully untethered bootloader unlock tool][kibo]. This comes with its quirks, such as needing a modified boot image to boot the stock OS due to the restrictions BlackBerry put in place when the device is in FACTORY_MODE state.
+
 > TCL acts premium but is nothing more than a Chinese basement. Their so‑called "security" only restricts users, while their phones are no better or safer than the rest.
 
 ***
@@ -16,3 +19,4 @@ Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439
 Info about authboot and engineering models by [DiabloSat](https://github.com/progzone122)<br/>
 
 [passport priv unlock]:https://balika011.hu/blackberry/guides/passport/conversion.php
+[kibo]:https://github.com/BotchedRPR/kibo

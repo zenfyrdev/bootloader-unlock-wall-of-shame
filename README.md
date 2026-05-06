@@ -13,10 +13,10 @@ Keeping track of companies that "care about your data 🥺"
 - GitHub: https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame
 - Codeberg: https://codeberg.org/zenfyr/bootloader-unlock-wall-of-shame
 - tangled: https://tangled.sh/did:plc:rjhjcb3rgdsmdr6ykywuh63z/bootloader-unlock-wall-of-shame
-Do note issues, pull requests and discussions on Codeberg and tangled are not monitored. Please use GitHub for these.
 
 </p>
 </details> 
+Do note issues, pull requests and discussions on Codeberg and tangled are not monitored. Please use GitHub for these.
 
 ## Why?
 Over the past few years, a suspicious number of companies have started to "take care of your data", aka block/strictly limit your ability to unlock the bootloader on your *own* devices.

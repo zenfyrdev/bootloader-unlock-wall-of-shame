@@ -29,6 +29,7 @@ It is currently **impossible** to unlock Xiaomi phones from the China region, es
   - **AQLR** – Script-based, requires running at **00:00 China time** on PC (Doesn't work in china)
   - **HyperSploit** – User-friendly program, patched as of **HyperOS 2.0.203.0**, works only on older builds - Can bypass the 30 days old account requirement.
   - **MlgmXyysd** - MlgmXyysd, the developer of the original bootloader bypass script, has discovered a new vulnerability in Qualcomm devices that enables bootloader unlocking on most HyperOS 2 and 3 phones. You may contact her on CoolAPK; according to some sources, she charges 600 per unlocking. (Not recommended)
+  - [Xiaomi 15 and other 8 Elite](https://xdaforums.com/t/guide-breakthrough-free-offline-bootloader-unlock-for-cn-xiaomi15-pro-ultra-redmi-k90-sd-8-elite-also-support-8g2-8g3-no-cn-exam-required.4786790/) devices can be unlocked if on the January 2026 patch or earlier. [Another exploit](https://xdaforums.com/t/unlock-bootloader-unbrick-xiaomi-8-elite-high-versions-auth-free-edl-firehose.4787466/) for 8 Elite devices exists, using EDL to flash the ABL from an engineering ROM, however this does not work on and **will hard brick** devices with a Toshiba or Kioxia UFS.
 - These tools try to exploit a vulnerability in the Community App request step so you can continue the 7-day waiting process and then unlock with Xiaomi’s official tool.  
 - ⚠️ **Risks**: Using bypasses may get your device or account banned by Xiaomi.  
 

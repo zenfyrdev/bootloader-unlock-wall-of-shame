@@ -169,7 +169,7 @@ If it also happens to be an OPPO/Realme device and you need to access fastboot: 
 If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG mod (unlocking via mtkclient), you can try unlocking fastboot by writing a modified boot1 (preloader). Writing a preloader also uses mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
 
 ### Qualcomm 
-On the Chinese app Cookapk, a method to unlock all Snapdragon 8E5 devices has been leaked. For Xiaomi devices, all 8E5/8E models can be unlocked if they have a security patch dated before February 2026; devices updated after February 2026 have already been patched.
+On the Chinese app Coolapk, a method to unlock all Snapdragon 8E5 devices has been leaked. For Xiaomi devices, all 8E5/8E models can be unlocked if they have a security patch dated before February 2026; devices updated after February 2026 have already been patched.
 
 [XDA](https://xdaforums.com/t/qualcomm-there-seems-to-be-a-0-day-vulnerability-that-can-be-used-to-unlock-the-bootloader.4776970/)
 

@@ -24,9 +24,10 @@ The specifics of what can and cannot be done change over time, and different sou
 It is currently **impossible** to unlock Xiaomi phones from the China region, especially if the device was imported and you are outside China. They have removed the unlocking function in their community app.
 
 ### Workarounds (use at your own risk)
-- **Bootloader Bypass tools**  
-  - [Xiaomi-HyperOS-BootLoader-Bypass](https://github.com/MlgmXyysd/Xiaomi-BootLoader-Questionnaire) – Original PoC (PHP, cumbersome to set up)  
-  - **AQLR** – Script-based, requires running at **00:00 China time** on PC (Doesn't work in china)
+- **Bootloader Bypass tools**
+  **For all Xiaomi 8E and devices with android security patch before 2/2026 may be able to unlcok thought the vulnerbility released on Coolapk. Most 8E5 devices can be unlocked as long as it has security patch before 2/2026. The 8E5 vulnerbility works by first using (`fastboot oem set-gpu-preemption-value 0 androidboot.selinux=permissive`) then (`fastboot continue`) and lastly (`adb shell service call miui.mqsas.IMQSNative 21 i32 1 s16 "toybox" i32 1 s16 'nc -s 127.0.0.1 -p 1234 -L sh -l' s16 '/data/mqsas/log.txt' i32 60`) to gain root. Qualcomm's proprietary verification mechanism allows an unsigned Generic Boot Loader (GBL) UEFI application to be flashed and executed from the efisp partition. Because this unsigned application runs early in the boot sequence within the privileged Android Boot Loader (ABL) environment, it achieves arbitrary code execution before critical security milestones are enforced. Leveraging this execution window, the application can call internal ABL functions designed to interface with the Replay Protected Memory Block (RPMB), allowing it to modify the devinfo partition, overwrite the tamper-evident lock state, and successfully bypass the bootloader lock. The 8E one works basically the same.**
+  -  ~~[Xiaomi-HyperOS-BootLoader-Bypass](xiaomi-hyperos-bootLoader-bypass) Xiaomi has patch the orginal vulnerbility.~~
+  - **AQLR** – Script-based, requires running at **00:00 China time** on PC (Doesn't work for Chinese phones)
   - **HyperSploit** – User-friendly program, patched as of **HyperOS 2.0.203.0**, works only on older builds - Can bypass the 30 days old account requirement.
   - **MlgmXyysd** - MlgmXyysd, the developer of the original bootloader bypass script, has discovered a new vulnerability in Qualcomm devices that enables bootloader unlocking on most HyperOS 2 and 3 phones. You may contact her on CoolAPK; according to some sources, she charges 600 per unlocking. (Not recommended)
   - [Xiaomi 15 and other 8 Elite](https://xdaforums.com/t/guide-breakthrough-free-offline-bootloader-unlock-for-cn-xiaomi15-pro-ultra-redmi-k90-sd-8-elite-also-support-8g2-8g3-no-cn-exam-required.4786790/) devices can be unlocked if on the January 2026 patch or earlier. [Another exploit](https://xdaforums.com/t/unlock-bootloader-unbrick-xiaomi-8-elite-high-versions-auth-free-edl-firehose.4787466/) for 8 Elite devices exists, using EDL to flash the ABL from an engineering ROM, however this does not work on and **will hard brick** devices with a Toshiba or Kioxia UFS.
@@ -55,6 +56,8 @@ It is currently **impossible** to unlock Xiaomi phones from the China region, es
 - Multiple forum posts suggest that **only users physically located in China, with Level 5 accounts, and valid Chinese ID can currently unlock**. Others sometimes resort to paid third-party services, though results vary.
 - In **1/1/2026** Xiaomi offically remove the unlocking function from their community app.
 - On **2/1/2026** MlgmXyysd the devloper of the orginal bootloader bypass claim she had found a way to unlock Qualcomm devices using a unknown vulnerability
+- On about **5/1/2026** Someone leaked the vulnerbility for 8E5.
+- On about **10/1/2026** The vulnerbility for 8E was leaked.
 
 
 
@@ -97,7 +100,7 @@ As such, for as long as the option is available, you'll skip this community BS a
 * [AQLR][aqlr] The current bypass method, though you need to have your computer running at 00:00 Chinese ([GMT+8][gmt+8]) time. (The script is in AQLR.zip at the end of the post.)
   * At the very end, [offici5l][offici5l]'s Python [MiUnlockTool][py-MiUnlockTool] can be used instead of the official Windows only [Mi Unlock][MiUnlock].
 * ~~[HyperSploit][hypersploit] is the newer option. This is a simple to use program with no external dependencies.~~ Confirmed as patched as of HyperOS version 2.0.203.0. Still works on old versions.
-* ~~[Xiaomi-HyperOS-BootLoader-Bypass][xiaomi-hyperos-bootLoader-bypass] is the original proof of concept, but it's written in PHP and it's cumbersome to set up.~~ Same as above.
+* ~~[Xiaomi-HyperOS-BootLoader-Bypass][xiaomi-hyperos-bootLoader-bypass] is the original proof of concept, but it's written inf PHP and it's cumbersome to set up.~~ Same as above.
 
 This will (for now) allow you to continue with the last of the **bad old MIUI days** steps, where you wait for 3 (used to be 7) days and can then unlock your phone successfully.
 Do NOT make a new request by pressing the button in the Settings app as that will undo you bypass (hypersploit, MiUnlockTool and Mi Unlock also mention this to you). The tool will make the needed request itself.

@@ -1,193 +1,144 @@
-![Banner. A lock and a key on fire on the left and the text 'Bootloader Unlock: Wall of Shame' on the right.](./misc/banner/banner.jpg)
+# Xiaomi/Redmi/POCO
 
-Keeping track of companies that "care about your data 🥺"
+- Verdict: **⛔ Avoid!**
+- Verdict: **🍅 Terrible!** (Unisoc)
 
-[Switch to Russian translation](ru/README.md)
+In the past, Xiaomi allowed most of its devices to be unlocked after a period of 7+ days (depending on how new the device is).
 
-![Terrible](https://raw.githubusercontent.com/zenfyrdev/mini-badges/v1/personal/terrible.svg)
-[![License CC BY-NC-SA](https://raw.githubusercontent.com/zenfyrdev/mini-badges/v1/licenses/cc/cc-by-nc-sa-4.0.svg)](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/blob/main/LICENSE)
+With the launch of Xiaomi's new Android fork, HyperOS, they have introduced a number of changes to the unlock process, with new device limits and Mi Account requirements.
 
-<details><summary>mirrors</summary>
-<p>
+Look here if you want to learn about how Ximi's bootloader works: [Xiaomi-bootloader]<br>
+Alternative tools instead of Mi Flash Unlock: [Awesome Xiaomi BootLoader Unlock](https://github.com/topminipie/awesome-xiaomi-bootloader-unlock)
 
-- GitHub: https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame
-- Codeberg: https://codeberg.org/zenfyr/bootloader-unlock-wall-of-shame
-- tangled: https://tangled.sh/did:plc:rjhjcb3rgdsmdr6ykywuh63z/bootloader-unlock-wall-of-shame
+Unisoc devices will never be unlockable, this is *not* Xiaomi's fault, Unisoc does not allow unlocking.
 
-</p>
-</details> 
-Do note issues, pull requests and discussions on Codeberg and tangled are not monitored. Please use GitHub for these.
+# China
+**Note**
 
-## Why?
-Over the past few years, a suspicious number of companies have started to "take care of your data", aka block/strictly limit your ability to unlock the bootloader on your *own* devices.
+The specifics of what can and cannot be done change over time, and different sources may claim different things depending on the time period.
 
-While this may not affect you directly, it sets a bad precedent. You never know what will get the axe next: Shizuku? ADB?<br><br> 
-**They've already gone after [sideloading](https://keepandroidopen.org).**<br><br>
-I thought it might be a good idea to keep track of bad companies and workarounds.
 
-If you know of specific details/unlocking methods, please PR them or drop them in the [discussions](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions)
 
-# The list:
+### Devices running HyperOS 2 (China region)
 
-> [!CAUTION]
-> Reminder that no matter how nice a company is, <br/>
-> you should not trust them unless their unlock process is 100% offline!
+It is currently **impossible** to unlock Xiaomi phones from the China region, especially if the device was imported and you are outside China. They have removed the unlocking function in their community app.
 
-## 🍅 Just terrible!
+### Workarounds (use at your own risk)
+- **Bootloader Bypass tools**
+  **For all Xiaomi 8E and devices with android security patch before 2/2026 may be able to unlcok thought the vulnerbility released on Coolapk. Most 8E5 devices can be unlocked as long as it has security patch before 2/2026. The 8E5 vulnerbility works by first using (`fastboot oem set-gpu-preemption-value 0 androidboot.selinux=permissive`) then (`fastboot continue`) and lastly (`adb shell service call miui.mqsas.IMQSNative 21 i32 1 s16 "toybox" i32 1 s16 'nc -s 127.0.0.1 -p 1234 -L sh -l' s16 '/data/mqsas/log.txt' i32 60`) to gain root. Qualcomm's proprietary verification mechanism allows an unsigned Generic Boot Loader (GBL) UEFI application to be flashed and executed from the efisp partition. Because this unsigned application runs early in the boot sequence within the privileged Android Boot Loader (ABL) environment, it achieves arbitrary code execution before critical security milestones are enforced. Leveraging this execution window, the application can call internal ABL functions designed to interface with the Replay Protected Memory Block (RPMB), allowing it to modify the devinfo partition, overwrite the tamper-evident lock state, and successfully bypass the bootloader lock. The 8E one works basically the same.**
+  -  ~~[Xiaomi-HyperOS-BootLoader-Bypass](xiaomi-hyperos-bootLoader-bypass) Xiaomi has patch the orginal vulnerbility.~~
+  - **AQLR** – Script-based, requires running at **00:00 China time** on PC (Doesn't work for Chinese phones)
+  - **HyperSploit** – User-friendly program, patched as of **HyperOS 2.0.203.0**, works only on older builds - Can bypass the 30 days old account requirement.
+  - **MlgmXyysd** - MlgmXyysd, the developer of the original bootloader bypass script, has discovered a new vulnerability in Qualcomm devices that enables bootloader unlocking on most HyperOS 2 and 3 phones. You may contact her on CoolAPK; according to some sources, she charges 600 per unlocking. (Not recommended)
+  - [Xiaomi 15 and other 8 Elite](https://xdaforums.com/t/guide-breakthrough-free-offline-bootloader-unlock-for-cn-xiaomi15-pro-ultra-redmi-k90-sd-8-elite-also-support-8g2-8g3-no-cn-exam-required.4786790/) devices can be unlocked if on the January 2026 patch or earlier. [Another exploit](https://xdaforums.com/t/unlock-bootloader-unbrick-xiaomi-8-elite-high-versions-auth-free-edl-firehose.4787466/) for 8 Elite devices exists, using EDL to flash the ABL from an engineering ROM, however this does not work on and **will hard brick** devices with a Toshiba or Kioxia UFS.
+- These tools try to exploit a vulnerability in the Community App request step so you can continue the 7-day waiting process and then unlock with Xiaomi’s official tool.  
+- ⚠️ **Risks**: Using bypasses may get your device or account banned by Xiaomi.  
 
-The following manufacturers have made it completely impossible to unlock their devices without a workaround.
+### Other reports
+- Some users claim that visiting a Xiaomi store and asking a technician to downgrade the system version results in a temporary unlocked state. A few reported flashing their own system during this process — **Basically impossible** due to Xiaomi now using A/B flashing
 
-### [Alcatel](./brands/alcatel/README.md)
 
-### [Amazon](./brands/amazon/README.md)
 
-### [Apple](./brands/apple/README.md)
+### Devices running HyperOS 1
+- Some may still be unlockable using bypass tools.  
+- However, success is not guaranteed and bans are possible.  
 
-### [Asus](./brands/asus/README.md)
 
-### [Cat](./brands/cat/README.md)
 
-### [Coolpad](./brands/coolpad/README.md)
+### Devices running MIUI 14 and below
+- These devices generally still support the **“classic” unlock process** (Mi Account login → Developer Options request → wait ~7 days → Mi Unlock tool), without requiring the Community App exam.  
 
-### [Doogee](./brands/doogee/README.md)
 
-### [Energizer](./brands/energizer/README.md)
 
-### [Huawei](./brands/huawei/README.md)
+### Timeline & Reports
+- The last official day to submit unlock requests via the old form was reportedly **September 9, 2024**.  
+- Xiaomi has hinted in the Community App that the service *may return in 2025*, but similar promises have not been fulfilled in the past.  
+- Multiple forum posts suggest that **only users physically located in China, with Level 5 accounts, and valid Chinese ID can currently unlock**. Others sometimes resort to paid third-party services, though results vary.
+- In **1/1/2026** Xiaomi offically remove the unlocking function from their community app.
+- On **2/1/2026** MlgmXyysd the devloper of the orginal bootloader bypass claim she had found a way to unlock Qualcomm devices using a unknown vulnerability
+- On about **5/1/2026** Someone leaked the vulnerbility for 8E5.
+- On about **10/1/2026** The vulnerbility for 8E was leaked.
 
-### [Meizu](./brands/meizu/README.md)
 
-### [Panasonic](./brands/panasonic/README.md)
 
-### [Samsung](./brands/samsung/README.md)
+📖 **Further Reading:**  
+- [Xiaomi BootLoader Questionnaire Questions](https://github.com/MlgmXyysd/Xiaomi-BootLoader-Questionnaire) – community-collected notes and exam details.  
 
-### [Sharp](./brands/sharp/README.md)
+### Global
 
-### [TCL/BlackBerry](./brands/tcl/README.md)
+> [!WARNING]
+> Since October 2024 [there have been rumors][bootloader-unlock-block-global] that Xiaomi will kill bootloader unlocking on the Global market, after having done so for the China market.
+>
+> If you own a Xiaomi device and your warranty has ended or you don't care for it, you should unlock your device while you can.
 
-### [Vivo/IQOO](./brands/vivo/README.md)
+### Devices running HyperOS (even if they were upgraded to it from MIUI)
 
-### [Vsmart](./brands/Vsmart/README.md)
+First of all we should clear up something: HyperOS is essentially a new marketing term for what would've been MIUI 15. So it's still a vendor skin/theming engine on top of Linux-based Android, it's just called HyperOS instead of MIUI as it used to be called.
 
-### [Windows phones](./brands/winphones/README.md)
+Secondly: One might remember how, in order to unlock the device back in the good old MIUI days, you would:
 
-### Carrier Locked Devices
+* Ensure a Xiaomi account was logged in on the device in the Settings app
+* Go to Developer Options > Mi Unlock Status and press the button to request your device to be unlocked in the Xiaomi servers
+* Then after 3 days you can use the [official Mi Unlock][MiUnlock] for Windows or [offici5l][offici5l]'s Python [MiUnlockTool][py-MiUnlockTool] which will check those servers to see if a request has been made for that specific device and allow you to unlock it.
 
-> [!NOTE]
-> Phone brands handle carrier locks differently, so check your device manual or contact support.
+Not straightforward or fast, but doable.
+WELL:
 
-Carrier locked devices are the ones you get after making a commitment with a carrier of your choice. This is quite common in North America and (supposedly) allows you to save some money on your device.
+With HyperOS Xiaomi essentially makes the second stop more compilated.
 
-As a rule, almost all carrier locked devices do not allow the bootloader to be unlocked. This usually makes sense, as it would allow you to completely bypass the contract. The problem is that many devices still do not allow you to unlock the bootloader even after the carrier lock has been lifted. For more details, see the [carriers page](./carriers/README.md).
+That is, you can only make the request for unlocking the device inside Developer Options, ONLY AFTER you have made another SEPARATE successful request inside the Xiaomi Community App, which will then allow you to make the ACTUAL first request you wanted inside the Developer Settings (![yo dawg…][yo-dawg-meme])
 
-## ⛔ Avoid at all costs!
+If [xiaomiui.net][global-requirements] is to be believed, the requirements for the Community App request are as follows:
+* Your Mi Account has been active for more than 30 days.
+* Xiaomi Community App version 5.3.31 or above.
+* Xiaomi has [updated their policies][updated-policies], further restricting bootloader unlocking. As of January 1st, 2025, they only let you unlock 1 device per year. *What a good way to start the year, right?* This requirement has also been added to MIUI 14.
 
-The following manufacturers allow unlocking under certain conditions, such as region, model, SOC, etc., or require a sacrifice to unlock.
+And it gets even better! As people have found it the hard way [in the xda forums][community-app-cap], there is a cap on the amount of people who can request per day inside the Community App, and it gets filled pretty much instantly, so your only chance to make a successful request there is if you get lucky spamming the request at midnight, Beijing time (or whatever that is in your timezone).
 
-### [Hisense](./brands/hisense/README.md)
+As such, for as long as the option is available, you'll skip this community BS and use the bypass methods:
 
-### [HMD/Nokia](./brands/nokia/README.md)
+* [AQLR][aqlr] The current bypass method, though you need to have your computer running at 00:00 Chinese ([GMT+8][gmt+8]) time. (The script is in AQLR.zip at the end of the post.)
+  * At the very end, [offici5l][offici5l]'s Python [MiUnlockTool][py-MiUnlockTool] can be used instead of the official Windows only [Mi Unlock][MiUnlock].
+* ~~[HyperSploit][hypersploit] is the newer option. This is a simple to use program with no external dependencies.~~ Confirmed as patched as of HyperOS version 2.0.203.0. Still works on old versions.
+* ~~[Xiaomi-HyperOS-BootLoader-Bypass][xiaomi-hyperos-bootLoader-bypass] is the original proof of concept, but it's written inf PHP and it's cumbersome to set up.~~ Same as above.
 
-### [Honor](./brands/honor/README.md)
+This will (for now) allow you to continue with the last of the **bad old MIUI days** steps, where you wait for 3 (used to be 7) days and can then unlock your phone successfully.
+Do NOT make a new request by pressing the button in the Settings app as that will undo you bypass (hypersploit, MiUnlockTool and Mi Unlock also mention this to you). The tool will make the needed request itself.
+The only thing you need to do is use Xiaomi's [official Mi Unlock][MiUnlock] or [offici5l][offici5l]'s [Python script][py-MiUnlockTool] after 3 days.
 
-### [HTC](./brands/htc/README.md)
+### Devices running MIUI 14 and below
 
-### [LG](./brands/lg/README.md)
+You should be able to use the "normal" unlock process by itself, wihtout the community app BS
+(the one descibed in the "bad old MIUI days" section above).
 
-### [Motorola/Lenovo/NEC](./brands/motorola/README.md)
+## Workarounds
+On some old Devices 9008 or MTK client might be able be unlock.
+Xiaomikey could also work on some devices.
 
-### [OPPO/Realme](./brands/oppo/README.md)
 
-### [Oukitel](./brands/oukitel/README.md)
+## Android One
 
-### [Xiaomi/Redmi/POCO](./brands/xiaomi/README.md)
+* [**🔓️ Unlock Guide**](../../misc/generic-unlock.md)
 
-### [ZTE/nubia/Redmagic](./brands/zte/README.md)
-
-## ⚠️ Proceed with caution!
-
-The following manufacturers require an online account and/or a waiting period before unlocking.
-
-### [Fairphone](./brands/fairphone/README.md)
-
-### [Google/Nexus](./brands/google/README.md)
-
-### [Infinix](./brands/infinix/README.md)
-
-### [itel](./brands/itel/README.md)
-
-### [OnePlus](./brands/oneplus/README.md)
-
-### [Sony](./brands/sony/README.md)
-
-### [Tecno](./brands/tecno/README.md)
-
-## ℹ️ "Safe for now" :trollface: 
-
-### [Blackview](./brands/blackview/README.md)
-
-### [Cubot](./brands/cubot/README.md)
-
-### [Micromax](./brands/micromax/README.md)
-
-### [Microsoft](./brands/microsoft/README.md)
-
-### [Nothing](./brands/nothing/README.md)
-
-### [Shift](./brands/shift/README.md)
-
-### [Teclast](./brands/teclast/README.md)
-
-### [Teracube](./brands/teracube/README.md)
-
-### [TP-Link/Neffos](./brands/tplink/README.md)
-
-### [Ulefone](./brands/ulefone/README.md)
-
-### [Umidigi](./brands/umidigi/README.md)
-
-### [Volla](./brands/volla/README.md)
-
-# Misc info
-
-## Custom AVB Keys
-
-Custom Android Verified Boot keys is a feature which allows you to run a custom OS with a locked bootloader.
-
-It's rare to see a device which supports custom AVB keys, but some devices can be found [here](https://github.com/chenxiaolong/avbroot/issues/299).
-
-## Universal SOC-based methods
-
-### Kirin
-Kirin 620, 650, 655, 658, 659, 925, 935, 950, 960:<br/>
-It's possible to unlock using testpoints and [PotatoNV](https://github.com/mashed-potatoes/PotatoNV) (Read the readme)
-
-### MediaTek
-If you own a MediaTek device exploitable by [mtkclient](https://github.com/bkerler/mtkclient) ([fork old version](https://github.com/R0rt1z2/mtkclient)) or [Penumbra](https://github.com/shomykohai/penumbra) you can unlock the bootloader using that.<br/>
-If it also happens to be an OPPO/Realme device and you need to access fastboot: [lkpatcher](https://github.com/R0rt1z2/lkpatcher) ([web version](https://lkpatcher.r0rt1z2.com/))
-
-If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG mod (unlocking via mtkclient), you can try unlocking fastboot by writing a modified boot1 (preloader). Writing a preloader also uses mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
-
-### Qualcomm 
-On the Chinese app Coolapk, a method to unlock all Snapdragon 8E5 devices has been leaked. For Xiaomi devices, all 8E5/8E models can be unlocked if they have a security patch dated before February 2026; devices updated after February 2026 have already been patched.
-
-[XDA](https://xdaforums.com/t/qualcomm-there-seems-to-be-a-0-day-vulnerability-that-can-be-used-to-unlock-the-bootloader.4776970/)
-
-Although some of these might work for you:
-
-The general exploit:<br/>
-[alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) the bootloader unlock section.
-
-Xiaomi Mi A1 and maybe all MSM89** manufactured before 2018:<br/>
-[EDLUnlock](https://github.com/Giovix92/EDLUnlock)
-
-### Unisoc
-If you own a phone with the Unisoc UMS9620 or older,you can use this exploit to achieve temporary secure boot bypass and persistently unlock bootloader(except some devices with modified uboot) [CVE-2022-38694_unlock_bootloader](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader)
-
-If you own a phone with the Unisoc UMS312 UMS512 UD710,you can use this exploit to achieve persistently secure boot bypass, which means all firmwares including splloader,uboot can be modified and resigned. [CVE-2022-38691_38692](https://github.com/TomKing062/CVE-2022-38691_38692)
-
-Otherwise, you can also look into this: [Spectrum_UnlockBL_Tool](https://github.com/zhuofan-16/Spectrum_UnlockBL_Tool) <br/>
-This: [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-unlock-w-unisoc-t310.4393389/) <br/>
-Or this: [subut](https://unisoc-android.github.io/subut/)
+Devices shipping with Android One do NOT have any unlock requirements. They follow the standard Android unlock process.
 
 ***
+Updated info provided by [n1ses](https://github.com/n1ses) & [Crimson Fork/🌌🏳️‍⚧️&ΘΔ](https://cf.spaceport.nexus)  & [Mluo2011](https://github.com/Mluo2011)<br/>
+Authored by [zenfyr](https://zenfyr.dev).
+
+[hypersploit]:https://github.com/TheAirBlow/HyperSploit
+[xiaomi-hyperos-bootLoader-bypass]:https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass
+[bootloader-unlock-block-mainland-china]:https://xiaomitime.com/bootloader-unlocking-comes-to-an-end-with-xiaomi-hyperos-2-0-12926
+[bootloader-unlock-block-mainland-china-alt]:https://xiaomi.eu/community/threads/right-now-is-there-any-way-to-unlock-the-bootloader-on-chinese-versions-of-xiaomi-devices.73029/#post-726609
+[bootloader-unlock-block-global]:https://x.com/chunvn8888/status/1841901853073953254
+[global-requirements]:https://xiaomiui.net/how-unlock-bootloader-xiaomi-hyperos-53493
+[Xiaomi-bootloader]:https://github.com/lrh2000/Xiaomi-bootloader
+[yo-dawg-meme]:https://i.kym-cdn.com/photos/images/small/000/001/122/xzibit-happy.jpg "I heard you liked unlock requests…"
+[community-app-cap]:https://xdaforums.com/t/application-quota-limit-reached.4695764
+[updated-policies]:https://xiaomitime.com/xiaomi-global-bootloader-unlock-policy-has-changed-20295
+[other requirements]:https://xiaomitime.com/xiaomi-restricts-bootloader-unlocking-with-new-180-day-rule-23160
+[aqlr]:https://xdaforums.com/t/how-to-unlock-bootloader-on-xiaomi-hyperos-all-devices-except-cn.4654009/post-89311595
+[gmt+8]:https://time.is/GMT%208
+[offici5l]:https://offici5l.github.io
+[py-MiUnlockTool]:https://github.com/offici5l/MiUnlockTool
+[MiUnlock]:https://en.miui.com/unlock/download_en.html

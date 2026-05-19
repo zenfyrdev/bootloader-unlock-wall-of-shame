@@ -100,7 +100,7 @@ As such, for as long as the option is available, you'll skip this community BS a
 * [AQLR][aqlr] The current bypass method, though you need to have your computer running at 00:00 Chinese ([GMT+8][gmt+8]) time. (The script is in AQLR.zip at the end of the post.)
   * At the very end, [offici5l][offici5l]'s Python [MiUnlockTool][py-MiUnlockTool] can be used instead of the official Windows only [Mi Unlock][MiUnlock].
 * ~~[HyperSploit][hypersploit] is the newer option. This is a simple to use program with no external dependencies.~~ Confirmed as patched as of HyperOS version 2.0.203.0. Still works on old versions.
-* ~~[Xiaomi-HyperOS-BootLoader-Bypass][xiaomi-hyperos-bootLoader-bypass] is the original proof of concept, but it's written inf PHP and it's cumbersome to set up.~~ Same as above.
+* ~~[Xiaomi-HyperOS-BootLoader-Bypass][xiaomi-hyperos-bootLoader-bypass] is the original proof of concept, but it's written in PHP and it's cumbersome to set up.~~ Same as above.
 
 This will (for now) allow you to continue with the last of the **bad old MIUI days** steps, where you wait for 3 (used to be 7) days and can then unlock your phone successfully.
 Do NOT make a new request by pressing the button in the Settings app as that will undo you bypass (hypersploit, MiUnlockTool and Mi Unlock also mention this to you). The tool will make the needed request itself.

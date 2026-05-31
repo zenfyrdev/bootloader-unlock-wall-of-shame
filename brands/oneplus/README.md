@@ -1,6 +1,7 @@
 # OnePlus
 
-* Verdict **⚠️ Proceed with caution!**
+* Verdict **⚠️ Proceed with caution! (New Chinese devices / T-Mobile)**
+* **ℹ️ Safe for Now (Global / Older Chinese devices)**
 * Global phones or Chinese phones released with ColorOS 15 or older: [**🔓️ Unlock Guide**](../../misc/generic-unlock.md)
 
 ## Global phones and older Chinese models

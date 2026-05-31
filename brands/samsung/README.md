@@ -1,7 +1,7 @@
 # Samsung
 
-- Verdict: **🍅 Terrible! (OneUI 8+ / Most US/CA Phones 2016+)**
-* **⛔ Best to Avoid! (OneUI 7- And non US/CA devices)**
+- Verdict: **🍅 Terrible!** (OneUI 8+ / Most US/CA Phones 2016+)
+* **⛔ Best to Avoid!** (OneUI 7- And non US/CA devices)
 * [**🔓️ Unlock Guide (supported devices)**](../../misc/samsung-unlock.md)
 
 If you have a North American device and were lucky enough not to update for a while, you can check out [this paid service][Paid North American Unlock] at your own risk. Exynos devices, regardless of region, can be unlocked assuming you're on One UI 7 or earlier. 

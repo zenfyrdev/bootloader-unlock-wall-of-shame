@@ -12,7 +12,7 @@ Asus claimed the bootloader unlock program would come back for two years, howeve
 
 In 2024, an XDA user had their Zenfone 9 bricked following a borked update, Asus denied warranty and refused to replace the phone due to the bootloader being unlocked. After Asus's "RMA Revamp", Asus offered to replace the phone, but the bootloader would be relocked and would not be able to be unlocked again due to the unlock program shutdown. After the OP of the thread said it was an advertised feature and they just can't remove it, Asus offered to unlock their bootloader, but for the absolutely outrageous price of [200 USD.][200 usd unlock]. Extremely sketchy behaviour from Asus, and that is a ridiculous price just for a bootloader unlock.
 
-In addition, Chinese ROG phones sold under the Tecent ROG brand cannot be unlocked at all.
+In addition, Chinese ROG phones sold under the Tecent ROG brand were never officially unlockable at all.
 
 
 ***

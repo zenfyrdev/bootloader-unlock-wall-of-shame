@@ -176,7 +176,7 @@ If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG
 
 On Snapdragon 8E5, Qualcomm introduced a [vulnerability (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) [(POC)](https://github.com/kasnria001/qualcomm_gbl_exploit_poc) where the boot process would not perform signature verification for the Generic Bootloader, so with write access to the `efisp` partition it was possible to run arbitary code.
 
-While the vulnerability itself is universal for the platform, it requires device/OEM specific tricks to get root and write the GBL. A lot of those exist for [Xiaomi devices](./brands/xiaomi/README.md#workarounds-use-at-your-own-risk).
+While the vulnerability itself is universal for the platform, it requires device/OEM specific tricks to get root and write the GBL. Some exist for [Xiaomi devices](./brands/xiaomi/README.md#snapdragon-8-elite).
 
 #### Other
 

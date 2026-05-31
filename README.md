@@ -56,6 +56,9 @@ The following manufacturers have made it completely impossible to unlock their d
 
 ### [Huawei](./brands/huawei/README.md)
 
+### [Oukitel](./brands/oukitel/README.md)
+
+
 ### [Meizu](./brands/meizu/README.md)
 
 ### [Panasonic](./brands/panasonic/README.md)
@@ -98,8 +101,6 @@ The following manufacturers allow unlocking under certain conditions, such as re
 ### [Motorola/Lenovo/NEC](./brands/motorola/README.md)
 
 ### [OPPO/Realme](./brands/oppo/README.md)
-
-### [Oukitel](./brands/oukitel/README.md)
 
 ### [Xiaomi/Redmi/POCO](./brands/xiaomi/README.md)
 

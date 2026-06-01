@@ -6,7 +6,7 @@
 > [!CAUTION]
 > Read in full before you act!
 
-The standard unlocking process for Samsung is to enable OEM Unlocking, then go to the "Warning!" screen and hold down a button to unlock the bootloader. On older devices (prior to 2019), all you have to do is enable OEM unlocking, and your bootloader is unlocked, no data wipe required on older devices.
+The standard unlocking process for Samsung is to enable OEM Unlocking, then go to the "Warning!" screen and hold down a button to unlock the bootloader. On older devices (prior to 2019), all you have to do is enable OEM unlocking, and your bootloader is unlocked, no data wipe is required on pre 2017 devices.
 
 ## Requirements
 

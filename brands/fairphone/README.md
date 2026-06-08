@@ -2,7 +2,7 @@
 
 - Verdict: **⚠️ Proceed with caution!**
 
-With firmware [FP3.6.A.040.2] on the Fairphone 3, with firmware [FP4.QREL.15.17.2] on the Fairphone 4 and with firmware [FP6.QREL.16.69.0] on the Fairphone (Gen. 6), Fairphone switched to the [standard unlock procedure]((../../misc/generic-unlock.md)), however all other Fairphone devices still require their website.
+With firmware [FP3.6.A.040.2] on the Fairphone 3, with firmware [FP4.QREL.15.17.2] on the Fairphone 4 and with firmware [FP6.QREL.16.69.0] on the Fairphone (Gen. 6), Fairphone switched to the [standard unlock procedure](../../misc/generic-unlock.md), however all other Fairphone devices still require their website.
 
 All Fairphones after 2 require you to request a code from [this][unlock-website] website to enable OEM unlock. There is nothing stopping them from requiring an account and having device unlock limits in the future. This is "proceed with caution" after all.
 

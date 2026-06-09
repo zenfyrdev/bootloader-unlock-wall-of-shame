@@ -1,7 +1,7 @@
 # Samsung
 
 - Verdict: **🍅 Terrible!**
-* [**🔓️ Unlock Guide (supported devices)**](../../misc/samsung-unlock.md)
+* [**🔓️ Unlock Guide (supported devices, ~ One UI 7)**](../../misc/samsung-unlock.md)
 
 If you have a North American device and were lucky enough not to update for a while, you can check out [this paid service][Paid North American Unlock] at your own risk. Exynos devices, regardless of region, can be unlocked assuming you're on One UI 7 or earlier. 
 
@@ -47,7 +47,7 @@ There have been hardware issues caused by unlocking the bootloader, but these ha
 
 As of September 2025, Galaxy Z Fold 5 also has a camera issue after unlocking the bootloader. After analyzing it, we found out it is a "Security Mechanism" to prevent the user from "taking photos" once they unlock the bootloader by providing a "black screen" in the viewfinder. (Fixable by re-locking the bootloader)
 
-Some devices, such as the Galaxy Tab S6 Lite, require an internet connection before the bootloader can be unlocked.
+Some devices, such as the Galaxy S25, Galaxy Tab S6 Lite, require an internet connection before the bootloader can be unlocked.
 
 ---
 
@@ -153,6 +153,15 @@ Some of Knox-based features can be fixed with this LSPosed module [KnoxPatch] an
 Samsung's IMS service is not compatible with AOSP's, so VoLTE will not work on GSI ROMs.
 
 There is an [open source VoLTE service] developed by phh, but it's incomplete and not stable.
+
+## Galaxy Watch
+All Galaxy Watches that runs Wear OS(Galaxy Watch4 or newer) got a rollback prevention update in March 2026. This prevents you from downgrading to older software. There's no way to revert this change right now. So if you want to downgrade, DO NOT UPDATE.
+
+### Bootloader Unlock
+Unlike other Samsung devices, One UI 8 Watch brought a proper OEM Unlock and bootloader unlock. However, the device does not seem to work correctly(bootloop) after flashing custom binaries.
+Also, **LTE models has the risk of HARD BRICKING THE DEVICE.**
+There's no EDL mode or EUB mode to fix this. You have to replace the motherboard or find a way to fix it.
+
 
 ***
 Additional info provided by [aries-ts-indo](https://github.com/aries-ts-indo), [ravindu644](https://github.com/ravindu644) and [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439).<br/>

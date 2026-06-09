@@ -10,7 +10,7 @@ Certain Kirin-based phones can use [PotatoNV]
 ## Older phones (from the Huawei EMUI era)
 Apparently you can call Honor customer service, invent a pretext that would require the device to be unlocked (like someone working in cybersecurity needing to remove google services), after being redirected to the good support team, they should be able to give you the code for your device. They might not have it and will in this case redirect you to Huawei's support team, just do the same on Huawei's end.
 
-__This will not work for Honor 50 devices as both Honor and Huawei don't have tokens for this lineup. It is mostly probable that they lost some part of their databases during the seperation of Huawei and Honor, which was happening at the time. Will also not work on Unisoc/Spreadtrum devices due to UniSoc preventing bootloader unlocking__
+__This will not work for Honor 50 devices as both Honor and Huawei don't have tokens for this lineup. It is mostly probable that they lost some part of their databases during the seperation of Huawei and Honor, which was happening at the time. Will also not work on Unisoc/Spreadtrum devices due to Unisoc preventing bootloader unlocking__
 
 ***
 Authored by [Ivy/Lost-Entrepreneur439](https://github.com/lost-entrepreneur439).

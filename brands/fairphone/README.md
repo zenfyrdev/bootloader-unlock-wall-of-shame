@@ -8,6 +8,8 @@ All Fairphones after 2 require you to request a code from [this][unlock-website]
 
 Not very fair in my opinion, but whatever fairs your phone.
 
+A [workaround] exists to avoid official server by using mitmproxy to authorize unlock, because there is no cryptographic signature, only HTTP status code.
+
 They also [broke Verified Boot][verified-boot], lol
 
 ***
@@ -18,3 +20,4 @@ Authored by [zenfyr](https://zenfyr.dev).
 [FP6.QREL.16.69.0]:https://forum.fairphone.com/t/software-update-fp6-qrel-16-69-0-20260430160633/131953
 [unlock-website]:https://shop.fairphone.com/bootloader-unlocking-code-for-fairphone
 [verified-boot]:https://forum.fairphone.com/t/bootloader-avb-keys-used-in-roms-for-fairphone-3-4/83448/4
+[workaround]:https://www.datenrei.ch/blog/2024/05/25/fp-oem-unlock-all.html

@@ -118,6 +118,8 @@ The following manufacturers require an online account and/or a waiting period be
 
 ### [OnePlus](./brands/oneplus/README.md)
 
+### [Onn](./brands/onn/README.md)
+
 ### [Sony](./brands/sony/README.md)
 
 ### [Tecno](./brands/tecno/README.md)

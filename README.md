@@ -79,7 +79,7 @@ Carrier locked devices are the ones you get after making a commitment with a car
 
 As a rule, almost all carrier locked devices do not allow the bootloader to be unlocked. This usually makes sense, as it would allow you to completely bypass the contract. The problem is that many devices still do not allow you to unlock the bootloader even after the carrier lock has been lifted. For more details, see the [carriers page](./carriers/README.md).
 
-## ⛔ Avoid!
+## ⛔ Avoid at all costs!
 
 The following manufacturers allow unlocking under certain conditions, such as region, model, SOC, etc., or require a sacrifice to unlock.
 

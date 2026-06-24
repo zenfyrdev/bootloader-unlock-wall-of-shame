@@ -170,17 +170,19 @@ If it also happens to be an OPPO/Realme device and you need to access fastboot: 
 If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG mod (unlocking via mtkclient), you can try unlocking fastboot by writing a modified boot1 (preloader). Writing a preloader also uses mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
 
 ### Qualcomm 
-On the Chinese app Coolapk, a method to unlock all Snapdragon 8E5 devices has been leaked. For Xiaomi devices, all 8E5/8E models can be unlocked if they have a security patch dated before February 2026; devices updated after February 2026 have already been patched.
 
-[XDA](https://xdaforums.com/t/qualcomm-there-seems-to-be-a-0-day-vulnerability-that-can-be-used-to-unlock-the-bootloader.4776970/)
+#### Snapdragon 8 Elite Gen 5
 
-Although some of these might work for you:
+**Patched in February/March 2026**
+
+On Snapdragon 8E5, Qualcomm introduced a [vulnerability (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) [(POC)](https://github.com/kasnria001/qualcomm_gbl_exploit_poc) where the boot process would not perform signature verification for the Generic Bootloader, so with write access to the `efisp` partition it was possible to run arbitary code.
+
+While the vulnerability itself is universal for the platform, it requires device/OEM specific tricks to get root and write the GBL. Some exist for [Xiaomi devices](./brands/xiaomi/README.md#snapdragon-8-elite).
+
+#### Other
 
 The general exploit:<br/>
 [alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) the bootloader unlock section.
-
-Xiaomi Mi A1 and maybe all MSM89** manufactured before 2018:<br/>
-[EDLUnlock](https://github.com/Giovix92/EDLUnlock)
 
 ### Unisoc
 If you own a phone with the Unisoc UMS9620 or older,you can use this exploit to achieve temporary secure boot bypass and persistently unlock bootloader(except some devices with modified uboot) [CVE-2022-38694_unlock_bootloader](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader)

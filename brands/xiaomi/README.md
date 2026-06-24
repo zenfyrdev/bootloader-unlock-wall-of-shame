@@ -31,7 +31,7 @@ Additionally, [on xda forums][community-app-cap] people have found that there is
 All of those methods chain the QCOM SELinux bypass, and the Xiaomi MQSAS service privilege escalation vulnerabilities.
 
 - Xiaomi 17 series, POCO F8 Ultra, Redmi K90 Pro Max with Security Patch before February 2026: [XDA](https://xdaforums.com/t/xiaomi17-series-and-pocof8ultra-redmi-k90-pro-max-unlock-bootloader-xiaomi8elite5seriesbootloader-unlock.4781439/)
-- Xiaomi 13, 14, 15 series, MIX Flip 2, Pad 8 Pro, Pad 6S Pro, Redmi K90/K80/K70/K60 Pro with Security Patch before January 2026: [XDA](https://xdaforums.com/t/guide-breakthrough-free-offline-bootloader-unlock-for-cn-xiaomi15-pro-ultra-redmi-k90-sd-8-elite-also-support-8g2-8g3-no-cn-exam-required.4786790/)
+- Xiaomi 13, 14, 15 series, MIX Flip 2, Pad 8 Pro, Pad 6S Pro, Redmi K90/K80/K70/K60 Pro with Security Patch before January 2026: [XDA](https://xdaforums.com/t/guide-breakthrough-free-offline-bootloader-unlock-for-cn-xiaomi15-pro-ultra-redmi-k90-sd-8-elite-also-support-8g2-8g3-no-cn-exam-required.4786m790/)
 
 It's theoretically possible to downgrade and unlock **non Kioxia UFS** devices using an EDL programmer and an engineering ABL: [XDA](https://xdaforums.com/t/unlock-bootloader-unbrick-xiaomi-8-elite-high-versions-auth-free-edl-firehose.4787466/)
 
@@ -49,8 +49,8 @@ At the very end of the unlock process, [offici5l][offici5l]'s Python [MiUnlockTo
 
 - [Xiaomi BootLoader Questionnaire Questions](https://github.com/MlgmXyysd/Xiaomi-BootLoader-Questionnaire) – community-collected notes and exam details. 
 
-## MIUI 14 and below (some users claim the server for verification has been shutdown)
-
+## MIUI 14 and below
+On [Bilibili}(https://www.bilibili.com/video/BV15Ut2z5Epo/?spm_id_from=333.1387.search.video_card.click&vd_source=96eca9b96bc62dc161f76ff2ff1fc1f3) some channels claim that that Xiaomi verification server has been shutdown.
 You should be able to use the "normal" unlock process, without the Community app.
 
 * Ensure a Xiaomi account was logged in on the device in the Settings app

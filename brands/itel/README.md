@@ -1,7 +1,6 @@
 # itel 
 
-- Verdict: **🍅 Terrible! (Galaxy OS 2.x)**
-- Verdict: **⚠️ Proceed with caution! (Galaxy OS 1.x and lower)**
+- Verdict: **⚠️ Proceed with caution!**
 - Verdict: **🍅 Terrible!** (Unisoc)
 
 * [**🔓️ Unlock Guide (MediaTek)**](../../misc/generic-unlock.md)

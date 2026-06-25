@@ -13,6 +13,9 @@ Older devices (prior to 2015) do not have partition verification, and assuming y
 ## Watches
 All LG watches on Android Wear/Wear OS use the [standard unlock procedure](../../misc/generic-unlock.md) via fastboot.
 
+## Unofficial methods
+Aside from the generic unofficial methods for devices with MediaTek and Unisoc SoCs, some of their devices with Qualcomm SoCs have leaked engineering bootloaders available, for example the LG G7.
+
 ***
 Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439), [DiabloSat](https://github.com/progzone122)<br/>
 

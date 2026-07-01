@@ -2,8 +2,6 @@
 
 - Verdict: **🍅 Terrible!**
 
-This one is probably expected. No iPhone, iPad, iPod Touch or Apple TV model has had an unlockable bootloader. 
-
 As expected, Apple does not allow bootloader unlocking, and never has. Most Apple devices also have an aggressive anti-rollback system, stopping you from downgrading to an older iOS version for jailbreaking purposes.
 
 ## Firmware signing
@@ -36,22 +34,25 @@ If your device has a bootROM exploit, you can extract the blob, and then use sof
 ### SEP
 In the Apple A7 SoC, Apple introduced a coprocessor called the Secure Enclave Processor, typically shortened to SEP. It is used for data protection, touch ID and face ID, the SEP's purpose is to handle keys that are sensitive enough to require isolation from the rest of the device. The SEP's firmware is frequently updated, and the updates typically make it incompatible with older iOS versions, and the SEP has its own firmware signing process, so without a SEP exploit, you cannot downgrade to an older version without a SEP exploit, even if you have an SHSH blob and bootrom exploit. The SEP is present in all Apple devices made in 2013 or later (excluding the iPhone 5c, as the 5c uses the older Apple A6 SoC.). There are only two known SEP exploits, [blackbird], which affects the A8-A10 (2014-2016), and [hardbird], which affects the A7 (2013)
 
-For devices made from 2014-2016 (excluding the iPad mini 3), you can use [turdus merula] to downgrade, untethered if you have SHSH blobs, otherwise a tethered downgrade. turdus merula uses the blackbird exploit.
+For devices using the Apple A9, Apple A10, or associated variants, you can use [turdus merula] to downgrade, untethered if you have SHSH blobs, otherwise a tethered downgrade. turdus merula uses the blackbird exploit. A8 is currently not supported.
 
 ## bootROM and iBoot exploits
 The bootROM is an SoC-level code, and the first thing that runs on an Apple device upon boot, and the code is read-only. A bootROM exploit is the Apple equivelant of a hardware-level bootloader unlock exploit. However, the attack vector is very small, and only two have been found in the last ten years.
 
 iBoot is Apple's bootloader. an iBoot exploit is Apple's equivelant of a software-level bootloader unlock exploit, however, since it's software level, and iBoot is usually updated in every iOS update, exploits are usually quickly patched and the last iOS version with a known iBoot exploit is 7.1.2, which released in 2014.
 ### checkm8
-[checkm8] (CVE-2019-8900) was a bootROM exploit discovered in 2019, and as of 2025, is the only bootROM exploit that effects 64-bit Apple devices. It was the first major bootROM exploit discovery since 2010's limera1n. It is a very capable exploit, affecting all Apple SoCs from the A5 to the A11, meaning it affects all Apple devices made from 2011 to 2017, and also the iPad 6 (2018), iPad 7 (2019), and iPod Touch 7 (2019). The main part of the exploit also affects the A12 and A13, however the A12 patched a memory leak in DFU, which makes it impossible to actually execute the exploit, unless you leave your device in DFU mode for several months. checkm8 is used by many jailbreaks and iOS tools, including turdus merula, Legacy iOS Kit, checkra1n, palera1n, and even [Project Sandcastle], which allows you to run a very broken Android build on the iPhone 7. However, there are a number of issues with checkm8:
+[checkm8] (CVE-2019-8900) was a bootROM exploit discovered in 2019, and from 2019 to 2026, it was the only bootROM exploit to affect 64-bit devices. It was the first major bootROM exploit discovery since 2010's limera1n. It is a very capable exploit, affecting all Apple SoCs from the A5 to the A11, meaning it affects all Apple devices made from 2011 to 2017, and also the iPad 6 (2018), iPad 7 (2019), and iPod Touch 7 (2019). The main part of the exploit also affects the A12 and A13, however the A12 patched a memory leak in DFU, which makes it impossible to actually execute the exploit, unless you leave your device in DFU mode for several months. checkm8 is used by many jailbreaks and iOS tools, including turdus merula, Legacy iOS Kit, checkra1n, palera1n, and even [Project Sandcastle], which allows you to run a very broken Android build on the iPhone 7. However, there are a number of issues with checkm8:
 - It is a tethered exploit, so once you reboot or power off your phone, you'll have to connect to your computer to re-run the exploit.
 - The exploit has absolutely zero support for Windows, you need to use macOS or Linux.
 - checkm8 has an extremely high failure rate on AMD CPUs, most projects that use checkm8 tell you to not even bother if you're on AMD and to just get a cheap Intel system. AMD is the only brand affected, all other CPUs (x86 or ARM) work.
 - If using a device with the Apple A5 (iPhone 4S, iPad 2, iPad 3, iPad mini 1 or iPod touch 5), you need an Arduino with a USB Host Shield to run checkm8, it won't work without it.
 - If using a device with the Apple A7 (iPhone 5s, iPad Air 2, iPad mini 2 or iPad mini 3), exploiting on Linux almost always fails, you'll need to use macOS. A Hackintosh will work fine, as long as it has an Intel CPU.
 
+### usbliter8
+[usbliter8] is a bootROM exploit discovered in 2026, for the Apple A12, Apple A13, Apple S5, and their associated variants. As of right now, due to being a very new exploit, virtually nothing supports it, however it can be expected that jailbreaking tools will support usbliter8 in the future. usbliter8 requires an RP2350 based microcontroller, such as a Raspberry Pi Pico 2.
+
 ### Other exploits
-checkm8 is the only one that applies to modern devices, so it's the only one that I'll go into detail on, but there are a number of other exploits, including alloc8 (iPhone 3GS), limera1n (iPod touch 3, and all Apple A4 devices.), 24Kpwn (old bootrom iPod touch 2) and Pwnage (iPhone 2G, iPod Touch 1 and iPhone 3G). For iBoot exploits, there's DRA (32-bit iOS 7.0-7.1.2), HFS Heap Buffer Overflow (iOS 5.0-5.1.1), usb_control_msg(0x21, 2) (iOS 3.1-3.1.2), and EVO (iOS 3.0).
+checkm8 and usbliter8 are the only ones that applu to modern devices, so it's the only two that I'll go into detail on, but there are a number of other exploits, including alloc8 (iPhone 3GS), limera1n (iPod touch 3, and all Apple A4 devices.), 24Kpwn (old bootrom iPod touch 2) and Pwnage (iPhone 2G, iPod Touch 1 and iPhone 3G). For iBoot exploits, there's DRA (32-bit iOS 7.0-7.1.2), HFS Heap Buffer Overflow (iOS 5.0-5.1.1), usb_control_msg(0x21, 2) (iOS 3.1-3.1.2), and EVO (iOS 3.0).
 ***
 Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439).<br/>
 
@@ -62,3 +63,4 @@ Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439
 [hardbird]:https://theapplewiki.com/wiki/Hardbird_Exploit
 [checkm8]:https://theapplewiki.com/wiki/Checkm8_Exploit
 [Project Sandcastle]:https://projectsandcastle.org/
+[usbliter8]:https://theapplewiki.com/wiki/Usbliter8_Exploit

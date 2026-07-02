@@ -52,7 +52,7 @@ iBoot is Apple's bootloader. an iBoot exploit is Apple's equivelant of a softwar
 [usbliter8] is a bootROM exploit discovered in 2026, for the Apple A12, Apple A13, Apple S5, and their associated variants. As of right now, due to being a very new exploit, virtually nothing supports it, however it can be expected that jailbreaking tools will support usbliter8 in the future. usbliter8 requires an RP2350 based microcontroller, such as a Raspberry Pi Pico 2.
 
 ### Other exploits
-checkm8 and usbliter8 are the only ones that applu to modern devices, so it's the only two that I'll go into detail on, but there are a number of other exploits, including alloc8 (iPhone 3GS), limera1n (iPod touch 3, and all Apple A4 devices.), 24Kpwn (old bootrom iPod touch 2) and Pwnage (iPhone 2G, iPod Touch 1 and iPhone 3G). For iBoot exploits, there's DRA (32-bit iOS 7.0-7.1.2), HFS Heap Buffer Overflow (iOS 5.0-5.1.1), usb_control_msg(0x21, 2) (iOS 3.1-3.1.2), and EVO (iOS 3.0).
+checkm8 and usbliter8 are the only ones that apply to modern devices, so it's the only two that I'll go into detail on, but there are a number of other exploits, including alloc8 (iPhone 3GS), limera1n (iPod touch 3, and all Apple A4 devices.), 24Kpwn (old bootrom iPod touch 2) and Pwnage (iPhone 2G, iPod Touch 1 and iPhone 3G). For iBoot exploits, there's DRA (32-bit iOS 7.0-7.1.2), HFS Heap Buffer Overflow (iOS 5.0-5.1.1), usb_control_msg(0x21, 2) (iOS 3.1-3.1.2), and EVO (iOS 3.0).
 ***
 Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439).<br/>
 

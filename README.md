@@ -184,9 +184,9 @@ The general exploit:<br/>
 [alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) the bootloader unlock section.
 
 ### Unisoc
-If you own a phone with the Unisoc UMS9620 or older,you can use this exploit to achieve temporary secure boot bypass and persistently unlock bootloader(except some devices with modified uboot) [CVE-2022-38694_unlock_bootloader](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader)
+If you own a phone with the Unisoc UMS9620 or older you can use [this](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader) (UMS9621 need [this](https://github.com/TomKing062/exec_addr_v2) as exec address) to achieve temporary secure boot bypass and persistently unlock bootloader. This is valid for all devices except some devices with [modified uboot](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/patch_do_cboot%E2%80%90SPL#part-2-modify-fdl2ubootlk) which need [this](https://github.com/TomKing062/unisoc_chipram_signcheck_exploit) or [this](https://github.com/YC-nw/bsp_sign_fxxker) or [this](https://github.com/kasnria001/unisoc_secure_boot_bypass), note that the method used on all these three links is the same but implemented by different people and with possible differences, also by using this aside from bootloader unlock is possible to completely disable dm-verity by patching trustos partition which would allow booting of unsigned partitions.
 
-If you own a phone with the Unisoc UMS312 UMS512 UD710,you can use this exploit to achieve persistently secure boot bypass, which means all firmwares including splloader,uboot can be modified and resigned. [CVE-2022-38691_38692](https://github.com/TomKing062/CVE-2022-38691_38692)
+If you own a phone with the Unisoc UMS312 UMS512 UD710,you can use [this](https://github.com/TomKing062/CVE-2022-38691_38692) exploit to achieve persistently secure boot bypass, which means all firmwares including splloader,uboot can be modified and resigned.
 
 Otherwise, you can also look into this: [Spectrum_UnlockBL_Tool](https://github.com/zhuofan-16/Spectrum_UnlockBL_Tool) <br/>
 This: [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-unlock-w-unisoc-t310.4393389/) <br/>

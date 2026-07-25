@@ -6,6 +6,8 @@
 
 It is not possible to officially unlock most HMD/Nokia phones. However, according to Hikari Calyx, the HMD Fusion series [is unlockable][fusion-unlock]. It's unknown if this is just a mistake from HMD or if HMD is planning on introducing bootloader unlocks.
 
+Some early HMD-era Nokia devices can be unlocked by md5 hashing the serial number, running `fastboot oem key YOUR_MD5_SUM` in Fastboot mode, then `fastboot flashing unlock`.
+
 ### Unofficial Unlock
 
 - [💡 Universal SOC-based methods](../../README.md#universal-soc-based-methods)

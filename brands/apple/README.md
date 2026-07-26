@@ -1,6 +1,6 @@
 # Apple
 
-- Verdict: **🍅 Terrible!**
+- Verdict: **⛔ Avoid at all costs!**
 
 As expected, Apple does not allow bootloader unlocking, and never has. Most Apple devices also have an aggressive anti-rollback system, stopping you from downgrading to an older iOS version for jailbreaking purposes.
 

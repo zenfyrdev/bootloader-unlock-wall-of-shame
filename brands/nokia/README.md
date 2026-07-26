@@ -1,6 +1,6 @@
 # HMD Global/Nokia
 
-- Verdict: **⛔ Avoid!**
+- Verdict: **🍅 Just terrible!**
 
 ## HMD
 

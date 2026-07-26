@@ -1,6 +1,6 @@
 # OPPO/Realme
 
-> 🧹 Deep Testing section needs apk links.
+> 🧹 Deep Testing section needs apk links.  
 > 🧹 There should be a guide to running code with the debuggable apk.
 
 - Verdict: **🍅 Just terrible!**

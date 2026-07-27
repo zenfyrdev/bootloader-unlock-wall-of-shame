@@ -23,6 +23,67 @@
 
 [[toc]]
 
+## 🍅 Просто ужасно!
+
+Следующие производители сделали невозможной разблокировку загрузчика своих устройств без использования обходных путей.
+
+### [Alcatel](brands/alcatel/README.md)
+
+### [Amazon](brands/amazon/README.md)
+
+### [Apple](brands/apple/README.md)
+
+### [Asus](brands/asus/README.md)
+
+### [Cat](brands/cat/README.md)
+
+### [Coolpad](brands/coolpad/README.md)
+
+### [Doogee](brands/doogee/README.md)napdragon 8 Elite Gen 5 / Snapdragon 8 Elite
+
+**Исправлено в феврале-марте 2026**
+
+На чипах Snapdragon 8E5/8E Qualcomm представила [уязвимость (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) ([POC](https://github.com/kasnria001/qualcomm_gbl_exploit_poc)), при которой процесс загрузки не выполнял проверку подписи для Generic Bootloader, поэтому при наличии доступа на запись к разделу `efisp` было возможно выполнение произвольного кода.
+
+Хотя сама уязвимость является универсальной для платформы, для получения root-доступа и записи GBL требуются устройства/ OEM-специфические трюки. Некоторые из них существуют для [устройств Xiaomi](./brands/xiaomi/README.md#snapdragon-8-elite).
+
+#### Другие
+
+Общий эксплойт:<br/>
+[alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) — секция разблокировки загрузчика.
+
+### Custom AVB Keys
+
+Кастомные ключи Android Verified Boot — функция, которая позволяет запускать пользовательскую ОС с заблокированным загрузчиком.
+
+Редко можно встретить устройство, поддерживающее кастомные ключи AVB, но некоторые устройства можно найти [здесь](https://github.com/chenxiaolong/avbroot/issues/299).
+
+***
+
+
+### [Energizer](brands/energizer/README.md)
+
+### [Meizu](brands/meizu/README.md)
+
+### [Panasonic](brands/panasonic/README.md)
+
+### [Sharp](brands/sharp/README.md)
+
+### [TCL/BlackBerry](brands/tcl/README.md)
+
+### [Vsmart](brands/Vsmart/README.md)
+
+### [Windows phones](brands/winphones/README.md)
+
+### Заблокированные под оператора устройства
+
+> [!NOTE]
+> Телефонные бренды по-разному обрабатывают блокировку оператора, поэтому проверьте руководство по устройству или обратитесь в службу поддержки.
+
+Заблокированные под оператора устройства — это те, которые вы получаете после заключения контракта с оператором связи. Это довольно распространено в Северной Америке и (якобы) позволяет сэкономить на устройстве.
+
+Как правило, почти все заблокированные под оператора устройства не позволяют разблокировать загрузчик. Обычно это оправдано, так как разблокировка позволила бы полностью обойти контракт. Проблема в том, что многие устройства по-прежнему не позволяют разблокировать загрузчик даже после снятия блокировки оператора. Подробнее см. на [странице операторов](../carriers/README.md).
+
 ## ⛔ Избегать любой ценой!
 
 ### Huawei/Honor
@@ -111,9 +172,17 @@
 
 > Информация любезно предоставлена [aries-ts-indo](https://github.com/aries-ts-indo)!
 
-### ZTE
+### [Hisense](brands/hisense/README.md)
 
-Старые устройства (до Андроид 8):<br/>
+### [HTC](brands/htc/README.md)
+
+### [LG](brands/lg/README.md)
+
+### [Oukitel](brands/oukitel/README.md)
+
+### [ZTE/nubia/Redmagic](brands/zte/README.md)
+
+Старые устройства ZTE (до Андроид 8):<br/>
 [xdaforums.com](https://xdaforums.com/t/bootloader-unlocking-on-older-qualcomm-zte-devices-devinfo-partition-modification.4100897/)
 
 ## ⚠️ Действуйте осторожно!
@@ -145,6 +214,15 @@
 Not very fair in my opinion, but whatever fairs your phone*
 > * Непереводимая игра слов, где «fair» — честный в названии бренда — *Прим. переводчика.*
 
+### Google/Nexus
+Позволяет разблокировку на практически любом не заблокированном под оператора устройстве, но является пионером в области того, чтобы делать рутирование и установку пользовательских прошивок сложнее при помощи таких вещей, как Safety Net и Play Integrity. Последним достижением стали RCS сообщения, требующие работы DEVICE Integrity (всё ради предотвращения «спама», разумеется).
+
+### [Infinix](brands/infinix/README.md)
+
+### [itel](brands/itel/README.md)
+
+### [Tecno](brands/tecno/README.md)
+
 ### Sony
 
 У Sony открытая политика для разработчиков ПО:
@@ -156,11 +234,30 @@ Not very fair in my opinion, but whatever fairs your phone*
 
 ## ℹ️ «Пока безопасно» :trollface: 
 
-### Google
-Позволяет разблокировку на практически любом не заблокированном под оператора устройстве, но так же является пионером в области того, чтобы делать рутирование и установку пользовательских прошивок сложнее при помощи таких вещей, как Safety Net и Play Integrity. Последним достижением стали RCS сообщения, требующие работы DEVICE Integrity (всё ради предотвращения «спама», разумеется).
+### [Blackview](brands/blackview/README.md)
+
+### [Cubot](brands/cubot/README.md)
+
+### [Micromax](brands/micromax/README.md)
+
+### [Microsoft](brands/microsoft/README.md)
 
 ### Nothing
 Nothing Phone'ы могут быть разблокированы через fastboot без каких-либо кодов. Единственным требованием является включение **Заводской разблокировки** в разделе настроек **Для разработчиков**. Процедура не отличается от устройств Google Pixel.
+
+### [Shift](brands/shift/README.md)
+
+### [Teclast](brands/teclast/README.md)
+
+### [Teracube](brands/teracube/README.md)
+
+### [TP-Link/Neffos](brands/tplink/README.md)
+
+### [Ulefone](brands/ulefone/README.md)
+
+### [Umidigi](brands/umidigi/README.md)
+
+### [Volla](brands/volla/README.md)
 
 # Прочая информация
 
@@ -177,21 +274,31 @@ Kirin 620, 650, 655, 658, 659, 925, 935, 950, 960:<br/>
 Если разблокировка загрузчика не работает на устройстве Oppo Mediatek с использованием модификации SECCFG (разблокировка через mtkclient), вы можете попробовать разблокировать fastboot, записав модифицированный boot1 (preloader). Запись preloader также использует mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
 
 ### Unisoc
-Если у вас телефон с SOC'ами Unisoc ud710 или ums512, вы можете обратить внимание на этот эксплойт: [CVE-2022-38694_unlock_bootloader](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader).
+Если у вас телефон с чипсетами Unisoc UMS9620 или старше, вы можете использовать [эту уязвимость](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader) для получения постоянного обхода защищённой загрузки и разблокировки загрузчика. Это работает на всех устройствах, кроме некоторых с [модифицированным uboot](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/patch_do_cboot%E2%80%90SPL#part-2-modify-fdl2ubootlk), которые требуют [этот](https://github.com/TomKing062/unisoc_chipram_signcheck_exploit), [этот](https://github.com/YC-nw/bsp_sign_fxxker) или [этот](https://github.com/kasnria001/unisoc_secure_boot_bypass) эксплойт. Все три последних ссылки используют один и тот же метод, но реализованы разными людьми с возможными различиями. Кроме того, помимо разблокировки загрузчика, с помощью этого метода можно полностью отключить dm-verity, пропатчев раздел trustos, что позволит загружать неподписанные разделы.
 
-Вы можете также попробовать это: [Spectrum_UnlockBL_Tool](https://github.com/zhuofan-16/Spectrum_UnlockBL_Tool). <br/>
-Это: [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-unlock-w-unisoc-t310.4393389/). <br/>
-Или это: [subut](https://unisoc-android.github.io/subut/).
+Для телефонов с Unisoc UMS312, UMS512, UD710 вы можете использовать [этот](https://github.com/TomKing062/CVE-2022-38691_38692) эксплойт для получения постоянного обхода защищённой загрузки, что означает, что все прошивки, включая splloader и uboot, могут быть модифицированы и переподписаны.
+
+Также вы можете обратить внимание на: [Spectrum_UnlockBL_Tool](https://github.com/zhuofan-16/Spectrum_UnlockBL_Tool), [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-unlock-w-unisoc-t310.4393389/) или [subut](https://unisoc-android.github.io/subut/).
 
 ### Qualcomm
-К сожалению, не существует универсального метода для устройств на чипах Qualcomm.
 
-Однако что-то из этого может сработать:
+#### Snapdragon 8 Elite Gen 5 / Snapdragon 8 Elite
+
+**Исправлено в феврале-марте 2026**
+
+На чипах Snapdragon 8E5/8E Qualcomm представила [уязвимость (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) ([POC](https://github.com/kasnria001/qualcomm_gbl_exploit_poc)), при которой процесс загрузки не выполнял проверку подписи для Generic Bootloader, поэтому при наличии доступа на запись к разделу `efisp` было возможно выполнение произвольного кода.
+
+Хотя сама уязвимость является универсальной для платформы, для получения root-доступа и записи GBL требуются устройства/ OEM-специфические трюки. Некоторые из них существуют для [устройств Xiaomi](./brands/xiaomi/README.md#snapdragon-8-elite).
+
+#### Другие
 
 Общий эксплойт:<br/>
-[alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) (секция разблокировки загрузчика).
+[alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) — секция разблокировки загрузчика.
 
-Xiaomi Mi A1 и, возможно, все MSM89, произведённые до 2018:<br/>
-[EDLUnlock](https://github.com/Giovix92/EDLUnlock)
+### Custom AVB Keys
+
+Кастомные ключи Android Verified Boot — функция, которая позволяет запускать пользовательскую ОС с заблокированным загрузчиком.
+
+Редко можно встретить устройство, поддерживающее кастомные ключи AVB, но некоторые устройства можно найти [здесь](https://github.com/chenxiaolong/avbroot/issues/299).
 
 ***

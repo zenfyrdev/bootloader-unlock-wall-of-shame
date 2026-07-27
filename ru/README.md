@@ -39,7 +39,7 @@
 
 ### [Coolpad](brands/coolpad/README.md)
 
-### [Doogee](brands/doogee/README.md)napdragon 8 Elite Gen 5 / Snapdragon 8 Elite
+### [Doogee](brands/doogee/README.md)Snapdragon 8 Elite Gen 5 / Snapdragon 8 Elite
 
 **Исправлено в феврале-марте 2026**
 

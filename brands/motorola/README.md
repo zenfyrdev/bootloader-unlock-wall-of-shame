@@ -1,7 +1,7 @@
 # Motorola/Lenovo/NEC
 
-- Verdict: **⛔ Avoid!**
-- Verdict: **🍅 Terrible!** (Unisoc/MTK Legacy)
+- Verdict: **🍅 Just terrible!**
+- Verdict: **⛔ Avoid at all costs!** (Unisoc/MTK Legacy)
 
 ## Kernel sources
 Motorola is one of the manufacturers that provide kernel source code for their devices via official repositories on GitHub. However, they usually have weird build instructions, and will not share them unless you threaten to report to the SFC. 

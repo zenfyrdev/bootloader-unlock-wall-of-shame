@@ -1,7 +1,7 @@
 # Oukitel 
 
-- Verdict: **⛔ Avoid!**
-* Verdict: **🍅 Terrible!** (Unisoc)
+- Verdict: **🍅 Just terrible!**
+- Verdict: **⛔ Avoid at all costs!** (Unisoc)
 * [**🔓️ Unlock Guide (MediaTek)**](../../misc/generic-unlock.md)
 
 

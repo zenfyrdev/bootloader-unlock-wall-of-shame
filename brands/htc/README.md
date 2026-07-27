@@ -1,7 +1,7 @@
 # HTC
 
-- Verdict: **⛔ Avoid!**
-- Verdict: **🍅 Terrible!** (Unisoc/Spreadtrum)
+- Verdict: **🍅 Just terrible!**
+- Verdict: **⛔ Avoid at all costs!** (Unisoc/Spreadtrum)
 
 In the past, HTC allowed you to unlock your bootloader on their [developer website], but in June 2018 for whatever reason, HTC announced that any new phones would not have unlockable bootloaders, however their developer website would remain up for older devices. A few months prior to this, HTC sold their entire phone division to Google, and simply became a name for whatever Chinese ODM wanted it; this was probably the reason for HTC killing their bootloader unlock. Unisoc and Spreadtrum devices will never be unlockable, this is *not* HTC's fault, Unisoc/Spradtrum does not allow unlocking.
 > [!NOTE]

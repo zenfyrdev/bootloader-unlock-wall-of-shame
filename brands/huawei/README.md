@@ -1,6 +1,6 @@
 # Huawei
 
-- Verdict: **🍅 Terrible! _(but could be worse!)_**
+- Verdict: **⛔ Avoid at all costs! _(but could be worse!)_**
 
 In the past, Huawei allowed you to unlock (userlock) with a special code you get by submitting some information to emui.com (IMEI, serial, model, and product ID), but in 2018 "corporate values have changed" and the site went down. <br/>
 Worse, on Android 10+, the unlock command has been **completely removed** from fastboot, removing the "userlock" capability.

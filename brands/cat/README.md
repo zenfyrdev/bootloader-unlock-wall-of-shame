@@ -1,6 +1,6 @@
 # Cat
 
-- Verdict: **🍅 Terrible!**
+- Verdict: **⛔ Avoid at all costs!**
 
 Cat's phones have the OEM Unlock option in the settings app, but the typical `fastboot flashing unlock`/`fastboot oem unlock` just returns an [unknown command error][Cat Unlock]. I'm honestly not sure why you'd buy a phone from a tractor company anyways.
 

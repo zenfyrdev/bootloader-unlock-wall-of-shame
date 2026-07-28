@@ -1,6 +1,6 @@
 # Asus
 
-- Verdict: **🍅 Terrible!**
+- Verdict: **⛔ Avoid at all costs!**
 
 Asus originally allowed you to unlock your bootloader via their website, however in November 2023, the website went down "for maintanence", Asus claimed it would come back, but it never did. 
 

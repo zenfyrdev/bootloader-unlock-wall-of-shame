@@ -1,6 +1,6 @@
 # Amazon
 
-- Verdict: **🍅 Terrible!**
+- Verdict: **⛔ Avoid at all costs!**
 
 Amazon is a strange company in the Android world. They cling to old Android versions (their latest devices still ship with the EOL Android 11), they don’t include Google services on their devices, and they are **extremely aggressive towards bootloader unlocks.**
 

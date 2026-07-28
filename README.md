@@ -34,7 +34,7 @@ If you know of specific details/unlocking methods, please PR them or drop them i
 > Reminder that no matter how nice a company is, <br/>
 > you should not trust them unless their unlock process is 100% offline!
 
-## 🍅 Just terrible!
+## ⛔ Avoid at all costs!
 
 The following manufacturers have made it completely impossible to unlock their devices without a workaround.
 
@@ -81,7 +81,7 @@ Carrier locked devices are the ones you get after making a commitment with a car
 
 As a rule, almost all carrier locked devices do not allow the bootloader to be unlocked. This usually makes sense, as it would allow you to completely bypass the contract. The problem is that many devices still do not allow you to unlock the bootloader even after the carrier lock has been lifted. For more details, see the [carriers page](./carriers/README.md).
 
-## ⛔ Avoid at all costs!
+## 🍅 Just terrible!
 
 The following manufacturers allow unlocking under certain conditions, such as region, model, SOC, etc., or require a sacrifice to unlock.
 
@@ -171,11 +171,11 @@ If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG
 
 ### Qualcomm 
 
-#### Snapdragon 8 Elite Gen 5
+#### Snapdragon 8 Elite Gen 5/Snapdragon 8 ELite
 
 **Patched in February/March 2026**
 
-On Snapdragon 8E5, Qualcomm introduced a [vulnerability (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) [(POC)](https://github.com/kasnria001/qualcomm_gbl_exploit_poc) where the boot process would not perform signature verification for the Generic Bootloader, so with write access to the `efisp` partition it was possible to run arbitary code.
+On Snapdragon 8E5/8E, Qualcomm introduced a [vulnerability (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) [(POC)](https://github.com/kasnria001/qualcomm_gbl_exploit_poc) where the boot process would not perform signature verification for the Generic Bootloader, so with write access to the `efisp` partition it was possible to run arbitary code.
 
 While the vulnerability itself is universal for the platform, it requires device/OEM specific tricks to get root and write the GBL. Some exist for [Xiaomi devices](./brands/xiaomi/README.md#snapdragon-8-elite).
 
@@ -185,9 +185,9 @@ The general exploit:<br/>
 [alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) the bootloader unlock section.
 
 ### Unisoc
-If you own a phone with the Unisoc UMS9620 or older,you can use this exploit to achieve temporary secure boot bypass and persistently unlock bootloader(except some devices with modified uboot) [CVE-2022-38694_unlock_bootloader](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader)
+If you own a phone with the Unisoc UMS9620 or older you can use [this](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader) (UMS9621 need [this](https://github.com/TomKing062/exec_addr_v2) as exec address) to achieve temporary secure boot bypass and persistently unlock bootloader. This is valid for all devices except some devices with [modified uboot](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/patch_do_cboot%E2%80%90SPL#part-2-modify-fdl2ubootlk) which need [this](https://github.com/TomKing062/unisoc_chipram_signcheck_exploit) or [this](https://github.com/YC-nw/bsp_sign_fxxker) or [this](https://github.com/kasnria001/unisoc_secure_boot_bypass), note that the method used on all these three links is the same but implemented by different people and with possible differences, also by using this aside from bootloader unlock is possible to completely disable dm-verity by patching trustos partition which would allow booting of unsigned partitions.
 
-If you own a phone with the Unisoc UMS312 UMS512 UD710,you can use this exploit to achieve persistently secure boot bypass, which means all firmwares including splloader,uboot can be modified and resigned. [CVE-2022-38691_38692](https://github.com/TomKing062/CVE-2022-38691_38692)
+If you own a phone with the Unisoc UMS312 UMS512 UD710,you can use [this](https://github.com/TomKing062/CVE-2022-38691_38692) exploit to achieve persistently secure boot bypass, which means all firmwares including splloader,uboot can be modified and resigned.
 
 Otherwise, you can also look into this: [Spectrum_UnlockBL_Tool](https://github.com/zhuofan-16/Spectrum_UnlockBL_Tool) <br/>
 This: [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-unlock-w-unisoc-t310.4393389/) <br/>

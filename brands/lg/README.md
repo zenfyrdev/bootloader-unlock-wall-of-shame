@@ -1,8 +1,8 @@
 # LG
 
-- Verdict: **⛔ Avoid!**
-- Verdict: **🍅 Terrible!** (Unisoc)
-- Verdict (Watches): **ℹ️ "Safe for now" :trollface:**
+- Verdict: **🍅 Just terrible!**
+- Verdict: **⛔ Avoid at all costs!** (Unisoc)
+- Verdict: **ℹ️ Safe for now** (Watches) :trollface:
 
 In the past, LG had a developer portal which could be used to unlock phones on their website, however it only supported **some** international models of their phones, but in December 2021, LG [announced][announcement-archive] the developer portal would be shutting down due to LG ending production of all phones. Unisoc devices will never be unlockable, this is *not* LG's fault, Unisoc does not allow unlocking.
 

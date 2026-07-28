@@ -1,6 +1,6 @@
 # Coolpad
 
-- Verdict: **🍅 Terrible!**
+- Verdict: **⛔ Avoid at all costs!**
 
 Coolpad completely removed [the unlock command][Coolpad unlock] from their Fastboot, so Coolpad devices can't be unlocked unless your device has an SoC level exploit like mtkclient.
 ***

@@ -6,7 +6,7 @@
 
 In the past, LG had a developer portal which could be used to unlock phones on their website, however it only supported **some** international models of their phones, but in December 2021, LG [announced][announcement-archive] the developer portal would be shutting down due to LG ending production of all phones. Unisoc devices will never be unlockable, this is *not* LG's fault, Unisoc does not allow unlocking.
 
-On some models (such as the Stylo 3 Plus and G6), the bootloader can still be officially unlocked via `fastboot oem unlock` **only if** [the phone is a T-Mobile model][t-mobile-unlock]. T-Mobile versions also have most fastboot commands removed, including `fastboot flash`, `erase` and `boot`.
+On some models (such as the Stylo 3 Plus and G6), the bootloader can still be officially unlocked via `fastboot oem unlock` **only if** [the phone is a T-Mobile model][t-mobile-unlock]. T-Mobile versions also have most fastboot commands removed, including `fastboot flash`, `erase` and `boot` since the LG V10 on Android 6.
 
 Older devices (prior to 2015) have partition verification but can be tricked into believing that non OEM signed software is OEM signed, and assuming you have a root exploit, you can just flash modified partitions with dd -- as recommended by some official LineageOS [install guides]
 

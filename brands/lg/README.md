@@ -8,7 +8,7 @@ In the past, LG had a developer portal which could be used to unlock phones on t
 
 On some models (such as the Stylo 3 Plus and G6), the bootloader can still be officially unlocked via `fastboot oem unlock` **only if** [the phone is a T-Mobile model][t-mobile-unlock]. T-Mobile versions also have most fastboot commands removed, including `fastboot flash`, `erase` and `boot`.
 
-Older devices (prior to 2015) do not have partition verification, and assuming you have a root exploit, you can just flash modified partitions with dd -- as recommended by some official LineageOS [install guides]
+Older devices (prior to 2015) have partition verification but can be tricked into believing that non OEM signed software is OEM signed, and assuming you have a root exploit, you can just flash modified partitions with dd -- as recommended by some official LineageOS [install guides]
 
 ## Watches
 All LG watches on Android Wear/Wear OS use the [standard unlock procedure](../../misc/generic-unlock.md) via fastboot.

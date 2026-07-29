@@ -27,16 +27,6 @@ Even though OxygenOS 17 is officially cancelled (every version of OnePlus 16 wil
 
 Note that if you updated your OnePlus 11-15 to ColorOS 17 (when it will be released) and downgraded it to OxygenOS 16 through official Rollback package (note that it is not released yet), you will not be able to flash any custom ROM based on android 16 other than that Rollback package, because this package has patched ARB index.
 
-### How to check your ARB index
-
-Go to fastboot mode and enter this command:
-
-```console
-$ fastboot getvar anti
-```
-
-If it says `0`, you can do anything with your phone. If it says `1`, you cannot downgrade your phone to android 15. If it says `2`, you cannot downgrade your phone to android 16.
-
 > **Note:** This information may not be correct because ColorOS 17 and OnePlus 16 are not released yet
 
 ## T-Mobile

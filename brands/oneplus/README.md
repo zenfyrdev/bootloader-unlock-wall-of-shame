@@ -25,7 +25,7 @@ Note that starting September, 2026, OnePlus will make "Deep Testing" program muc
 
 Even though OxygenOS 17 is officially cancelled (every version of OnePlus 16 will be initially released with ColorOS 17), "Deep Testing" program will be needed only on Chinese versions.
 
-Note that if you updated your OnePlus 11-15 to ColorOS 17 (when it will be released), you will be able to downgrade it to OxygenOS 16 through official Rollback package (note that it is not released yet). Note that if works even if the bootloader is not unlocked. Note that it works only on global versions of OnePlus. Note that after downgrading, you will not be able to flash any custom ROM based on android 16 other than that Rollback package, because this package has patched ARB index.
+Note that if you updated your OnePlus 11-15 to ColorOS 17 (when it will be released), you will be able to downgrade it to OxygenOS 16 through official Rollback package (note that it is not released yet). Note that it works even if the bootloader is not unlocked. Note that it works only on global versions of OnePlus. Note that after downgrading, you will not be able to flash any custom ROM based on android 16 other than that Rollback package, because this package has patched ARB index.
 
 > **Note:** This information may not be correct because ColorOS 17 and OnePlus 16 are not released yet
 

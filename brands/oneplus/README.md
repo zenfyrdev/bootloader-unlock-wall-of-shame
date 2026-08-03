@@ -2,6 +2,8 @@
 
 * Verdict **⚠️ Proceed with caution!**
 * Global phones or Chinese phones released with ColorOS 15 or older: [**🔓️ Unlock Guide**](../../misc/generic-unlock.md)
+* 2026 - Unlocking remains unrestricted, but Oneplus is introducing new and new hardware Antirollback mechanisms. It's not clear whether they are chinese exclusive or global.[1]
+* In case you hard brick your device, EDL flashes are even harder and more expensive to get than with Xiaomi.
 
 ## Global phones and older Chinese models
 All OnePlus phones on the global market, and any Chinese models that were initially released with ColorOS 15 or older, can be easily unlocked using the [standard procedure](../../misc/generic-unlock.md). This includes devices that have since updated to ColorOS 16.0 or newer.
@@ -10,7 +12,8 @@ All OnePlus phones on the global market, and any Chinese models that were initia
 According to the [OnePlus forum](https://bbs.oneplus.com/thread/1926504022886318086), for phones and tablets sold in mainland China, unlocking the bootloader is **only possible via an official application to join the “Deep Testing” program**. After submitting a unlock request they normally take 2 days to be approved.
 **Main requirements:**  
 - Account must be in good standing (no violations or restrictions)  
-- No application submitted in the past 30 days  
+- No application submitted in the past 30 days
+  
 - Device is not a corporate or carrier-customized model  
 
 > **Note:** These restrictions currently apply only to devices sold in mainland China. However, due to the unified OPPO–OnePlus codebase, similar restrictions may be introduced for global models in the future.
@@ -38,3 +41,4 @@ Authored by [madeline-yana](https://github.com/madeline-yana) and [jotkauser](ht
 Information about the Deep Testing program by [DiabloSat](https://github.com/progzone122).
 
 [unlock token]:https://www.oneplus.com/us/unlock_token
+[1]:https://xdaforums.com/t/critical-warning-coloros-16-0-8-xxx-16-0-3-501-permanent-anti-rollback-arb-fuse-blown-do-not-update.4775930/

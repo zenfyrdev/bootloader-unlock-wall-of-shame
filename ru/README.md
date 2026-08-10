@@ -7,10 +7,23 @@
 ![Terrible](https://raw.githubusercontent.com/zenfyrdev/bootloader-unlock-wall-of-shame/main/ru/terrible_ru.svg)
 [![License CC BY-NC-SA](https://raw.githubusercontent.com/zenfyrdev/bootloader-unlock-wall-of-shame/main/ru/CC-BY-NC-SA-4.0_ru.svg)](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/blob/main/LICENSE)
 
-## Зачем?
-За последние несколько лет, подозрительное число компаний начало «заботиться о ваших данных», а точнее, блокировать/строго лимитировать возможность разблокировки загрузчика вашего *собственного* устройства.
+<details><summary>Зеркала</summary>
+<p>
 
-Хотя это может и не коснуться вас напрямую, это создаёт плохой прецедент. Никогда не знаешь, что пойдёт под нож следующим: Shizuku? ADB? Скачивание приложений из неизвестных источников? Я думаю, что было бы хорошей идеей отслеживать плохие компании и относящиеся к их устройствам обходные пути.
+- GitHub: https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame
+- Codeberg: https://codeberg.org/zenfyr/bootloader-unlock-wall-of-shame
+- tangled: https://tangled.sh/did:plc:rjhjcb3rgdsmdr6ykywuh63z/bootloader-unlock-wall-of-shame
+
+</p>
+</details>
+Обратите внимание, что issues, pull requests и обсуждения на Codeberg и tangled не отслеживаются. Пожалуйста, используйте GitHub.
+
+## Зачем?
+За последние несколько лет подозрительное число компаний начало «заботиться о ваших данных», а точнее — блокировать/строго лимитировать возможность разблокировки загрузчика вашего *собственного* устройства.
+
+Хотя это может и не коснуться вас напрямую, это создаёт плохой прецедент. Никогда не знаешь, что пойдёт под нож следующим: Shizuku? ADB?<br><br>
+**Они уже взялись за [sideloading](https://keepandroidopen.org).**<br><br>
+Я думаю, что было бы хорошей идеей отслеживать плохие компании и относящиеся к их устройствам обходные пути.
 
 Если вы знаете какие-то специфические детали/методы разблокировки, пожалуйста, создайте PR или отправьте их в раздел [дискуссий](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions).
 
@@ -21,9 +34,7 @@
 > вы не должны доверять ей, <br/>
 > если процесс разблокировки нельзя провести на 100% в режиме офлайн!
 
-[[toc]]
-
-## 🍅 Просто ужасно!
+## ⛔ Избегать любой ценой!
 
 Следующие производители сделали невозможной разблокировку загрузчика своих устройств без использования обходных путей.
 
@@ -39,37 +50,23 @@
 
 ### [Coolpad](brands/coolpad/README.md)
 
-### [Doogee](brands/doogee/README.md)Snapdragon 8 Elite Gen 5 / Snapdragon 8 Elite
-
-**Исправлено в феврале-марте 2026**
-
-На чипах Snapdragon 8E5/8E Qualcomm представила [уязвимость (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) ([POC](https://github.com/kasnria001/qualcomm_gbl_exploit_poc)), при которой процесс загрузки не выполнял проверку подписи для Generic Bootloader, поэтому при наличии доступа на запись к разделу `efisp` было возможно выполнение произвольного кода.
-
-Хотя сама уязвимость является универсальной для платформы, для получения root-доступа и записи GBL требуются устройства/ OEM-специфические трюки. Некоторые из них существуют для [устройств Xiaomi](./brands/xiaomi/README.md#snapdragon-8-elite).
-
-#### Другие
-
-Общий эксплойт:<br/>
-[alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) — секция разблокировки загрузчика.
-
-### Custom AVB Keys
-
-Кастомные ключи Android Verified Boot — функция, которая позволяет запускать пользовательскую ОС с заблокированным загрузчиком.
-
-Редко можно встретить устройство, поддерживающее кастомные ключи AVB, но некоторые устройства можно найти [здесь](https://github.com/chenxiaolong/avbroot/issues/299).
-
-***
-
+### [Doogee](brands/doogee/README.md)
 
 ### [Energizer](brands/energizer/README.md)
+
+### [Huawei](brands/huawei/README.md)
 
 ### [Meizu](brands/meizu/README.md)
 
 ### [Panasonic](brands/panasonic/README.md)
 
+### [Samsung](brands/samsung/README.md)
+
 ### [Sharp](brands/sharp/README.md)
 
 ### [TCL/BlackBerry](brands/tcl/README.md)
+
+### [Vivo/IQOO](brands/vivo/README.md)
 
 ### [Vsmart](brands/Vsmart/README.md)
 
@@ -84,153 +81,47 @@
 
 Как правило, почти все заблокированные под оператора устройства не позволяют разблокировать загрузчик. Обычно это оправдано, так как разблокировка позволила бы полностью обойти контракт. Проблема в том, что многие устройства по-прежнему не позволяют разблокировать загрузчик даже после снятия блокировки оператора. Подробнее см. на [странице операторов](../carriers/README.md).
 
-## ⛔ Избегать любой ценой!
+## 🍅 Просто ужасно!
 
-### Huawei/Honor
-В прошлом, Huawei позволяла разблокировку со специальным кодом, который можно было получить, предоставив некоторую информацию на emui.com (IMEI, серию, модель и ID продукта), но в 2018 «корпоративные ценности изменились» и сайт перестал работать. <br/>
-Хуже того, на устройствах с Андроид 10+, команду разблокировки **полностью вырезали** из меню fastboot.
-
-Некоторые устройства основанные на Kirin, могут использовать [PotatoNV](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame#kirin).
-
-Платные методы:<br/>
-Я бы не рекомендовал платные методы из-за их подозрительности. Хотя один из таких методов я использовал как-то давно, он был неплох.<br/>
-Возможна разблокировка через HCU-client (не все устройства поддерживаются + невероятно дорогой [hcu-client.com](https://hcu-client.com/buy/)) или DC-Unlocker (те же проблемы, что и у HCU [dc-unlocker.com](https://www.dc-unlocker.com/buy)).
-
-### HMD Global/Nokia
-В пылающей куче «прекрасных» решений HMD по улучшению Nokia находится одно, выделяющееся среди других: решение последовать новомодному тренду блокировки загрузчика.<br/>
-Зачем это было нужно? Понятия не имею…
-
-Ну, в любом случае. Модели, выпущенные до начала 2019 могут запросить разблокировку используя неофициальный сервис Hikari Calyx ([hikaricalyx.com](https://hikaricalyx.com/request-bootloader-unlock)).
-
-И для некоторых других моделей у Hikari Calyx имеется репозиторий с прототипами ABL [fih-firmware.hikaricalyx.com](https://fih-firmware.hikaricalyx.com/protoabl/).
-
-Модели 7.2, 8.3 и 5.3 могут быть разблокированы офлайн, в то время, как другие модели требуют наличие HMD Device Kit'а, **который не является публичным и требует наличия сервисного аккаунта.**
-
-> Информация любезно предоставлена самими [Hikari Calyx](https://github.com/HikariCalyx)!
-
-### Vivo/IQOO
-У семейства BBK есть проблема с разблокировкой. Если в случае с OPPO/Realme они хотя бы предоставляют приложение в некоторых регионах, Vivo заблокирован полностью.
-
-Вернее, это только если [данный метод с xdaforums.com](https://xdaforums.com/t/how-to-unlock-bootloader-of-vivo-phones.3686690/) к вам не относится.
-
-На прошивках, выпущенных до мая 2022 года (судя по всему, этот метод *был* ~универсальным, но соблюдайте осторожность):
-
-* Vivo x70 Pro+: [xdaforums.com](https://xdaforums.com/t/vivo-x70-pro-bootloader-unlock-how-to-guide.4444989/)
-* Vivo Y31 2021: [xdaforums.com](https://xdaforums.com/t/unlocking-bootloader-rebooting-in-edl-without-testpoint-vivo-y31-2021.4440801/)
-
-### OPPO/Realme
-Мне нечего сказать об OPPO.<br/>
-Самая раздражающая вещь в том, что вы *можете* разблокировать загрузчик, но только если сможете добраться до fastboot'а. И угадайте что? Они заблокировали загрузчик за RSA-ключом!
-
-Что же до Realme, они решили, что сегрегация людей по ~~расе~~ региону их телефона — это круто. Если вы не купили телефон в Китае или Индии, то вы навряд ли сможете что-нибудь разблокировать в ближайшем будущем.
-
-В апреле–мае 2023 вы могли разблокировать любой телефон Realme, используя этот скрипт — [rmx3474-rooting](https://github.com/turistu/rmx3474-rooting), но 26 мая Realme опубликовали вот это объявление (которое больше похоже на шутку) на своём форуме — [c.realme.com](https://c.realme.com/in/post-details/1671137365285982208). (Они удалили оригинальное объявление).
-С этого момента они заставляют сервера использовать только ключи «новой структуры», к которым прикреплена дата модели, что делает скрипт бесполезным.
-
-Теоретически, если есть такая возможность, вы можете использовать full-OTA пакет, чтобы сменить прошивку своего телефона и использовать приложение для глубокого тестирования напрямую, но я не могу подтвердить, что это гарантированно работает (поправьте, если я не прав). Инструкция: [xdaforums.com](https://xdaforums.com/t/change-region-via-full-ota.4535659/)
-
-Что же до Китая и Индии… Видя, как легко Realme обманули своих глобальных пользователей, я бы выразил некоторое беспокойство об их будущих планах. Однако на данный момент, вам будет нужно найти и проследовать инструкции для устройства вашей модели на [c.realme.com](https://c.realme.com/in/). Процесс схож для всех устройств, но новые модели могут потребовать наличия аккаунта HeyTap.
-
-### Xiaomi/Redmi/POCO
-
-Несмотря на то, что (пока что) это относится только к пользователям из Китая, новая политика Xiaomi делает процесс разблокировки очень неприятным.
-
-С этой новой политикой, **вам необходимо иметь Xiaomi Community аккаунта разработчика 5 уровня**. </br>
-Вот список вещей, которым вам нужно для этого соответствовать:
- - Вы должны быть гражданином Китая;
- - Вам нужно использовать HyperOS и вы должны сообщать, по крайней мере, об 1 баге в день (????);
- - Вам нужно подавать не менее 1 предложения, касающегося HyperOS, в месяц (????);
- - Вы должны быть активным пользователем Xiaomi Community.
-
-Но и это ещё не всё:
- - Разрешение на разблокировку временно и даётся только на 1 год;
- - За год можно разблокировать только 3 устройства;
- - Вы не будете получать OTA-обновления;
- - Ваша гарантия будет стёрта.
-
-Кстати, гляньте [Xiaomi-HyperOS-BootLoader-Bypass](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass) от [MlgmXyysd](https://github.com/MlgmXyysd).
-
-> [!NOTE]
-> Если верить [xiaomiui.net](https://xiaomiui.net/how-unlock-bootloader-xiaomi-hyperos-53493/), глобальная разблокировка также подверглась изменениям, пусть и не таким критичным:
-> * Ваш Mi Аккаунт должен быть активным в течение 30 дней;
-> * Версия приложения Xiaomi Community должна быть ≥ 5.3.31;
-> * Вы можете разблокировать загрузчики только 3 устройств за год со своего аккаунта.
-
-Если вам интересно узнать о том, как работает загрузчик Xiaomi, вы можете узнать об этом подробнее здесь: [Xiaomi-bootloader](https://github.com/lrh2000/Xiaomi-bootloader)
-
-> Информация любезно предоставлена [n1ses](https://github.com/n1ses)!
-
-### Samsung
-Если у вас устройство из Северной Америки, то, эм… Если вам повезло не обновлять свой телефон в течении длительного времени, то можете глянуть [вот этот платный сервис](https://xdaforums.com/t/android-unsamlock-bootloader-unlock-for-samsung-us-canada-devices.4215101/). (На ваш страх и риск).
-
-Если вы купили телефон где-то ещё и он не заблокирован под оператора, то можете использовать стандартный процесс, но будьте готовы ко всем проблемам, которые возникнут у вас на пути!
-
-Например, разблокировка необратимо тикнет счётчик Knox. В результате *любые* связанные с Knox'ом функции будут сломаны, *даже если вы заблокируете загрузчик обратно*. Эти функции включают, но не ограничиваются: Samsung Pay, Pass, Flow, Health, Secure Folder, Secure Wi-Fi, Smart View. Могут ли вам отказать в гарантийном обслуживании? Может быть…
-Некоторые из этих функций могут быть восстановлены при помощи LsPosed модуля [KnoxPatch](https://github.com/BlackMesa123/KnoxPatch) и этого модуля Magisk: [KnoxPatch#knoxpatch-enhancer](https://github.com/BlackMesa123/KnoxPatch#knoxpatch-enhancer).
-
-К тому же некоторые базовые функции, такие как VoLTE (спасибо проприетарной реализации Samsung) и, в некоторых случаях, [даже камера](https://xdaforums.com/t/a52s-5g-sm-a528b-unlock-bootloader-camera-failed.4336007/), могут быть и, скорее всего, будут сломаны.
-
-> Информация любезно предоставлена [aries-ts-indo](https://github.com/aries-ts-indo)!
+Следующие производители допускают разблокировку только при определённых условиях, таких как регион, модель, SOC и т.д., или требуют жертву для разблокировки.
 
 ### [Hisense](brands/hisense/README.md)
+
+### [HMD/Nokia](brands/nokia/README.md)
+
+### [Honor](brands/honor/README.md)
 
 ### [HTC](brands/htc/README.md)
 
 ### [LG](brands/lg/README.md)
 
+### [Motorola/Lenovo/NEC](brands/motorola/README.md)
+
+### [OPPO/Realme](brands/oppo/README.md)
+
 ### [Oukitel](brands/oukitel/README.md)
+
+### [Xiaomi/Redmi/POCO](brands/xiaomi/README.md)
 
 ### [ZTE/nubia/Redmagic](brands/zte/README.md)
 
-Старые устройства ZTE (до Андроид 8):<br/>
-[xdaforums.com](https://xdaforums.com/t/bootloader-unlocking-on-older-qualcomm-zte-devices-devinfo-partition-modification.4100897/)
-
 ## ⚠️ Действуйте осторожно!
 
-### Motorola
-Для начала, чтобы разблокировать загрузчик, вам нужно подать заявку на их сайте, что уже плохо само по себе (*кхм-кхм* Huawei). Но как вам узнать, возможно ли вообще разблокировать ваше устройство? Что ж…
+Следующие производители требуют онлайн-аккаунт и/или период ожидания перед разблокировкой.
 
-* [На этой странице](https://en-us.support.motorola.com/app/answers/detail/a_id/87215) сказано: «большинство наших новых устройств поддерживают нашу программу по разблокировке загрузчика».
-* [На этой странице](https://en-us.support.motorola.com/app/standalone/bootloader/unlock-your-device-a) сказано, что только «Photon Q 4G LTE, DROID RAZR M(Developer Edition), DROID RAZR HD(Developer Edition CDMA-LTE), MOTOROLA RAZR HD (Весь остальной мир -UMTS/LTE), MOTOROLA RAZR HD (Роджерс Канада - UMTS/LTE) и MOTOROLA RAZR i поддерживаются сайтом по Разблокировке Загрузчика».
-* [И в этом разговоре](https://xdaforums.com/t/how-to-guide-unlocking-using-deeptest-gdpr.4585829/post-88734665) с их службой поддержки, [turistu](https://github.com/turistu) получил ответ: «бо́льшая часть наших E-устройств не поддерживают программу по разблокировке загрузчика. Пожалуйста, обратитесь к списку ниже, чтобы узнать список поддерживаемых программой по разблокировке загрузчика устройств: g100, g51, g71, g200, g52, g82, g42, g62, g32».
-* Есть так же неофициальный метод с CID, который позволяет узнать, поддерживает ли ваше устройство разблокировку. Смотрите здесь: [xdaforums.com](https://xdaforums.com/t/guide-un-locking-motorola-bootloader.4079111/post-85375429)
+### [Fairphone](brands/fairphone/README.md)
 
-> Мото используют путаницу! И довольно эффективно…
-
-### OnePlus
-— Что? OnePlus? Разве их телефоны не суперлегко разблокировать? <br/>
-— Да, но… <br/>
-Вы, вероятно, слышали о слиянии ОС OnePlus x OPPO и, хотя они были отменены, обе компании начали делиться «унифицированной кодовой базой». Наверное, уже поняли куда я клоню?
-
-Если в один прекрасный день OnePlus начнёт практиковать расизм подобно Realme или решит пойти до конца, как OPPO/Vivo, то эти «унифицированные» инструменты будут в их распоряжении.
-
-### Fairphone
-> Эм, ну, они же совершенны!
-
-Нет, погодите, я не ошибся.
-
-Все Fairphone'ы после 2 требуют запросить код с [этого](https://www.fairphone.com/en/bootloader-unlocking-code-for-fairphone) веб-сайта, чтобы включить заводскую разблокировку. Ничего не останавливает их от того, чтобы начать требовать аккаунт и/или ввести лимит на разблокировку устройств в будущем. Это ведь «действуйте осторожно», в конце концов.
-
-Not very fair in my opinion, but whatever fairs your phone*
-> * Непереводимая игра слов, где «fair» — честный в названии бренда — *Прим. переводчика.*
-
-### Google/Nexus
-Позволяет разблокировку на практически любом не заблокированном под оператора устройстве, но является пионером в области того, чтобы делать рутирование и установку пользовательских прошивок сложнее при помощи таких вещей, как Safety Net и Play Integrity. Последним достижением стали RCS сообщения, требующие работы DEVICE Integrity (всё ради предотвращения «спама», разумеется).
+### [Google/Nexus](brands/google/README.md)
 
 ### [Infinix](brands/infinix/README.md)
 
 ### [itel](brands/itel/README.md)
 
+### [OnePlus](brands/oneplus/README.md)
+
+### [Sony](brands/sony/README.md)
+
 ### [Tecno](brands/tecno/README.md)
-
-### Sony
-
-У Sony открытая политика для разработчиков ПО:
-- Они публикуют исходники AOSP под условиями [Sony Open Devices Program](https://developer.sony.com/open-source/aosp-on-xperia-open-devices).
-- Jolla предоставляет первоклассную поддержку по установке [Sailfish OS](https://shop.jolla.com/) на некоторые устройства Xperia. Это было бы невозможно без открытости Sony.
-
-Но так как Sony любит губить идеальные вещи:
-- Sony требует запросить код разблокировки с [их серверов](https://developer.sony.com/open-source/aosp-on-xperia-open-devices/get-started/unlock-bootloader). Они могут перекрыть кислород в любой момент. Вам потребуется отправить свой IMEI и согласиться на стирание гарантии.
 
 ## ℹ️ «Пока безопасно» :trollface: 
 
@@ -242,8 +133,7 @@ Not very fair in my opinion, but whatever fairs your phone*
 
 ### [Microsoft](brands/microsoft/README.md)
 
-### Nothing
-Nothing Phone'ы могут быть разблокированы через fastboot без каких-либо кодов. Единственным требованием является включение **Заводской разблокировки** в разделе настроек **Для разработчиков**. Процедура не отличается от устройств Google Pixel.
+### [Nothing](brands/nothing/README.md)
 
 ### [Shift](brands/shift/README.md)
 
@@ -261,6 +151,12 @@ Nothing Phone'ы могут быть разблокированы через fas
 
 # Прочая информация
 
+## Кастомные AVB ключи
+
+Кастомные ключи Android Verified Boot — функция, которая позволяет запускать пользовательскую ОС с заблокированным загрузчиком.
+
+Редко можно встретить устройство, поддерживающее кастомные ключи AVB, но некоторые устройства можно найти [здесь](https://github.com/chenxiaolong/avbroot/issues/299).
+
 ## Универсальные SOC-методы
 
 ### Kirin
@@ -273,14 +169,7 @@ Kirin 620, 650, 655, 658, 659, 925, 935, 950, 960:<br/>
 
 Если разблокировка загрузчика не работает на устройстве Oppo Mediatek с использованием модификации SECCFG (разблокировка через mtkclient), вы можете попробовать разблокировать fastboot, записав модифицированный boot1 (preloader). Запись preloader также использует mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
 
-### Unisoc
-Если у вас телефон с чипсетами Unisoc UMS9620 или старше, вы можете использовать [эту уязвимость](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader) для получения постоянного обхода защищённой загрузки и разблокировки загрузчика. Это работает на всех устройствах, кроме некоторых с [модифицированным uboot](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/patch_do_cboot%E2%80%90SPL#part-2-modify-fdl2ubootlk), которые требуют [этот](https://github.com/TomKing062/unisoc_chipram_signcheck_exploit), [этот](https://github.com/YC-nw/bsp_sign_fxxker) или [этот](https://github.com/kasnria001/unisoc_secure_boot_bypass) эксплойт. Все три последних ссылки используют один и тот же метод, но реализованы разными людьми с возможными различиями. Кроме того, помимо разблокировки загрузчика, с помощью этого метода можно полностью отключить dm-verity, пропатчев раздел trustos, что позволит загружать неподписанные разделы.
-
-Для телефонов с Unisoc UMS312, UMS512, UD710 вы можете использовать [этот](https://github.com/TomKing062/CVE-2022-38691_38692) эксплойт для получения постоянного обхода защищённой загрузки, что означает, что все прошивки, включая splloader и uboot, могут быть модифицированы и переподписаны.
-
-Также вы можете обратить внимание на: [Spectrum_UnlockBL_Tool](https://github.com/zhuofan-16/Spectrum_UnlockBL_Tool), [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-unlock-w-unisoc-t310.4393389/) или [subut](https://unisoc-android.github.io/subut/).
-
-### Qualcomm
+### Qualcomm 
 
 #### Snapdragon 8 Elite Gen 5 / Snapdragon 8 Elite
 
@@ -288,17 +177,18 @@ Kirin 620, 650, 655, 658, 659, 925, 935, 950, 960:<br/>
 
 На чипах Snapdragon 8E5/8E Qualcomm представила [уязвимость (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) ([POC](https://github.com/kasnria001/qualcomm_gbl_exploit_poc)), при которой процесс загрузки не выполнял проверку подписи для Generic Bootloader, поэтому при наличии доступа на запись к разделу `efisp` было возможно выполнение произвольного кода.
 
-Хотя сама уязвимость является универсальной для платформы, для получения root-доступа и записи GBL требуются устройства/ OEM-специфические трюки. Некоторые из них существуют для [устройств Xiaomi](./brands/xiaomi/README.md#snapdragon-8-elite).
+Хотя сама уязвимость является универсальной для платформы, для получения root-доступа и записи GBL требуются устройства/ OEM-специфические трюки. Некоторые из них существуют для [устройств Xiaomi](../brands/xiaomi/README.md#snapdragon-8-elite).
 
 #### Другие
 
 Общий эксплойт:<br/>
 [alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) — секция разблокировки загрузчика.
 
-### Custom AVB Keys
+### Unisoc
+Если у вас телефон с чипсетами Unisoc UMS9620 или старше, вы можете использовать [эту уязвимость](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader) для получения постоянного обхода защищённой загрузки и разблокировки загрузчика. Это работает на всех устройствах, кроме некоторых с [модифицированным uboot](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/patch_do_cboot%E2%80%90SPL#part-2-modify-fdl2ubootlk), которые требуют [этот](https://github.com/TomKing062/unisoc_chipram_signcheck_exploit), [этот](https://github.com/YC-nw/bsp_sign_fxxker) или [этот](https://github.com/kasnria001/unisoc_secure_boot_bypass) эксплойт. Все три последних ссылки используют один и тот же метод, но реализованы разными людьми с возможными различиями. Кроме того, помимо разблокировки загрузчика, с помощью этого метода можно полностью отключить dm-verity, пропатчев раздел trustos, что позволит загружать неподписанные разделы.
 
-Кастомные ключи Android Verified Boot — функция, которая позволяет запускать пользовательскую ОС с заблокированным загрузчиком.
+Для телефонов с Unisoc UMS312, UMS512, UD710 вы можете использовать [этот](https://github.com/TomKing062/CVE-2022-38691_38692) эксплойт для получения постоянного обхода защищённой загрузки, что означает, что все прошивки, включая splloader и uboot, могут быть модифицированы и переподписаны.
 
-Редко можно встретить устройство, поддерживающее кастомные ключи AVB, но некоторые устройства можно найти [здесь](https://github.com/chenxiaolong/avbroot/issues/299).
+Также вы можете обратить внимание на: [Spectrum_UnlockBL_Tool](https://github.com/zhuofan-16/Spectrum_UnlockBL_Tool), [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-unlock-w-unisoc-t310.4393389/) или [subut](https://unisoc-android.github.io/subut/).
 
 ***

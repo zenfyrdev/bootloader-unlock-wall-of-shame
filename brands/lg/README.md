@@ -12,6 +12,8 @@ Older devices (prior to 2015) have partition verification but can be tricked int
 
 Newer LG budget phones (2018+) from the K and Stylo series typically do not have Fastboot.
 
+Most carrier branded LG devices (aside from T-Mobile versions) also usually have hidden or no Fastboot as well.
+
 ## Watches
 All LG watches on Android Wear/Wear OS use the [standard unlock procedure](../../misc/generic-unlock.md) via fastboot.
 

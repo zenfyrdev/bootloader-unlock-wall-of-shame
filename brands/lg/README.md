@@ -10,6 +10,8 @@ On some models (such as the Stylo 3 Plus and G6), the bootloader can still be of
 
 Older devices (prior to 2015) have partition verification but can be tricked into believing that non OEM signed software is OEM signed, and assuming you have a root exploit, you can just flash modified partitions with dd -- as recommended by some official LineageOS [install guides]
 
+Newer LG budget phones (2018+) from the K and Stylo series typically do not have Fastboot.
+
 ## Watches
 All LG watches on Android Wear/Wear OS use the [standard unlock procedure](../../misc/generic-unlock.md) via fastboot.
 

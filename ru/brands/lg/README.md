@@ -11,7 +11,7 @@
 Старые устройства (до 2015) не имеют проверки разделов — при наличии root-доступа можно просто прошить модифицированные разделы через dd.
 
 ## Часы
-Все часы LG на Android Wear/Wear OS используют [стандартную процедуру разблокировки](../../misc/generic-unlock.md) через fastboot.
+Все часы LG на Android Wear/Wear OS используют [стандартную процедуру разблокировки](../../../misc/generic-unlock.md) через fastboot.
 
 ***
 Автор: [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439), [DiabloSat](https://github.com/progzone122)<br/>

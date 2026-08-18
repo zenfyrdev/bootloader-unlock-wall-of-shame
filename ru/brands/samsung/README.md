@@ -1,7 +1,7 @@
 # Samsung
 
 - Вердикт: **⛔ Избегать любой ценой!**
-* [**🔓️ Руководство по разблокировке (поддерживаемые устройства, ~ One UI 7)**](../../misc/samsung-unlock.md)
+* [**🔓️ Руководство по разблокировке (поддерживаемые устройства, ~ One UI 7)**](../../../misc/samsung-unlock.md)
 
 Если у вас североамериканское устройство и вам повезло какое-то время не обновляться, вы можете воспользоваться [этой платной услугой][Paid North American Unlock] на свой страх и риск. Устройства на Exynos, независимо от региона, можно разблокировать, если у вас One UI 7 или более ранняя версия.
 
@@ -30,8 +30,8 @@
 > <details>
 > <summary>Нажмите, чтобы посмотреть доказательства</summary>
 > 
-> ![MTK HARD BRICK AFTER ONE UI 8](resources/MTK_UI_8_HARD_BRICK_1.png)
-> ![MTK HARD BRICK AFTER ONE UI 8](resources/MTK_UI_8_HARD_BRICK_2.png)
+> ![MTK HARD BRICK AFTER ONE UI 8](../../../brands/samsung/resources/MTK_UI_8_HARD_BRICK_1.png)
+> ![MTK HARD BRICK AFTER ONE UI 8](../../../brands/samsung/resources/MTK_UI_8_HARD_BRICK_2.png)
 > 
 > </details>
 
@@ -64,7 +64,7 @@ Galaxy XR — XR-гарнитура Samsung — не имеет разблоки
 <details>
 <summary>Нажмите, чтобы развернуть изображение</summary>
 
-![G99 Modem Issue](resources/G99_modem_issue.jpg)
+![G99 Modem Issue](../../../brands/samsung/resources/G99_modem_issue.jpg)
 
 </details>
 
@@ -93,7 +93,7 @@ https://github.com/user-attachments/assets/dcf5c6d6-59fb-4e8c-9a1c-d44888f0a0d4
 <details>
 <summary>Нажмите, чтобы развернуть изображение</summary>
 
-![Possible kill switch ?](resources/modem_strings.png)
+![Possible kill switch ?](../../../brands/samsung/resources/modem_strings.png)
 
 *Возможный kill switch?*
 

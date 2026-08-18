@@ -20,9 +20,16 @@ All LG watches on Android Wear/Wear OS use the [standard unlock procedure](../..
 ## Unofficial methods
 Aside from the generic unofficial methods for devices with MediaTek and Unisoc SoCs, some of their devices with Qualcomm SoCs have leaked engineering bootloaders available, for example the LG G7.
 
+There are also some bootloader exploits such as [CVE-2020-12753] ([PoC]) that allow bootloader unlock as well.
+
+
 ***
 Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439), [DiabloSat](https://github.com/progzone122)<br/>
 
 [announcement-archive]:https://www.reddit.com/r/LineageOS/comments/r961u3/termination_of_lg_mobile_developer_website/
 [t-mobile-unlock]:https://xdaforums.com/t/unlock-bootloader-tmo.3578099/
 [install guides]:https://wiki.lineageos.org/devices/d852/install/#installing-a-custom-recovery-using-dd
+
+[CVE-2020-12753]:https://douevenknow.us/post/619763074822520832/an-el1el3-coldboot-vulnerability?
+
+[PoC]:https://github.com/shinyquagsire23/CVE-2020-12753-PoC

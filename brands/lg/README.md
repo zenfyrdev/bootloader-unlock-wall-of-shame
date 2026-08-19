@@ -24,7 +24,7 @@ There are also some bootloader exploits such as [CVE-2020-12753] ([PoC]) that al
 
 
 ***
-Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439), [DiabloSat](https://github.com/progzone122)<br/>
+Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439), [DiabloSat](https://github.com/progzone122) [TheEnby](https://github.com/TheEnby)<br/>
 
 [announcement-archive]:https://www.reddit.com/r/LineageOS/comments/r961u3/termination_of_lg_mobile_developer_website/
 [t-mobile-unlock]:https://xdaforums.com/t/unlock-bootloader-tmo.3578099/

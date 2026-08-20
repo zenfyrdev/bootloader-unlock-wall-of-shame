@@ -23,6 +23,7 @@ Over the past few years, a suspicious number of companies have started to "take 
 
 While this may not affect you directly, it sets a bad precedent. You never know what will get the axe next: Shizuku? ADB?<br><br> 
 **They've already gone after [sideloading](https://keepandroidopen.org).**<br><br>
+
 I thought it might be a good idea to keep track of bad companies and workarounds.
 
 If you know of specific details/unlocking methods, please PR them or drop them in the [discussions](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions)
@@ -106,7 +107,7 @@ The following manufacturers allow unlocking under certain conditions, such as re
 
 ## ⚠️ Proceed with caution!
 
-The following manufacturers require an online account and/or a waiting period before unlocking.
+The following manufacturers require an internet connection and/or a waiting period before unlocking.
 
 ### [Fairphone](./brands/fairphone/README.md)
 

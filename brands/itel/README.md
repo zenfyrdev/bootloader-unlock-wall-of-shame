@@ -9,7 +9,13 @@ Itel [requires you to have an Itel ID](https://en.wikipedia.org/wiki/Bootloader_
 
 Earlier, itel didn't require online verification and two weeks of waiting. Things changed.
 
-itel does not share the kernel source code for their devices. This is a violation of the GPLv2 license used in the Linux kernel. The lack of kernel source code severely limits the creation of custom ROMs, and can also at times make it more difficult to root or run GSIs.
+# Galaxy OS 2.x
+
+Since this version they have disabled the ability to unlock the bootloader entirely.
+
+# GPL
+
+itel does not share the kernel source code for their devices. This is a violation of the GPLv2 license used in the Linux kernel. The lack of kernel source code **severely** limits the creation of custom Android distributions, and can also at times make it more difficult to root or run GSIs.
 
 See also: [Tecno](../tecno/README.md)/[Infinix](../infinix/README.md) - all subsidiaries of [Transsion Holdings](https://en.wikipedia.org/wiki/Transsion)
 

@@ -10,9 +10,11 @@ On some models (such as the Stylo 3 Plus and G6), the bootloader can still be of
 
 Older devices (prior to 2015) do not have partition verification (on operating system versions made prior to 2015) and assuming you have a root exploit, you can just flash modified partitions with dd -- as recommended by some official LineageOS [install guides]
 
-Newer LG budget phones (2018+) from the K and Stylo series typically do not have Fastboot.
+Newer LG budget phones (2018+) from the K and Stylo series typically do not have visible Fastboot.
 
-Most carrier branded LG devices (aside from T-Mobile versions) also usually have hidden or no Fastboot as well.
+On these devices, fastboot can usually be accessed by wiping LG Download mode otherwise known as LAF.
+
+Most carrier branded LG devices (aside from T-Mobile versions made before 2018) also usually have hidden or no Fastboot as well.
 
 ## Watches
 All LG watches on Android Wear/Wear OS use the [standard unlock procedure](../../misc/generic-unlock.md) via fastboot.

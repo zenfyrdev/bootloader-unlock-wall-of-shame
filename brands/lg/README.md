@@ -12,7 +12,7 @@ Older devices (prior to 2015) do not have partition verification (on operating s
 
 Newer LG budget phones (2018+) from the K and Stylo series typically do not have visible Fastboot.
 
-On these devices, fastboot can usually be accessed by wiping LG Download mode otherwise known as LAF.
+On most LG devices with fastboot mode hidden, fastboot can usually be accessed by wiping LG Download mode otherwise known as LAF. It is usually wiped either with root (devices prior to 2015) or EDL (devices since 2015).
 
 Most carrier branded LG devices (aside from T-Mobile versions made before 2018) also usually have hidden or no Fastboot as well.
 
@@ -20,7 +20,7 @@ Most carrier branded LG devices (aside from T-Mobile versions made before 2018) 
 All LG watches on Android Wear/Wear OS use the [standard unlock procedure](../../misc/generic-unlock.md) via fastboot.
 
 ## Unofficial methods
-Aside from the generic unofficial methods for devices with MediaTek and Unisoc SoCs, some of their devices with Qualcomm SoCs have leaked engineering bootloaders available, for example the LG G7.
+Aside from the generic unofficial methods for devices with MediaTek and Unisoc SoCs, some of their devices with Qualcomm SoCs have leaked [engineering bootloaders][SDM845 ENG Boot] available, for example the LG G7.
 
 There are also some bootloader exploits such as [CVE-2020-12753] ([PoC]) ([Working example]) that allow bootloader unlock as well.
 
@@ -39,3 +39,5 @@ Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439
 [TMO Fastboot commands removed]:https://xdaforums.com/t/v10-bootloop-fix-lengthens-life.3694064/post-74461372
 
 [Working example]:https://xdaforums.com/t/rle888-bootloader-unlock-exploit-for-the-lg-g5.4792237/
+
+[SDM845 ENG Boot]:https://xdaforums.com/t/guide-guide-to-unlock-bootloader-for-every-lg-sdm845-except-g710tm-with-photos.4168771/

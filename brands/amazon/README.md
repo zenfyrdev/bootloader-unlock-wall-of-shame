@@ -11,7 +11,7 @@ The *official* way to unlock the bootloader is to flash a signed unlock image to
 ## MediaTek
 **Older MediaTek-based devices can be unlocked using [amonet]**, a bootloader/bootROM exploit [originally developed in 2019 to unlock the Amazon Fire HD 8 (2018)].
 
-The latest devices unlocked with amonet are the Fire TV Stick 3rd Gen and Fire TV Stick Lite 1st Gen (released around 2020).
+The latest devices unlocked with amonet are the Fire TV Stick 4K 2nd Gen series (released in 2023).
 
 However, **Amazon has actively patched this exploit**, so even if a port of amonet exists for your device, it may still not be unlockable.
 
@@ -33,6 +33,7 @@ The following list shows all available amonet ports for Amazon devices, along wi
 - [Amazon Echo Show 5 2nd Gen (2021)]: Most (and) latest versions are supported; Amazon hasn't patched this device.
 - [Amazon Fire HD 10 (2019)]: Only a temporary, tethered exploit is available for this device. Amazon disabled **DL-Mode** in **bootROM** on all newer hardware revisions, so only early units can use this method.  
 - [Amazon Fire TV Stick 3 and Fire TV Stick Lite (2020)]: Amazon patched the exploit in **FireOS 7.2.7.3**. There is a [hardware way to downgrade the device to a supported version], but it requires soldering and is not recommended for inexperienced users.  
+- [Amazon Fire TV Stick 4K 2nd Gen series (2023 ~ 2025)]: Amazon hasn't patched the exploit yet, but it is expected to be patched within the next few months. This applies to the Fire TV Stick 4K 2nd Gen, Fire TV Stick 4K Max 2nd Gen, and Fire TV Stick 4K Plus 2nd Gen.
 
 ## Qualcomm
 
@@ -50,7 +51,7 @@ For Amlogic-based devices (e.g., Fire TV Cube), multiple exploits are available.
 
 ## Conclusion
 
-As of this writing, **no known exploits exist for unlocking the bootloader of Amazon devices released after 2020**.  
+As of this writing, the newest Amazon devices with a public bootloader unlock are the **Fire TV Stick 4K 2nd Gen series (2023)**, and even there the unlock depends on a root exploit that Amazon is expected to patch. **No known exploits exist for Amazon devices released after that.**  
 
 There have been multiple reports of users [purchasing engineering samples] from third-party sellers, but the firmware on these devices is useless for production units.
 
@@ -78,6 +79,7 @@ Authored by [R0rt1z2](https://github.com/R0rt1z2), [Ivy / Lost-Entrepreneur439](
 [Amazon Fire TV Stick 4K 1st Gen (2018)]:https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-mantis.3978459/  
 [Amazon Fire HD 10 (2019)]:https://xdaforums.com/t/new-fire-hd10-2019-bootless-root-method-bootloader-unlock-brainstorming.3979343/page-40#post-86371571  
 [Amazon Fire TV Stick 3 and Fire TV Stick Lite (2020)]:https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-3-and-fire-tv-stick-lite-sheldon-p.4410297/  
+[Amazon Fire TV Stick 4K 2nd Gen series (2023 ~ 2025)]:https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-4k-2nd-gen-series-karat-mantra.4798951/
 [hardware way to downgrade the device to a supported version]:https://xdaforums.com/t/unlock-root-twrp-unbrick-fire-tv-stick-3-and-fire-tv-stick-lite-sheldon-p.4410297/page-47#post-89960237  
 [Fire TV Cube 1st Gen (2018) / Fire TV Pendant (2017)]:https://xdaforums.com/t/root-rooting-the-firetv-cube-and-pendant-with-firefu.3861272/  
 [Fire TV Cube 2nd Gen (2019)]:https://xdaforums.com/t/unlock-root-twrp-unbrick-firetv-2nd-gen-cube-raven-ps7242.4445971/  

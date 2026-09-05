@@ -6,7 +6,7 @@
 - Verdict: **⛔ Avoid at all costs!** (Unisoc)
 
 ## Newer devices (Snapdragon 8850/8750) 
-Newer Snapdragon devices are unlockable with an exploit, including Redmagic 11 and 10, Nubia Z80 and Z70 series, and perhaps a few more (exact list unclear). Some devices require a certain security patch, while others done. https://xdaforums.com/t/red-magic-11-pro-guide-bootloader-unlock-free-also-support-rm10-pad3pro-z70u-z80u-unlock-zte-family-toolbox.4780930/. However, the developer has recently come under scrutiny, so it's unlikely that future devices will be supported (RM12, Z90, etc.)
+Newer Snapdragon devices are unlockable with an exploit, including Redmagic 11 and 10, Nubia Z80 and Z70 series, and perhaps a few more (exact list unclear). Some devices require a certain security patch, while others don't. https://xdaforums.com/t/red-magic-11-pro-guide-bootloader-unlock-free-also-support-rm10-pad3pro-z70u-z80u-unlock-zte-family-toolbox.4780930/. However, the developer has recently come under scrutiny, so it's unlikely that future devices will be supported (RM12, Z90, etc.)
 
 Unlocking often breaks the fingerprint sensor, but there is a bypass for some devices provided.
 
@@ -28,6 +28,7 @@ There is also a chance that your device is vulnerable to one of the MTK or Uniso
 Side note, on the A11 link there is a collection of apps to grant a system shell, but they would probably only work on old models.
 
 ***
+Newer phones added by xMicro (9/5).
 Additional info provided by [Skorpion96](https://github.com/Skorpion96).
 Authored by [zenfyr](https://zenfyr.dev).
 

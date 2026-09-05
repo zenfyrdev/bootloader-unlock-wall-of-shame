@@ -103,7 +103,7 @@ The following manufacturers allow unlocking under certain conditions, such as re
 
 ### [Xiaomi/Redmi/POCO](./brands/xiaomi/README.md)
 
-### [ZTE/nubia/Redmagic](./brands/zte/README.md)
+### [ZTE/nubia/Redmagic](./brands/zte/README.md) \*for *some* devices: Unisoc devices (such as Nubia Neo, some ZTE Blade)
 
 ## ⚠️ Proceed with caution!
 
@@ -148,6 +148,8 @@ The following manufacturers require an internet connection and/or a waiting peri
 ### [Umidigi](./brands/umidigi/README.md)
 
 ### [Volla](./brands/volla/README.md)
+
+### [ZTE/nubia/Redmagic](./brands/zte/README.md) \*for *some* devices: Snapdragon devices (such as Redmagic, Nubia Z, ZTE Axon, some ZTE Blade)
 
 # Misc info
 

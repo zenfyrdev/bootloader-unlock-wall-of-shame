@@ -42,7 +42,7 @@ An [Example Link][example-link] in the middle.
 [example-link]:https:...
 ```
 
-Or you can also do this:
+Or you can do this:
 
 ```
 An [Example Link] in the middle.
@@ -55,4 +55,4 @@ An [Example Link] in the middle.
 ### Images
 It's fine to use images in brand pages, but they should have descriptive alt text and be small. The smaller size can be achieved by converting your images to lossy `.webp`.
 
-Also, avoid using the markdown `![]()` syntax as it does not have a way to set `width` and `height` of the image.
+Also, avoid using the markdown `![]()` syntax as it does not provide a way to set the `width` and `height` of the image.

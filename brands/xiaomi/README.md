@@ -21,7 +21,7 @@ Devices shipping with MIUI or HyperOS require activating your phone with Xiaomi 
 
 After enabling Developer options, go to Settings > Additional settings > Developer options, enable OEM Unlock and go to Device Unlock Status page, and if it shows "Locked" then you can proceed pressing "Add account and device" button to initiate the process.
 
-Doing these won't unlock your device immediately, but will grant you a permission to unlock in the end. So, to be able to eligible for unlocking, you will be asked to do these steps.
+Doing this won't unlock your device immediately, but will grant you permission to unlock in the end. So, to be eligible for unlocking, you will be asked to perform these steps.
 
 Xiaomi will let you know what is required right now when you press "Add account and device", but to explain fully in order, it tells you to do:
 
@@ -35,7 +35,7 @@ When you complete all above steps, pressing "Add account and device" button now 
 
 To actually *perform* the unlocking, you will need to use [Mi Unlock][miunlock] tool for Windows and follow prompts to enter fastboot mode and connect your device. If you cannot or don't want to use official tool, you can also use alternative tools such as [offici5l][offici5l]'s [MiUnlockTool][py-miunlock] made in Python.
 
-The unique key is to unlock the bootloader of your device is retrieved from Xiaomi servers, but there is a server-side (thus no tool can't bypass server time) countdown that will start running only after completing all steps above. For the most cases, the countdown is 3 days (= 72 hours) for HyperOS and 7 days (= 168 hours) for MIUI, but there are some reports people being forced to wait even more, such as 14 or 30 days instead.
+The unique key to unlock the bootloader of your device is retrieved from Xiaomi servers, but there is a server-side (thus no tool can bypass server time) countdown that will start running only after completing all steps above. In most cases, the countdown is 3 days (= 72 hours) for HyperOS and 7 days (= 168 hours) for MIUI, but there are some reports of people being forced to wait even longer, such as 14 or 30 days instead.
 
 You can continue using your device as usual and check with the unlock tool anytime to see how much time is left. Meanwhile, DON'T remove your Xiaomi account or factory reset your phone, doing these may result in the countdown being reset to what it was initially.
 
@@ -57,12 +57,12 @@ The [requirements for the Community App][global-requirements] request are as fol
 * [As of January 1st, 2025][updated-policies], Xiaomi only let you unlock 1 device per year. This requirement has also been extended to MIUI 14.
 * Make sure to select "Global" region in Xiaomi Community app to see "Unlock bootloader" section under "Me" tab.
 
-Additionally, [on XDA forums][community-app-cap] people have found that there is a cap on the amount of people (belived to be around 50 people) who can request per day inside the Community App, and it gets filled pretty much instantly, so your only chance to make a successful request there is if you get lucky spamming the request at midnight, Beijing time ([GMT+8][gmt+8]).
+Additionally, [on XDA forums][community-app-cap] people have found that there is a cap on the number of people (believed to be around 50 people) who can request per day inside the Community App, and it gets filled pretty much instantly, so your only chance to make a successful request there is if you get lucky spamming the request at midnight, Beijing time ([GMT+8][gmt+8]).
 
 There is a [AQLR][aqlr] (abbreviation of "application quota limit reached") script to do that automatically, so it would send a request to Xiaomi just before entering a new day in China, and you can have your computer running that script 7/24.
 
 > [!WARNING]
-> Even if it appears like you missed the today's quota, Xiaomi may report "application quota limit reached" [by a mistake even though you actually did placed in the quota][quota-error-problem]. So the only way is to be sure about that is to pressing "Add account and device" in Device Unlock Status page in Settings.
+> Even if it appears like you missed today's quota, Xiaomi may report "application quota limit reached" [by mistake even though you actually placed in the quota][quota-error-problem]. So the only way to be sure about that is by pressing "Add account and device" on the Device Unlock Status page in Settings.
 
 ## Workarounds & Exploits
 

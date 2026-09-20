@@ -13,7 +13,7 @@ Since Sony likes to ruin a perfect thing:
 
 Some carrier locked and US devices can never be unlocked. On Sony devices ([but not all?][service-menu-gone]) you can check if the bootloader is unlockable using the service menu.
 
-Additonally, only Xperia (Sony's main consumer phone/tablet line) is unlockable. Their other Android devices (such as their [Bravia TVs][Bravia unlock]) are not unlockable.
+Additionally, only Xperia (Sony's main consumer phone/tablet line) is unlockable. Their other Android devices (such as their [Bravia TVs][Bravia unlock]) are not unlockable.
 
 1. Dial `*#*#7378423#*#*` in the dialer.
 2. Tap "Service Info", then "Configuration", then "Rooting Status".
@@ -22,9 +22,9 @@ Additonally, only Xperia (Sony's main consumer phone/tablet line) is unlockable.
 
 For devices made [before 2019][TA patch 2019], Sony devices have a partition called `TA`, which contains files needed for things such as enhanced camera image processing, DRM keys, and display enhancements. Upon unlocking the bootloader, this partition is wiped and these features are lost, even on re-locking. If running Android Marshmallow or earlier, you can [back up][TA backup] the partition. 
 
-Sony supports [Custom AVB](../../README.md#custom-avb-keys) Since 2020.
+Sony supports [Custom AVB](../../README.md#custom-avb-keys) since 2020.
 
-You also can't unlock Japan carrier variants, for some reason - Japanese factory unlocked is unaffected.
+You also can't unlock Japanese carrier variants for some reason—Japanese factory-unlocked devices are unaffected.
 
 All Sony devices using the Snapdragon 835 and Snapdragon 845 can be unlocked via the [xperable exploit][xperable].
 

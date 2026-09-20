@@ -1,7 +1,7 @@
 ## General Guidelines
 
 ### Sources
-You don't have to cite every word, but it's best practice to cite sources for key statements.  It's preferred to source from the OEM directly, or device specific communities.
+You don't have to cite every word, but it's best practice to cite sources for key statements. It's preferred to source from the OEM directly, or device-specific communities.
 
 Links should generally point to the original website, unless the original source is dead, in which case an archive.org link is fine. For this reason, it's a good idea to archive the page now.
 

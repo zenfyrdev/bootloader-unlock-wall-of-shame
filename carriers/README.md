@@ -1,6 +1,6 @@
-Carrier locked devices are the ones you get after making a commitment with a carrier of your choice. This is quite common in North America and (supposedly) allows you to save some money on your device.
+Carrier-locked devices are the ones you get after making a commitment with a carrier of your choice. This is quite common in North America and (supposedly) allows you to save some money on your device.
 
-As a rule, almost all carrier locked devices do not allow the bootloader to be unlocked. This usually makes sense, as it would allow you to completely bypass the contract. The problem is that many devices still do not allow you to unlock the bootloader even after the carrier lock has been lifted. This page is keeping track of those carriers.
+As a rule, almost all carrier-locked devices do not allow the bootloader to be unlocked. This usually makes sense, as it would allow you to completely bypass the contract. The problem is that many devices still do not allow you to unlock the bootloader even after the carrier lock has been lifted. This page keeps track of those carriers.
 
 > [!NOTE]
 > This page is a WIP! If you have any details about a carrier who isn't here, please open a pull request!
@@ -19,7 +19,7 @@ Land of the free... unless you want your phone to be free. American carriers hav
 ### [Spectrum](./brands/spectrum/README.md)
 
 ## Canada
-All devices sold in Canada after December 1, 2017 are sold unlocked, and any devices sold before then legally have to be unlocked for free, thanks to [the Wireless Code](https://crtc.gc.ca/eng/archive/2017/2017-200.htm). For devices sold before then however..
+All devices sold in Canada after December 1, 2017, are sold unlocked, and any devices sold before then legally have to be unlocked for free, thanks to [the Wireless Code](https://crtc.gc.ca/eng/archive/2017/2017-200.htm). For devices sold before then, however...
 
 ### [Bell/Virgin/Lucky](./brands/bell/README.md)
 
@@ -28,7 +28,7 @@ All devices sold in Canada after December 1, 2017 are sold unlocked, and any dev
 ### [Telus/Koodo/Public](./brands/telus/README.md)
 
 ## Japan
-If you buy a Sony or Sharp phone used, high chance it's going to be locked to a Japanese carrier as that's just where Sony and Sharp are popular.
+If you buy a used Sony or Sharp phone, there's a high chance it will be locked to a Japanese carrier, as that's where Sony and Sharp are popular.
 
 ### [NTT Docomo/b-mobile/IIJMIO/DMM](./brands/nttdocomo/README.md)
 
@@ -42,4 +42,4 @@ Safe but be aware of one carrier
 ### [Mobily](./brands/Mobily/README.md)
 
 ### [Zain](./brands/Zain/README.md)
-(Note: Zain is mostly available in the most GCC like Bahrain and Kuwait as well as STC) 
+(Note: Zain is available in most GCC countries like Bahrain and Kuwait, as is STC.)

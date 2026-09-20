@@ -16,7 +16,7 @@ Keeping track of companies that "care about your data 🥺"
 
 </p>
 </details> 
-Do note issues, pull requests and discussions on Codeberg and tangled are not monitored. Please use GitHub for these.
+Do note that issues, pull requests, and discussions on Codeberg and tangled are not monitored. Please use GitHub for these.
 
 ## Why?
 Over the past few years, a suspicious number of companies have started to "take care of your data", aka block/strictly limit your ability to unlock the bootloader on your *own* devices.
@@ -72,14 +72,14 @@ The following manufacturers have made it completely impossible to unlock their d
 
 ### [Windows phones](./brands/winphones/README.md)
 
-### Carrier Locked Devices
+### Carrier-Locked Devices
 
 > [!NOTE]
 > Phone brands handle carrier locks differently, so check your device manual or contact support.
 
-Carrier locked devices are the ones you get after making a commitment with a carrier of your choice. This is quite common in North America and (supposedly) allows you to save some money on your device.
+Carrier-locked devices are the ones you get after making a commitment with a carrier of your choice. This is quite common in North America and (supposedly) allows you to save some money on your device.
 
-As a rule, almost all carrier locked devices do not allow the bootloader to be unlocked. This usually makes sense, as it would allow you to completely bypass the contract. The problem is that many devices still do not allow you to unlock the bootloader even after the carrier lock has been lifted. For more details, see the [carriers page](./carriers/README.md).
+As a rule, almost all carrier-locked devices do not allow the bootloader to be unlocked. This usually makes sense, as it would allow you to completely bypass the contract. The problem is that many devices still do not allow you to unlock the bootloader even after the carrier lock has been lifted. For more details, see the [carriers page](./carriers/README.md).
 
 ## 🍅 Just terrible!
 
@@ -153,31 +153,31 @@ The following manufacturers require an internet connection and/or a waiting peri
 
 ## Custom AVB Keys
 
-Custom Android Verified Boot keys is a feature which allows you to run a custom OS with a locked bootloader.
+Custom Android Verified Boot keys are a feature that allows you to run a custom OS with a locked bootloader.
 
-It's rare to see a device which supports custom AVB keys, but some devices can be found [here](https://github.com/chenxiaolong/avbroot/issues/299).
+It's rare to see a device that supports custom AVB keys, but some devices can be found [here](https://github.com/chenxiaolong/avbroot/issues/299).
 
 ## Universal SOC-based methods
 
 ### Kirin
 Kirin 620, 650, 655, 658, 659, 925, 935, 950, 960:<br/>
-It's possible to unlock using testpoints and [PotatoNV](https://github.com/mashed-potatoes/PotatoNV) (Read the readme)
+It's possible to unlock using test points and [PotatoNV](https://github.com/mashed-potatoes/PotatoNV) (Read the README)
 
 ### MediaTek
-If you own a MediaTek device exploitable by [mtkclient](https://github.com/bkerler/mtkclient) ([fork old version](https://github.com/R0rt1z2/mtkclient)) or [Penumbra](https://github.com/shomykohai/penumbra) you can unlock the bootloader using that.<br/>
+If you own a MediaTek device exploitable by [mtkclient](https://github.com/bkerler/mtkclient) ([fork old version](https://github.com/R0rt1z2/mtkclient)) or [Penumbra](https://github.com/shomykohai/penumbra), you can unlock the bootloader using it.<br/>
 If it also happens to be an OPPO/Realme device and you need to access fastboot: [lkpatcher](https://github.com/R0rt1z2/lkpatcher) ([web version](https://lkpatcher.r0rt1z2.com/))
 
-If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG mod (unlocking via mtkclient), you can try unlocking fastboot by writing a modified boot1 (preloader). Writing a preloader also uses mtckclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
+If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG mod (unlocking via mtkclient), you can try unlocking fastboot by writing a modified boot1 (preloader). Writing a preloader also uses mtkclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
 
 ### Qualcomm 
 
-#### Snapdragon 8 Elite Gen 5/Snapdragon 8 ELite
+#### Snapdragon 8 Elite Gen 5/Snapdragon 8 Elite
 
 **Patched in February/March 2026**
 
-On Snapdragon 8E5/8E, Qualcomm introduced a [vulnerability (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) [(POC)](https://github.com/kasnria001/qualcomm_gbl_exploit_poc) where the boot process would not perform signature verification for the Generic Bootloader, so with write access to the `efisp` partition it was possible to run arbitary code.
+On Snapdragon 8E5/8E, Qualcomm introduced a [vulnerability (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) [(POC)](https://github.com/kasnria001/qualcomm_gbl_exploit_poc) where the boot process would not perform signature verification for the Generic Bootloader, so with write access to the `efisp` partition it was possible to run arbitrary code.
 
-While the vulnerability itself is universal for the platform, it requires device/OEM specific tricks to get root and write the GBL. Some exist for [Xiaomi devices](./brands/xiaomi/README.md#snapdragon-8-elite8gen38gen28gen1).
+While the vulnerability itself is universal for the platform, it requires device/OEM-specific tricks to get root and write the GBL. Some exist for [Xiaomi devices](./brands/xiaomi/README.md#snapdragon-8-elite8gen38gen28gen1).
 
 #### Other
 
@@ -185,9 +185,9 @@ The general exploit:<br/>
 [alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) the bootloader unlock section.
 
 ### Unisoc
-If you own a phone with the Unisoc UMS9620 or older you can use [this](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader) (UMS9621 need [this](https://github.com/TomKing062/exec_addr_v2) as exec address) to achieve temporary secure boot bypass and persistently unlock bootloader. This is valid for all devices except some devices with [modified uboot](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/patch_do_cboot%E2%80%90SPL#part-2-modify-fdl2ubootlk) which need [this](https://github.com/TomKing062/unisoc_chipram_signcheck_exploit) or [this](https://github.com/YC-nw/bsp_sign_fxxker) or [this](https://github.com/kasnria001/unisoc_secure_boot_bypass), note that the method used on all these three links is the same but implemented by different people and with possible differences, also by using this aside from bootloader unlock is possible to completely disable dm-verity by patching trustos partition which would allow booting of unsigned partitions.
+If you own a phone with the Unisoc UMS9620 or older, you can use [this](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader) (UMS9621 needs [this](https://github.com/TomKing062/exec_addr_v2) as exec address) to achieve temporary secure boot bypass and persistently unlock the bootloader. This is valid for all devices except some devices with [modified uboot](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/patch_do_cboot%E2%80%90SPL#part-2-modify-fdl2ubootlk) which need [this](https://github.com/TomKing062/unisoc_chipram_signcheck_exploit) or [this](https://github.com/YC-nw/bsp_sign_fxxker) or [this](https://github.com/kasnria001/unisoc_secure_boot_bypass). Note that the method used in all three links is the same, but implemented by different people with possible differences. Also, using this, aside from unlocking the bootloader, it is possible to completely disable dm-verity by patching the trustos partition, which allows booting of unsigned partitions.
 
-If you own a phone with the Unisoc UMS312, UMS512, or UD710, you can use [this](https://github.com/TomKing062/CVE-2022-38691_38692) exploit to achieve persistently secure boot bypass, which means all firmwares including splloader,uboot can be modified and resigned.
+If you own a phone with the Unisoc UMS312, UMS512, or UD710, you can use [this](https://github.com/TomKing062/CVE-2022-38691_38692) exploit to achieve persistent secure boot bypass, which means all firmware, including splloader and uboot, can be modified and re-signed.
 
 Otherwise, you can also look into this: [Spectrum_UnlockBL_Tool](https://github.com/zhuofan-16/Spectrum_UnlockBL_Tool) <br/>
 This: [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-unlock-w-unisoc-t310.4393389/) <br/>

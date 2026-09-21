@@ -6,7 +6,7 @@
 > [!CAUTION]
 > Read in full before you act!
 
-The standard unlocking process for Samsung is to enable OEM Unlocking, then go to the "Warning!" screen and hold down a button to unlock the bootloader. On older devices (prior to 2019), all you have to do is enable OEM unlocking, and your bootloader is unlocked, no data wipe is required on pre 2017 devices.
+The standard unlocking process for Samsung is to enable OEM Unlocking, then go to the "Warning!" screen and hold down a button to unlock the bootloader. On older devices (prior to 2019), all you have to do is enable OEM unlocking, and your bootloader is unlocked; no data wipe is required on pre-2017 devices.
 
 ## Requirements
 
@@ -32,15 +32,15 @@ now tap the button several times until a confirmation toast/prompt appears.
 Now you can search for Developer options and from there enable OEM Unlocking.
 
 ## Download mode
-Power off your phone. The next procedure will depend on what buttons you device has
-- Devices with home button: Hold Power+Volume Down+Home until phone goes to the Warning screen
-- Devices with Bixby button: Hold Power+Volume Down+Bixby until phone goes to the Warning screen.
-- Devices with neither buttons: Hold down Volume Down+Volume Up, connect phone to computer, continue holding buttons until you see the Warning screen.
+Power off your phone. The next procedure will depend on what buttons your device has:
+- Devices with a home button: Hold Power + Volume Down + Home until the phone goes to the Warning screen.
+- Devices with a Bixby button: Hold Power + Volume Down + Bixby until the phone goes to the Warning screen.
+- Devices with neither button: Hold down Volume Down + Volume Up, connect the phone to a computer, and continue holding buttons until you see the Warning screen.
 
 The next step will depend on what your device's warning screen looks like.
 ![image](https://github.com/user-attachments/assets/11dcf926-989f-420d-b8f2-29c63bb5dc58)
 
-If it's variation 1 or 2, your bootloader is already unlocked. If you have variation 3, hold down volume up until it asks if you'd like to unlock the bootloader, then press volume up again to wipe data and unlock bootloader. 
+If it's variation 1 or 2, your bootloader is already unlocked. If you have variation 3, hold down volume up until it asks if you'd like to unlock the bootloader, then press volume up again to wipe data and unlock the bootloader.
 
 
 ## Troubleshooting

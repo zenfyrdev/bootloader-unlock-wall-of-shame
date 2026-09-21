@@ -19,7 +19,7 @@ The standard unlocking process is to enable **OEM unlocking** from the developer
 
 ## Getting Ready
 
-To unlock you phone, you have to download SDK Platform Tools.
+To unlock your phone, you have to download SDK Platform Tools.
 
 Go to [developer.android.com](https://developer.android.com/tools/releases/platform-tools#downloads) and download the package for your OS (most likely Windows) and extract the archive where appropriate. 
 On Linux it may be better to use your distro's package manager, although the package may be quite old.

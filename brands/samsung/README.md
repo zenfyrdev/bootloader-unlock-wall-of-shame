@@ -36,7 +36,7 @@ Until recently, international Samsung devices (e.g. ones sold in Europe or Asia)
 > </details>
 
 The Galaxy XR, Samsung's XR headset, does NOT have an unlockable bootloader as of the December 9th, 2025 update, this was the headset's first update post-launch. Firmware prior to this date have an unlockable bootloader.  
-The April 8th, 2026 update now seemingly prevents downgrading to older firmware that allows for unlocking the booloader.  
+The April 8th, 2026 update now seemingly prevents downgrading to older firmware that allows for unlocking the bootloader.
 [Source](https://doc.samsungmobile.com/SM-I610/TXV/doc.html). Note the change: ``The device is protected with improved security.``
 
 Snapdragon phones prior to the S7/Note7 (2016) can be unlocked regardless of region, as long as it's not locked to a carrier like AT&T or Verizon. The Canadian S7 can also be unlocked as it uses an Exynos SoC, despite Canada normally being a Snapdragon region.
@@ -142,7 +142,7 @@ If you want to unlock the bootloader, first update your phone to any firmware re
 
 
 ## SoC level exploits
-One of the first things Samsung bootloaders do on phone bootup is check if the bootloader is unlocked, and if it is, and a bootloader unlock has not been authorized, the bootloader will automatically relock. This means SoC level exploits such as mtkclient or EDLUnlock will not work on Samsung devices, unless you reverse engineer, modify and re-flash Samsung's bootloader to stop the bootloader from re-locking (something you cannot do because Samsung always verifies their bootloaders). 
+One of the first things Samsung bootloaders do on phone boot-up is check if the bootloader is unlocked, and if it is, and a bootloader unlock has not been authorized, the bootloader will automatically relock. This means SoC level exploits such as mtkclient or EDLUnlock will not work on Samsung devices, unless you reverse engineer, modify and re-flash Samsung's bootloader to stop the bootloader from re-locking (something you cannot do because Samsung always verifies their bootloaders).
 
 ## KnoxPatch
 
@@ -155,11 +155,11 @@ Samsung's IMS service is not compatible with AOSP's, so VoLTE will not work on G
 There is an [open source VoLTE service] developed by phh, but it's incomplete and not stable.
 
 ## Galaxy Watch
-All Galaxy Watches that runs Wear OS(Galaxy Watch4 or newer) got a rollback prevention update in March 2026. This prevents you from downgrading to older software. There's no way to revert this change right now. So if you want to downgrade, DO NOT UPDATE.
+All Galaxy Watches that run Wear OS (Galaxy Watch4 or newer) got a rollback prevention update in March 2026. This prevents you from downgrading to older software. There's no way to revert this change right now. So if you want to downgrade, DO NOT UPDATE.
 
 ### Bootloader Unlock
 Unlike other Samsung devices, One UI 8 Watch brought a proper OEM Unlock and bootloader unlock. However, the device does not seem to work correctly(bootloop) after flashing custom binaries.
-Also, **LTE models has the risk of HARD BRICKING THE DEVICE.**
+Also, **LTE models have the risk of HARD BRICKING THE DEVICE.**
 There's no EDL mode or EUB mode to fix this. You have to replace the motherboard or find a way to fix it.
 
 

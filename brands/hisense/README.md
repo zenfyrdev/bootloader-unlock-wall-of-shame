@@ -3,7 +3,7 @@
 - Verdict: **🍅 Just terrible!**
 - Verdict: **⛔ Avoid at all costs!** (Unisoc)
 
-Most [(but not all?)](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/issues/267) Hisense Android TVs are unlockable via the standard procedure. This is honestly pretty rare, most Android TVs cannot be unlocked. Their phones and tablets however, do not have unlockable bootloaders, although some devices, such as the A9, can be unlocked using a [custom fastboot]. Unisoc devices will never be unlockable, this is not Hisense's fault, Unisoc does not allow unlocking.
+Most [(but not all?)](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/issues/267) Hisense Android TVs are unlockable via the standard procedure. This is honestly pretty rare, most Android TVs cannot be unlocked. Their phones and tablets however, do not have unlockable bootloaders, although some devices, such as the A9, can be unlocked using a [custom fastboot]. Unisoc devices will never be officially bootloader unlockable, this is not Hisense's fault, Unisoc does not officially allow unlocking.
 
 ***
 Authored by [Evelyn/Lost-Entrepreneur439](https://github.com/lost-entrepreneur439).

@@ -7,7 +7,7 @@ In the past, Xiaomi allowed most of its devices to be unlocked after a period of
 
 With the launch of Xiaomi's new Android fork, HyperOS, they have introduced a number of changes to the unlock process, with new device limits and Mi Account requirements.
 
-Unisoc devices will never be unlockable, this is *not* Xiaomi's fault, Unisoc does not allow unlocking.
+Unisoc devices will never be officially bootloader unlockable, this is *not* Xiaomi's fault, Unisoc doesn't officially allow bootloader unlocking.
 
 ## Android One
 

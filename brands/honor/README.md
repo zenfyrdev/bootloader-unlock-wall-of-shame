@@ -3,7 +3,7 @@
 - Verdict: **🍅 Just terrible!**
 - Verdict: **⛔ Avoid at all costs!** (Unisoc/Spreadtrum)
 
-Following Honor's split from Huawei in 2020, Honor re-introduced the unlock command in fastboot; however, when you run it, it acts like the bootloader has been unlocked, but it [won't actually unlock][fake unlock]. Possibly Honor is slowly re-adding unlocks? No one really knows. Someone in that thread also claims they managed to unlock their bootloader, so maybe bootloaders are unlockable. You are best off avoiding Honor for now, but things could improve in the future for them. Unisoc and Spreadtrum devices will never be unlockable; this is *not* Honor's fault, as Unisoc/Spreadtrum does not allow unlocking.
+Following Honor's split from Huawei in 2020, Honor re-introduced the unlock command in fastboot; however, when you run it, it acts like the bootloader has been unlocked, but it [won't actually unlock][fake unlock]. Possibly Honor is slowly re-adding unlocks? No one really knows. Someone in that thread also claims they managed to unlock their bootloader, so maybe bootloaders are unlockable. You are best off avoiding Honor for now, but things could improve in the future for them. Unisoc and Spreadtrum devices will never be officially unlockable; this is *not* Honor's fault, as Unisoc/Spreadtrum does not officially allow bootloader unlocking.
 
 Certain Kirin-based phones can use [PotatoNV].
 

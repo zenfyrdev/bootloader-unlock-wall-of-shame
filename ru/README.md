@@ -164,7 +164,7 @@ Kirin 620, 650, 655, 658, 659, 925, 935, 950, 960:<br/>
 Возможно разблокировать, используя тестпоинты и [PotatoNV](https://github.com/mashed-potatoes/PotatoNV) (прочтите README).
 
 ### MediaTek
-Если у вас устройство на MediaTek, пригодное к использованию эксплойта [mtkclient](https://github.com/bkerler/mtkclient), вы можете использовать его для разблокировки загрузчика.<br/>
+Если у вас устройство на MediaTek, пригодное к использованию эксплойта [mtkclient](https://github.com/bkerler/mtkclient) ([форк старой версии](https://github.com/R0rt1z2/mtkclient)) или [Penumbra](https://github.com/shomykohai/penumbra), вы можете использовать его для разблокировки загрузчика.<br/>
 Если же речь идёт об устройстве OPPO/Realme и вам нужно также получить доступ к fastboot: [lkpatcher](https://github.com/R0rt1z2/lkpatcher) ([веб-версия](https://lkpatcher.r0rt1z2.com/)).
 
 Если разблокировка загрузчика не работает на устройстве Oppo Mediatek с использованием модификации SECCFG (разблокировка через mtkclient), вы можете попробовать разблокировать fastboot, записав модифицированный boot1 (preloader). Запись preloader также использует mtkclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
@@ -177,7 +177,7 @@ Kirin 620, 650, 655, 658, 659, 925, 935, 950, 960:<br/>
 
 На чипах Snapdragon 8E5/8E Qualcomm представила [уязвимость (CN)](https://www.cnblogs.com/sakrain/p/-/unlock-your-qualcomm) ([POC](https://github.com/kasnria001/qualcomm_gbl_exploit_poc)), при которой процесс загрузки не выполнял проверку подписи для Generic Bootloader, поэтому при наличии доступа на запись к разделу `efisp` было возможно выполнение произвольного кода.
 
-Хотя сама уязвимость является универсальной для платформы, для получения root-доступа и записи GBL требуются устройство-/OEM-специфические трюки. Некоторые из них существуют для [устройств Xiaomi](../brands/xiaomi/README.md#snapdragon-8-elite8gen38gen28gen1).
+Хотя сама уязвимость является универсальной для платформы, для получения root-доступа и записи GBL требуются устройство-/OEM-специфические трюки. Некоторые из них существуют для [устройств Xiaomi](brands/xiaomi/README.md#snapdragon-8-elite8gen38gen28gen1).
 
 #### Другие
 
@@ -185,9 +185,9 @@ Kirin 620, 650, 655, 658, 659, 925, 935, 950, 960:<br/>
 [alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) — секция разблокировки загрузчика.
 
 ### Unisoc
-Если у вас телефон с чипсетами Unisoc UMS9620 или старше, вы можете использовать [эту уязвимость](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader) для получения постоянного обхода защищённой загрузки и разблокировки загрузчика. Это работает на всех устройствах, кроме некоторых с [модифицированным uboot](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/patch_do_cboot%E2%80%90SPL#part-2-modify-fdl2ubootlk), которые требуют [этот](https://github.com/TomKing062/unisoc_chipram_signcheck_exploit), [этот](https://github.com/YC-nw/bsp_sign_fxxker) или [этот](https://github.com/kasnria001/unisoc_secure_boot_bypass) эксплойт. Все три последних ссылки используют один и тот же метод, но реализованы разными людьми с возможными различиями. Кроме того, помимо разблокировки загрузчика, с помощью этого метода можно полностью отключить dm-verity, пропатчив раздел trustos, что позволит загружать неподписанные разделы.
+Если у вас телефон с чипсетами Unisoc UMS9620 или старше, вы можете использовать [эту уязвимость](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader) (для UMS9621 требуется [это](https://github.com/TomKing062/exec_addr_v2) в качестве адреса выполнения) для получения временного обхода защищённой загрузки и постоянной разблокировки загрузчика. Это работает на всех устройствах, кроме некоторых с [модифицированным uboot](https://github.com/TomKing062/CVE-2022-38694_unlock_bootloader/wiki/patch_do_cboot%E2%80%90SPL#part-2-modify-fdl2ubootlk), которые требуют [этот](https://github.com/TomKing062/unisoc_chipram_signcheck_exploit), [этот](https://github.com/YC-nw/bsp_sign_fxxker) или [этот](https://github.com/kasnria001/unisoc_secure_boot_bypass) эксплойт. Все три последних ссылки используют один и тот же метод, но реализованы разными людьми с возможными различиями. Кроме того, помимо разблокировки загрузчика, с помощью этого метода можно полностью отключить dm-verity, пропатчив раздел trustos, что позволит загружать неподписанные разделы.
 
-Для телефонов с Unisoc UMS312, UMS512, UD710 вы можете использовать [этот](https://github.com/TomKing062/CVE-2022-38691_38692) эксплойт для получения постоянного обхода защищённой загрузки, что означает, что все прошивки, включая splloader и uboot, могут быть модифицированы и переподписаны.
+Для телефонов с Unisoc UMS312, UMS512 или UD710 вы можете использовать [этот](https://github.com/TomKing062/CVE-2022-38691_38692) эксплойт для получения постоянного обхода защищённой загрузки, что означает, что все прошивки, включая splloader и uboot, могут быть модифицированы и переподписаны.
 
 Также вы можете обратить внимание на: [Spectrum_UnlockBL_Tool](https://github.com/zhuofan-16/Spectrum_UnlockBL_Tool), [xdaforums.com](https://xdaforums.com/t/alldocube-t803-smile_1-bootloader-unlock-w-unisoc-t310.4393389/) или [subut](https://unisoc-android.github.io/subut/).
 

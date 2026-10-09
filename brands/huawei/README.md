@@ -19,7 +19,7 @@ _*Some custom, unsigned bootloaders using onchiprom (BootROM) vulnerability can 
 
 Anything over Kirin 810, and Kirin 990 remains non-unlockable for the time being. However, couple of BootROM-based exploits for tethered unlocking are currently being worked on! (shh!)
 
-Some older Qualcomm CPU Huawei devices (such as Y6 2018) can be unlocked using a board (factory) ROM's bootloader. Tho booting requires custom kernel. 
+Some older Qualcomm CPU Huawei devices (such as Y6 2018) can be unlocked using an engineering bootloader. Like most other engineering bootloaders, booting requires a custom kernel. 
 
 Also, if you have a really old Kirin device (Android 5 or lower), you can sometimes (depends on the firmware, Huawei patched it at some point) find the unlock code in the _nvme_ partition. It is located in the WVLOCK section, but you need a root shell. From there, execute the following command:
 

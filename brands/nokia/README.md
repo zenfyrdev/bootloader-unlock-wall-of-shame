@@ -16,9 +16,9 @@ Some early HMD-era Nokia devices can be unlocked by md5 hashing the serial numbe
 
 Models released before early 2019 can request unlocking using Hikari Calyx's unofficial service [hikaricalyx.com][hikari-service]
 
-#### Prototype ABLs
+#### Engineering bootloaders
 
-Hikari Calyx has a repo with prototype ABLs for some other models. [fih-firmware.hikaricalyx.com][hikari-abl]
+Hikari Calyx has a repo with engineering bootloaders for some other models. [fih-firmware.hikaricalyx.com][hikari-abl]
 
 #### HMD Device Kit
 

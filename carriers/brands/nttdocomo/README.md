@@ -1,6 +1,6 @@
 # NTT Docomo/b-mobile/IIJMIO/DMM
 
-- Verdict: **🍅 Terrible!**
+- Verdict: **⛔ Avoid at all costs!**
 
 NTT Docomo (and associated MVNOs) do not allow you to unlock your bootloader, the OEM unlock option is greyed out even if your phone is carrier unlocked (which is also incredibly difficult with Docomo and their MVNOs.. see a pattern?)
 ***

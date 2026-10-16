@@ -19,7 +19,7 @@ Note that starting September, 2026, OnePlus will make "Deep Testing" program muc
 - 7-day account login requirement
 - 7-day approval process
 - 14-day unlock window
-- 4 unlocked deviced per year max
+- 4 unlocked devices per year max
 
 ## Indian versions of OnePlus initially released with ColorOS 17 or newer (OnePlus 16 or newer)
 

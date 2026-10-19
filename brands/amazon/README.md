@@ -6,7 +6,7 @@ Amazon is a strange company in the Android world. They cling to old Android vers
 
 They don’t follow the standard Android bootloader unlocking procedure. Instead, they use their own implementation, which relies on a special partition called `idme`. This partition stores device-specific information such as the S/N, MAC address, and more.
 
-The *official* way to unlock the bootloader is to flash a signed unlock image to `idme` using the command `fastboot flash unlock unlock.bin`. Of course, **this requires Amazon to sign the unlock image.**
+The *official* way to unlock the bootloader is to flash a signed unlock image to `idme` using the command `fastboot flash unlock unlock.bin`. Of course, **this requires Amazon to sign the unlock image,** and Amazon doesn't provide this image.
 
 ## MediaTek
 **Older MediaTek-based devices can be unlocked using [amonet]**, a bootloader/bootROM exploit [originally developed in 2019 to unlock the Amazon Fire HD 8 (2018)].

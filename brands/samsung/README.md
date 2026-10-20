@@ -35,9 +35,12 @@ Until recently, international Samsung devices (e.g. ones sold in Europe or Asia)
 > 
 > </details>
 
-The Galaxy XR, Samsung's XR headset, does NOT have an unlockable bootloader as of the December 9th, 2025 update (``I610UEU1AYKE``), this was the headset's first update post-launch. Firmware ``I610UEU1AYIA`` is confirmed to have an unlockable bootloader.  
-Firmware ``I610UEU1AYKE`` has the same SW rev as the firmware with the unlockable bootloader, meaning that you can use Odin to flash to earlier firmware with an unlockable bootloader (``I610UEU1AYIA``).  
-[Source](https://doc.samsungmobile.com/SM-I610/TXV/doc.html).
+The Galaxy XR, Samsung's XR headset, is **confirmed** to have an unlockable bootloader on firmware ``I610UEU1AYIA``.  
+As of the December 9th, 2025 update (``I610UEU1AYKE``), the ability to unlock the bootloader was removed.  
+If you are on firmware ``I610UEU1AYKE``, you can downgrade to earlier firmware with an unlockable bootloader (``I610UEU1AYIA``) by flashing with Odin. **You cannot downgrade firmware below your current firmware's binary level.**  
+For example: If you are on firmware ``I610UEU2AZF3``, you can downgrade to ``I610UEU2AZCI``, as they both have the same binary level ``UEU2``.  
+[Firmware Update History](https://doc.samsungmobile.com/SM-I610/TXV/doc.html).  
+[Unlocked Bootloader Proof](https://x.com/SadlyItsBradley/status/1981549173565542669)
 
 Snapdragon phones prior to the S7/Note7 (2016) can be unlocked regardless of region, as long as it's not locked to a carrier like AT&T or Verizon. The Canadian S7 can also be unlocked as it uses an Exynos SoC, despite Canada normally being a Snapdragon region.
 

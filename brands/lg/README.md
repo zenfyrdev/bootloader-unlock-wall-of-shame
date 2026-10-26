@@ -14,7 +14,7 @@ Newer LG budget phones (2018+) from the K and Stylo series typically do not have
 
 On most LG devices with fastboot mode hidden, fastboot can usually be accessed by wiping LG Download mode otherwise known as LAF. It is usually wiped either with root (devices prior to 2015) or EDL (devices since 2015).
 
-Additionally, on devices with MediaTek SoCs, you can also add Fastboot mode and other functionality with [karu](https://github.com/R0rt1z2/kaeru/wiki).
+Additionally, on devices with MediaTek SoCs, you can also add Fastboot mode and other functionality with [karu](https://github.com/R0rt1z2/kaeru/wiki), as long as you have unlocked the bootloader.
 
 Most carrier branded LG devices (aside from T-Mobile branded devices made before 2018) also usually have hidden Fastboot as well.
 

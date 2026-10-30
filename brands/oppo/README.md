@@ -22,6 +22,8 @@ Realme, allows unlocking for supported models and regions. China and India model
 
 To unlock, you need to submit a request through the deep testing app that they publish on their forum. You'll have to find and follow instructions at [c.realme.com](https://c.realme.com/in/). The process is pretty much the same for most phones, but newer models may require a HeyTap account.
 
+### Unofficial Unlock
+
 #### Region Switching
 
 In theory, if available, you could use full-OTA packages to change your phone's firmware region and use the deep testing app directly, but I can't verify that this works (please, correct me if I'm wrong). Guide: [xdaforums.com][Full-OTA region switch]

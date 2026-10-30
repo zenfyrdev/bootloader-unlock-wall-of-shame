@@ -168,7 +168,7 @@ It's possible to unlock using test points and [PotatoNV](https://github.com/mash
 ### MediaTek
 If you own a MediaTek device exploitable by [mtkclient](https://github.com/bkerler/mtkclient) ([fork old version](https://github.com/R0rt1z2/mtkclient)) or [Penumbra](https://github.com/shomykohai/penumbra), you can unlock the bootloader using it.<br/>
 
-Bootloader (LK) patches can be applied via [lkpatcher](https://github.com/R0rt1z2/lkpatcher) ([web version](https://lkpatcher.r0rt1z2.com/)) or, for ARMv7 boards, via [kaeru](https://github.com/R0rt1z2/kaeru/wiki).
+Bootloader (LK) patches can be applied via [lkpatcher](https://github.com/R0rt1z2/lkpatcher) ([web version](https://lkpatcher.r0rt1z2.com/)) or, for ARMv7 boards, via [kaeru](https://github.com/R0rt1z2/kaeru/wiki). Booting with patched LKs requires an already unlocked bootloader or may not be supported at all.
 
 ### Qualcomm 
 

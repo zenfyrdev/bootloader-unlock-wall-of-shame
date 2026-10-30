@@ -18,15 +18,20 @@ Keeping track of companies that "care about your data 🥺"
 </details> 
 Do note that issues, pull requests, and discussions on Codeberg and tangled are not monitored. Please use GitHub for these.
 
+## What?
+
+All Android devices ship with a locked bootloader (ABL). This means that the device will verify every loaded image against known trusted keys right from the moment it turns on.
+
+Unlocking the bootloader means allowing the device to load images either signed with untrusted keys or not signed at all, such as custom OSes, kernels, recoveries, etc.
+
+Most of this is powered by [Android Verified Boot](https://source.android.com/docs/security/features/verifiedboot).
+Which by itself is a tool similar to [UEFI Secure Boot](https://uefi.org/specs/UEFI/2.9_A/32_Secure_Boot_and_Driver_Signing.html#secure-boot-and-driver-signing). AVB prevents the system from booting in case of corruption/compromise attempts, which is *good*, as long as the device owner can 1. Disable verification and 2. Enroll custom keys.
+
 ## Why?
-Over the past few years, a suspicious number of companies have started to "take care of your data", aka block/strictly limit your ability to unlock the bootloader on your *own* devices.
 
-While this may not affect you directly, it sets a bad precedent. You never know what will get the axe next: Shizuku? ADB?<br><br> 
-**They've already gone after [sideloading](https://keepandroidopen.org).**<br><br>
+Unfortunately, a lot of devices do not allow unlocking the bootloader at all, let alone enrolling a [custom root of trust](#custom-avb-keys). This is one of the many ways we see companies dismantle user choice and open platforms, with Google itself targeting things like installing "unauthorized" software with their [Android developer verification program](https://developer.android.com/developer-verification).
 
-I thought it might be a good idea to keep track of bad companies and workarounds.
-
-If you know of specific details/unlocking methods, please PR them or drop them in the [discussions](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions).
+This list contains info on how different companies handle (or don't handle!) unlocking on devices they sell and possible ways to bypass their locks. While it mainly targets Android devices, it also has info on other device families. If you know of specific details/unlocking methods, please PR them or drop them in the [discussions](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions).
 
 # The list:
 
@@ -153,7 +158,7 @@ The following manufacturers require an internet connection and/or a waiting peri
 
 ## Custom AVB Keys
 
-Custom Android Verified Boot keys are a feature that allows you to run a custom OS with a locked bootloader.
+Custom Android Verified Boot keys or [User-settable root of trust](https://source.android.com/docs/security/features/verifiedboot/device-state#user-settable-root-of-trust) is an optional AVB feature that allows you to run a custom OS with a locked bootloader.
 
 It's rare to see a device that supports custom AVB keys, but some devices can be found [here](https://github.com/chenxiaolong/avbroot/issues/299).
 

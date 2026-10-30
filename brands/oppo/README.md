@@ -5,15 +5,22 @@
 
 - Verdict: **🍅 Just terrible!**
 
+
+### Unofficial Unlock (Realme and Oppo)
+
+> [!NOTE]
+> If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG mod (unlocking via mtkclient), you can try unlocking fastboot by writing a >modified boot1 (preloader).<br/>
+> Writing a preloader also uses mtkclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
+
+- [💡 Universal SOC-based methods](../../README.md#universal-soc-based-methods)
+
+After unlocking, both OPPO and Realme MTK bootloaders can be patched to enable fastboot via [lkpatcher](https://github.com/R0rt1z2/lkpatcher) ([web version](https://lkpatcher.r0rt1z2.com/))
+
 ## Realme
 
 Realme, allows unlocking for supported models and regions. China and India models are confirmed to be supported, with some models from other regions reportedly supported as well. 
 
 To unlock, you need to submit a request through the deep testing app that they publish on their forum. You'll have to find and follow instructions at [c.realme.com](https://c.realme.com/in/). The process is pretty much the same for most phones, but newer models may require a HeyTap account.
-
-### Unofficial Unlock
-
-- [💡 Universal SOC-based methods](../../README.md#universal-soc-based-methods)
 
 #### Region Switching
 
@@ -25,7 +32,6 @@ In April-May 2023 you could unlock any Realme phone using this script [rmx3474-r
 Since then, they have forced their servers to only return "new struct" keys, which have model data attached, making the script useless.
 
 ## OPPO
->If bootloader unlocking doesn't work on an Oppo Mediatek device using the SECCFG mod (unlocking via mtkclient), you can try unlocking fastboot by writing a >modified boot1 (preloader). Writing a preloader also uses mtkclient: [oppo-mtk-fastboot-unlock](https://github.com/Shocked-Cat/oppo-mtk-fastboot-unlock).
 
 There's not much else to say about OPPO. They also offer in-depth testing, but only for Chinese models
 

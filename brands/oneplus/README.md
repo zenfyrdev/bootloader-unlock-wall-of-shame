@@ -27,7 +27,7 @@ OxygenOS 17 is officially cancelled. Starting from OnePlus 16, there will be onl
 
 ## Devices upgraded to ColorOS 17 from OxygenOS (every version of OnePlus 11-15 except Chinese)
 
-These phones were initially released with OxygenOS. If any of these phones got upgraded to ColorOS 17, you can bypass "Deep Testing" program and unlock the bootloader completely offline by downgrading it to OxygenOS 16 through official Rollback package (note that it is not released yet). Note that after downgrading, you will not be able to flash any custom ROM based on android 16 (only android 17+), because this package has patched ARB index.
+These devices are unaffected by the deep testing changes and can continue to use normal fastboot unlock method.
 
 > **Note:** This information may not be correct because ColorOS 17 and OnePlus 16 are not released yet
 

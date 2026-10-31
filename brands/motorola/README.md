@@ -48,6 +48,18 @@ On MTK CID devices, it is impossible to unlock using third party tools (like mtk
 Furthermore, Motorola disables BROM USBDL by efuse on newer devices (MTK V6 as well), and the stock Download Agent are limited to only allow flashing the bootloader.
 
 ### Possible bypasses?
+
+### val-protocol
+[val-protocol](https://github.com/Maikyxd/val-protocol) is a MTK-based Motorola LK Patcher that uses a LK cert validation exploit to bypass bootloader checks and enable unlocking using a serial-derived key.
+
+The exploit was [patched](https://xdaforums.com/t/success-moto-g-play-2026-xt2615v-bootloader-unlocked-via-val-protocol.4797789/#:~:text=Update%0ADo.Not.Update) in a September 2026 update, so make sure your device is not updated, and check if it's supported at all [here](https://github.com/Maikyxd/val-protocol#afected-devices).
+
+### MTKClient + BROM
+Most MTK-based Motorola devices **released before 2022 are susceptible to [mtkclient](https://github.com/bkerler/mtkclient) auth bypass**, and full unlock may require [chouchou](https://github.com/R0rt1z2/chouchou) / [Kaeru](https://github.com/R0rt1z2/kaeru) patches to disable automatic bootloader lock (as seen on Moto E7, codename `malta`).
+
+However, on devices **released after 2022, this method is ineffective** as the preloader vulnerability has been patched and the BROM is blocked via eFuse, and attempting to crash the preloader results in a bootloop in the preloader.
+Devices released before 2024 (and some released during 2024 as well) though are vulnerable to [Carbonara](https://shomy.is-a.dev/penumbra/Mediatek/Exploits/Carbonara), a DA1 memory corruption exploit that allows arbitrary code execution.
+
 #### Debug Token
 Motorola CID devices (both Qualcomm and Mediatek ones) have a customized bootloader by Motorola, including their security library `mot_sec`.
 
@@ -97,12 +109,6 @@ Devices made before Google purchased Motorola Mobility (May 2012) do not have un
 
 ### Motorola Solutions (radios)
 tldr, Motorola split into two companies in 2011. Motorola Mobility, which made the phones and DVRs and is now owned by Lenovo, and Motorola Solutions, who makes everything else. Solutions has recently started making radios which run Android. Not much is known about these devices, Motorola doesn't even reveal which SoC they use. I decided to contact Motorola Solutions myself, and [their response][Solutions unlock] was that the MOTOTRBO Ion radio uses the Snapdragon 660, and the bootloader on the Ion (and most likely all other Solutions devices) isn't unlockable unless they apply to be an ADP developer. 
-
-### MTKClient + BROM
-Most MTK-based Motorola devices **released before 2022 are susceptible to [mtkclient](https://github.com/bkerler/mtkclient) auth bypass**, and full unlock may require [chouchou](https://github.com/R0rt1z2/chouchou) / [Kaeru](https://github.com/R0rt1z2/kaeru) patches to disable automatic bootloader lock (as seen on Moto E7, codename `malta`).
-
-However, on devices **released after 2022, this method is ineffective** as the preloader vulnerability has been patched and the BROM is blocked via eFuse, and attempting to crash the preloader results in a bootloop in the preloader.
-Devices released before 2024 (and some released during 2024 as well) though are vulnerable to [Carbonara](https://shomy.is-a.dev/penumbra/Mediatek/Exploits/Carbonara), a DA1 memory corruption exploit that allows arbitrary code execution.
 
 ### Non-Motorola Lenovo devices, NEC devices and some Motorola tablets.
 Lenovo usually does not use the Motorola name on their tablets and gaming-oriented phones, and these are typically branded as Lenovo or NEC. While similar to Motorola's unlock process, these have to be unlocked on the [ZUI website], which requires your IMEI, serial number, and email, and they'll send you an unlock-bootloader.img which you flash to the unlock partition in Fastboot to unlock. However, similar to Xiaomi, Lenovo has a quota, which if you surpass, you cannot unlock your bootloader, @MlgmXyysd has created an [unofficial unlock portal] which may work on recent tablets like Legion Y700 4th Gen. Some Motorola tablets, such as the G62, also use the ZUI website to unlock instead of Motorola's unlock portal.

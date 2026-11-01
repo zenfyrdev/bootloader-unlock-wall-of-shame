@@ -20,7 +20,7 @@ Do note that issues, pull requests, and discussions on Codeberg and tangled are 
 
 ## What?
 
-All Android devices ship with a locked bootloader (ABL). This means that the device will verify every loaded image against known trusted keys right from the moment it turns on.
+Most Android devices ship with a locked bootloader (ABL). This means that the device will verify every loaded image against known trusted keys right from the moment it turns on.
 
 Unlocking the bootloader means allowing the device to load images either signed with untrusted keys or not signed at all, such as custom OSes, kernels, recoveries, etc.
 
@@ -29,7 +29,7 @@ Which by itself is a tool similar to [UEFI Secure Boot](https://uefi.org/specs/U
 
 ## Why?
 
-Unfortunately, a lot of devices do not allow unlocking the bootloader at all, let alone enrolling a [custom root of trust](#custom-avb-keys). This is one of the many ways we see companies dismantle user choice and open platforms, with Google itself targeting things like installing "unauthorized" software with their [Android developer verification program](https://developer.android.com/developer-verification).
+Unfortunately, a lot of devices do not allow unlocking the bootloader at all, let alone enrolling a [custom root of trust](#custom-avb-keys). This is one of the many ways we see companies dismantle user choice and open platforms, with Google itself targeting things like installing 'unauthorized' software with their [Android developer verification program](https://developer.android.com/developer-verification).
 
 This list contains info on how different companies handle (or don't handle!) unlocking on devices they sell and possible ways to bypass their locks. While it mainly targets Android devices, it also has info on other device families. If you know of specific details/unlocking methods, please PR them or drop them in the [discussions](https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/discussions).
 

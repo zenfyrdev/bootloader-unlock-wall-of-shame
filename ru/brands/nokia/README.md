@@ -16,9 +16,9 @@
 
 Модели, выпущенные до начала 2019 года, могут запросить разблокировку через неофициальный сервис Hikari Calyx [hikaricalyx.com][hikari-service]
 
-#### Прототипные ABL
+#### Инженерные загрузчики
 
-У Hikari Calyx есть репозиторий с прототипными ABL для некоторых других моделей. [fih-firmware.hikaricalyx.com][hikari-abl]
+У Hikari Calyx есть репозиторий с инженерными загрузчиками для некоторых других моделей. [fih-firmware.hikaricalyx.com][hikari-abl]
 
 #### HMD Device Kit
 

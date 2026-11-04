@@ -187,6 +187,8 @@ While the vulnerability itself is universal for the platform, it requires device
 
 #### Other
 
+With the Snapdragon 8E5/8E vulnerability you can get temporary root on Xiaomi and some other phones. [Xiaomi temporary root](https://github.com/Skorpion96/mi_nobl_magisk)
+
 The general exploit:<br/>
 [alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) the bootloader unlock section.
 

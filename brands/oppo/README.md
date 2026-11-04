@@ -33,6 +33,42 @@ In theory, if available, you could use full-OTA packages to change your phone's 
 In April-May 2023 you could unlock any Realme phone using this script [rmx3474-rooting], but on May 26th Realme posted this announcement on their forum [c.realme.com][announcement]. (They've deleted the original announcement)
 Since then, they have forced their servers to only return "new struct" keys, which have model data attached, making the script useless.
 
+#### Case Study: Realme 12x 5G (RMX3998) — Full Security Audit (Nov 2026)
+
+> Complete reverse engineering of the Realme 12x 5G (MT6835 / Dimensity 6100+, Android 16, realme UI 6/7).
+> Every unlock path was attempted and documented. The device is currently **impossible to root or bootloader-unlock** without realme's private signing key.
+>
+> **This research was conducted on a personally owned device for educational purposes only.**
+
+| Layer | Protection | Bypass Attempted | Result |
+|---|---|---|---|
+| Boot ROM (MTK V6) | Carbonara + HeapBait patched in mask ROM | mtkclient | ❌ Silent to legacy handshake |
+| Bootloader (LK) | Unlock flag in OPLUSreserve1, protected by runtime-derived 32-byte magic (TZ-derived) | Static forgery | ❌ Magic is runtime, not static |
+| fastbootd | Refuses flash on locked devices | Direct flash | ❌ "Command not available on locked devices" |
+| OTA server | Model whitelist — RMX3998 not approved | Direct API with spoofed/supported models | ❌ -1002 for ALL models (server shut down for all since May 2023) |
+| Deep Testing APK | Platform signing key rotated between Android versions | APK install | ❌ "oplus named app is not match signature" |
+| OTA app (update_engine) | RecoverySystem.verifyPackage requires realme signature | Local install with unsigned payload | ❌ Signature verification fails |
+
+##### Key Technical Findings
+
+- The `subsystem_daemon` SELinux domain (which executes `/odm/bin/init.subsys.sh`) has **blk_file read/write** access to `oplusreserve*` block devices, and `/odm` has **no dm-verity/AVB descriptor** — if a payload could write a modified script to odm, it would run as root at boot and could modify the unlock flag. The delivery mechanism (getting update_engine to accept the payload) is the unsolved problem.
+- The `OplusEngineerService` binder interface has 15 methods; `fastbootUnlock` is among them but requires a valid unlock token signed by realme's private key.
+- Realme's deep testing server (`lkf.realmemobile.com`) is still alive but returns `-1002` ("model not supported") for **all models**, including previously supported ones (RMX3461, RMX3474). The server was shut down for all devices in May 2023.
+- The `RecoverySystem.verifyPackage` check in update_engine requires a valid PKCS#7 signature from a cert in `otacerts.zip` (realme's platform cert, valid until 2046).
+- The local OTA install path (`forbid_ota_local_update=false`) is available but gated behind `LocalUpdateVerify()` which requires a realme-signed grant token: `RSA_public_decrypt(grant, embedded_pubkey, RSA_PKCS1_PADDING)` with device-ID binding and server-side timestamp validation.
+
+##### Tools Used
+
+- Ghidra 12.1.4 (ARM64 decompilation of update_engine, LK bootloader)
+- avbtool (AVB descriptor analysis)
+- Custom Python OTA query client (working — queries realme's encrypted OTA API)
+- apktool + jadx (APK decompilation of Deep Testing, OTA app, Engineer Mode)
+
+##### Credit
+
+Full research notes available at [mrbeandev/realme-12x-security-research](https://github.com/mrbeandev/realme-12x-security-research).
+
+
 ## OPPO
 
 There's not much else to say about OPPO. They also offer in-depth testing, but only for Chinese models

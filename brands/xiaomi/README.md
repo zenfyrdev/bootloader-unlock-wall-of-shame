@@ -77,6 +77,7 @@ These methods chain a Qualcomm "fastboot" parameter-injection oversight that fli
 These chain the QCOM SELinux Permissive bypass with the MQSAS privilege escalation.
 
 - Xiaomi 13, 14, 15 series, MIX Flip 2, Pad 8 Pro, Pad 6S Pro, Redmi K90/K80/K70/K60 Pro with Security Patch before January 2026, [see here][xda-qcom-2]. Support has since been extended to the Redmi K80 Ultra, K90 Max, K90 Ultra and Turbo 5 Max, and the process for other SM8750 devices on the Feb 2026 – June 2026 patches has been simplified.
+- [mi_nobl_magisk][mi-nobl-magisk] and [mi_nobl_root][mi-nobl-root] use the same Qualcomm fastboot parameter injection (`androidboot.selinux=permissive`) and `miui.mqsas.IMQSNative` privilege escalation to achieve temporary Magisk or KernelSU root on a locked bootloader.
 
 It's theoretically possible to downgrade and unlock **non Kioxia UFS** devices [using an EDL programmer and an engineering ABL][firehose] too.
 
@@ -136,3 +137,5 @@ Authored by [zenfyr](https://zenfyr.dev).
 [edl-unlock]: https://github.com/Giovix92/EDLUnlock
 [bootloader-questionnaire]: https://github.com/MlgmXyysd/Xiaomi-BootLoader-Questionnaire
 [awesome-bootloader-unlock]: https://github.com/topminipie/awesome-xiaomi-bootloader-unlock
+[mi-nobl-magisk]: https://github.com/Skorpion96/mi_nobl_magisk
+[mi-nobl-root]: https://github.com/xunchahaha/mi_nobl_root

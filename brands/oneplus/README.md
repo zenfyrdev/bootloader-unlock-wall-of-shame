@@ -1,7 +1,7 @@
 # OnePlus
 
 * Verdict **⚠️ Proceed with caution!**
-* Global phones or Chinese phones released with ColorOS 15 or older: [**🔓️ Unlock Guide**](../../misc/generic-unlock.md)
+* Global phones (except OnePlus 10T on late firmware) or Chinese phones released with ColorOS 15 or older: [**🔓️ Unlock Guide**](../../misc/generic-unlock.md)
 
 ## Global phones and older Chinese models
 All OnePlus phones on the global market, and any Chinese models that were initially released with ColorOS 15 or older, can be easily unlocked using the [standard procedure](../../misc/generic-unlock.md). This includes devices that have since updated to ColorOS 16.0 or newer.
@@ -34,9 +34,14 @@ These phones were initially released with OxygenOS. If any of these phones got u
 ## T-Mobile
 For OnePlus devices purchased from T-Mobile or an MVNO such as Metro, even if the device was later unlocked from T-Mobile, they require an [unlock token], and to get your unlock token, you need to provide original proof of purchase from T-Mobile. If you purchased the device from eBay, you will not be able to unlock your bootloader. This does not apply to the OnePlus 6 or earlier. This doesn't appear to apply to other third party sellers (such as OLX).
 
+## OnePlus 10T
+For the OnePlus 10T series (and the Chinese variant, the OnePlus Ace Pro), OnePlus quietly blocked fastboot access with a security patch for Android 14 (initial Android 14 for some regions). The most likely cause for OnePlus to do this was the fact that users were converting their Chinese OnePlus Ace Pros to global OnePlus 10Ts, though after the block OnePlus [tried to charge one user money for downgrade](https://xdaforums.com/t/tutorial-in-2026-how-to-unlock-oplus-10t-bootloader.4801801/post-90794394), which is highly unethical. Downgrading to Android 13 [is possible](https://xdaforums.com/t/oneplus10t-coloros17.4804116/post-90776656) except the Chinese variant (OnePlus Ace Pro), which raised the anti-rollback version.
+
 ***
 Authored by [madeline-yana](https://github.com/madeline-yana) and [jotkauser](https://github.com/jotkauser).
 
 Information about the Deep Testing program by [DiabloSat](https://github.com/progzone122).
+
+Information about the OnePlus 10 series by [Eggmanplant](https://github.com/Eggmanplant).
 
 [unlock token]:https://www.oneplus.com/us/unlock_token

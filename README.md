@@ -185,9 +185,10 @@ On Snapdragon 8E5/8E, Qualcomm introduced a [vulnerability (CN)](https://www.cnb
 
 While the vulnerability itself is universal for the platform, it requires device/OEM-specific tricks to get root and write the GBL. Some exist for [Xiaomi devices](./brands/xiaomi/README.md#snapdragon-8-elite8gen38gen28gen1).
 
-#### Other
+> [!NOTE]
+> The underlying Qualcomm ABL fastboot command-line injection (`fastboot oem set-gpu-preemption` / `set-hw-fence-value` to boot with `androidboot.selinux=permissive`; see [QualcommPermissive](https://github.com/NotAndrej/QualcommPermissive) and [qualcomm-gbl-exploit-checker](https://github.com/chkndrp/qualcomm-gbl-exploit-checker)) also affects other Qualcomm devices. Sources on CoolAPK and [rootWithoutUnlockBootloaderList](https://github.com/lokey0905/rootWithoutUnlockBootloaderList/blob/main/README.en.md) show that once SELinux is permissive, temporary root may also work on non-Xiaomi phones by chaining it with other privilege escalation methods (such as [Magica](https://github.com/vvb2060/Magica) via isolated services or other OEM-specific services).
 
-With the Snapdragon 8E5/8E vulnerability you can get temporary root on Xiaomi and some other phones. [Xiaomi temporary root](https://github.com/Skorpion96/mi_nobl_magisk)
+#### Other
 
 The general exploit:<br/>
 [alephsecurity.com](https://alephsecurity.com/2018/01/22/qualcomm-edl-2/) the bootloader unlock section.

@@ -17,7 +17,7 @@ Devices shipping with Android One do NOT have any unlock requirements listed bel
 
 ## Device unlock requirements
 
-Devices shipping with MIUI or HyperOS require activating your phone with Xiaomi servers before allowing unlocking. You can only unlock one phone in 30 days and four phones in a year.
+Devices shipping with MIUI or HyperOS require activating your phone with Xiaomi servers before allowing unlocking. Historically you could unlock one phone in 30 days and four phones in a year, but as of January 1st 2025 Xiaomi restricts this to **one device per year** (see [HyperOS requirements](#hyperos-specific) below).
 
 After enabling Developer options, go to Settings > Additional settings > Developer options, enable OEM Unlock and go to Device Unlock Status page, and if it shows "Locked" then you can proceed pressing "Add account and device" button to initiate the process.
 
@@ -40,11 +40,11 @@ The unique key to unlock the bootloader of your device is retrieved from Xiaomi 
 You can continue using your device as usual and check with the unlock tool anytime to see how much time is left. Meanwhile, DON'T remove your Xiaomi account or factory reset your phone, doing these may result in the countdown being reset to what it was initially.
 
 > [!NOTE]
-> For MIUI devices (not HyperOS), some channels on [Bilibili][bilibili-shutdown] claim that that Xiaomi verification server has been shutdown.
+> For MIUI devices (not HyperOS), some channels on [Bilibili][bilibili-shutdown] claim that that Xiaomi chinese verification server has been shutdown.
 
 ## HyperOS specific
 
-It is currently **impossible** to officially unlock Xiaomi phones from the China region, especially if the device was imported and you are outside China. They have removed the unlocking function in their community app.
+It is currently **impossible** to officially unlock Xiaomi phones from the China region officially, especially if the device was imported and you are outside China. They have removed the unlocking function in their community app.
 
 With HyperOS, Xiaomi introduced an additional step to the unlock process. You can make the request for unlocking the device inside Developer Options, only after you have made another separate successful request inside the [Xiaomi Community App.][mi-community-app]
 
@@ -66,12 +66,18 @@ There is a [AQLR][aqlr] (abbreviation of "application quota limit reached") scri
 
 ## Workarounds & Exploits
 
-### Snapdragon 8 Elite/8Gen3/8Gen2/8Gen1
+### Snapdragon 8 Elite Gen 5 (SM8750/SM8850)
 
-All of those methods chain the QCOM SELinux bypass, and the Xiaomi MQSAS service privilege escalation vulnerabilities.
+These methods chain a Qualcomm "fastboot" parameter-injection oversight that flips SELinux to Permissive, with the Xiaomi MQSAS (`miui.mqsas`) service privilege escalation that writes a custom UEFI app to the `efisp` partition (which lacks partition verification on this platform).
 
-- Xiaomi 17 series, POCO F8 Ultra, Redmi K90 Pro Max with Security Patch before February 2026, [see here][xda-qcom-1]
-- Xiaomi 13, 14, 15 series, MIX Flip 2, Pad 8 Pro, Pad 6S Pro, Redmi K90/K80/K70/K60 Pro with Security Patch before January 2026, [see here][xda-qcom-2]
+- Xiaomi 17 series, POCO F8 Ultra, Redmi K90 Pro Max. The original exploit required a Security Patch **before February 2026**, [see here][xda-qcom-1]. Later Coolapk/XDA tooling claims to unlock **all system/firmware versions** of the Xiaomi 17 series and Redmi K90 Pro Max with no patch-level restriction, [see here][xda-qcom-3].
+
+### Snapdragon 8 Elite / 8Gen3 / 8Gen2 / 8Gen1
+
+These chain the QCOM SELinux Permissive bypass with the MQSAS privilege escalation.
+
+- Xiaomi 13, 14, 15 series, MIX Flip 2, Pad 8 Pro, Pad 6S Pro, Redmi K90/K80/K70/K60 Pro with Security Patch before January 2026, [see here][xda-qcom-2]. Support has since been extended to the Redmi K80 Ultra, K90 Max, K90 Ultra and Turbo 5 Max, and the process for other SM8750 devices on the Feb 2026 – June 2026 patches has been simplified.
+- [mi_nobl_magisk][mi-nobl-magisk] and [mi_nobl_root][mi-nobl-root] use the same Qualcomm fastboot parameter injection (`androidboot.selinux=permissive`) and `miui.mqsas.IMQSNative` privilege escalation to achieve temporary Magisk or KernelSU root on a locked bootloader.
 
 It's theoretically possible to downgrade and unlock **non Kioxia UFS** devices [using an EDL programmer and an engineering ABL][firehose] too.
 
@@ -81,14 +87,14 @@ It's theoretically possible to downgrade and unlock **non Kioxia UFS** devices [
 
 ### Others
 
-* **MlgmXyysd** - MlgmXyysd, the developer of the original bootloader bypass script, has discovered a new vulnerability in Qualcomm devices that enables bootloader unlocking on most HyperOS 2 and 3 phones. You may contact her on CoolAPK; according to some sources.
+* ~~**MlgmXyysd** - MlgmXyysd, the developer of the original bootloader bypass script, has discovered a new vulnerability in Qualcomm devices that enables bootloader unlocking on most HyperOS 2 and 3 phones. You may contact her on CoolAPK; according to some sources.~~ (unverified)
 * ~~Some users claim that visiting a Xiaomi store and asking a technician to downgrade the system version results in a temporary unlocked state. A few reported flashing their own system during this process.~~ 
 * ~~[HyperSploit][hypersploit] is the newer option. This is a simple to use program with no external dependencies.~~ Confirmed as patched as of HyperOS version 2.0.203.0. Still works on old versions.
 * ~~[Xiaomi-HyperOS-BootLoader-Bypass][xiaomi-hyperos-bootLoader-bypass] is the original proof of concept, but it's written in PHP and it's cumbersome to set up.~~ Same as above.
 
 ## Further reading
 
-- [Xiaomi BootLoader Questionnaire Questions][bootloader-questionnaire] - community-collected notes and exam details. 
+- [Xiaomi BootLoader Questionnaire Questions][bootloader-questionnaire] - Exam has been removed. 
 - [Awesome Xiaomi Bootloader Unlock][awesome-bootloader-unlock]
 - [Some research about the bootloader used in Xiaomi phones][xiaomi-bootloader]
 
@@ -121,6 +127,7 @@ Authored by [zenfyr](https://zenfyr.dev).
 [quota-error-problem]: https://github.com/zenfyrdev/bootloader-unlock-wall-of-shame/issues/287
 [xda-qcom-1]: https://xdaforums.com/t/xiaomi17-series-and-pocof8ultra-redmi-k90-pro-max-unlock-bootloader-xiaomi8elite5seriesbootloader-unlock.4781439/
 [xda-qcom-2]: https://xdaforums.com/t/guide-breakthrough-free-offline-bootloader-unlock-for-cn-xiaomi15-pro-ultra-redmi-k90-sd-8-elite-also-support-8g2-8g3-no-cn-exam-required.4786790/
+[xda-qcom-3]: https://xdaforums.com/t/xiaomi-17-series-redmi-k90-pro-max-bootloader-unlock-for-all-systems-versions.4795002/
 [gmt+8]:https://time.is/GMT%208
 [offici5l]:https://offici5l.github.io
 [py-miunlock]:https://github.com/offici5l/MiUnlockTool
@@ -130,3 +137,5 @@ Authored by [zenfyr](https://zenfyr.dev).
 [edl-unlock]: https://github.com/Giovix92/EDLUnlock
 [bootloader-questionnaire]: https://github.com/MlgmXyysd/Xiaomi-BootLoader-Questionnaire
 [awesome-bootloader-unlock]: https://github.com/topminipie/awesome-xiaomi-bootloader-unlock
+[mi-nobl-magisk]: https://github.com/Skorpion96/mi_nobl_magisk
+[mi-nobl-root]: https://github.com/xunchahaha/mi_nobl_root

@@ -1,6 +1,6 @@
 # TP-Link/Neffos
 
-* Verdict **ℹ️ "Safe for now" :trollface:**
+* Verdict **ℹ️ "Safe for now" :trollface:** (retired)
 * [**🔓️ Unlock Guide**](../../misc/generic-unlock.md)
 
 It’s surprising that a company best known for its routers never complicated or restricted bootloader unlocking on it`s smartphones.

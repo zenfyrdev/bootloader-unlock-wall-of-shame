@@ -1,6 +1,6 @@
 # Windows phones
 
-- Verdict: **⛔ Avoid at all costs!**
+- Verdict: **⛔ Avoid at all costs!** (retired)
 
 All Windows phones are grouped into one page due to their unlocking methods being very close and the same for a lot of devices.
 None of them officially allowed bootloader unlocking, however many community methods have been developed over the years.

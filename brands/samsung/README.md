@@ -3,7 +3,7 @@
 - Verdict: **⛔ Avoid at all costs!**
 * [**🔓️ Unlock Guide (supported devices, ~ One UI 7)**](../../misc/samsung-unlock.md)
 
-If you have a North American device and were lucky enough not to update for a while, you can check out [this paid service][Paid North American Unlock] at your own risk. Exynos devices, regardless of region, can be unlocked assuming you're on One UI 7 or earlier. 
+If you have a North American device and were lucky enough not to update for a while, you can check out [this paid service][Paid North American Unlock] at your own risk. Most Exynos devices, regardless of region, can be unlocked assuming you're on One UI 7 or earlier. 
 
 Until recently, international Samsung devices (e.g. ones sold in Europe or Asia) were unlockable, however, starting with One UI 8, Samsung has [completely nuked][One UI 8 Unlock] the ability to unlock their devices, regardless of model or region. If you are still on One UI 7 or earlier, **DO NOT UPDATE.**
 
@@ -43,13 +43,13 @@ If you are on firmware ``I610UEU1AYKE``, you can downgrade to earlier firmware w
 [Firmware Update History](https://doc.samsungmobile.com/SM-I610/TXV/doc.html)  
 [Unlocked Bootloader Proof](https://x.com/SadlyItsBradley/status/1981549173565542669)
 
-Snapdragon phones prior to the S7/Note7 (2016) can be unlocked regardless of region, as long as it's not locked to a carrier like AT&T or Verizon. The Canadian S7 can also be unlocked as it uses an Exynos SoC, despite Canada normally being a Snapdragon region.
+Snapdragon phones prior to the S7/Note7 (2016) can be officially unlocked regardless of region or are factory unlocked with no lock state, as long as it's not originally sold by a carrier like AT&T or Verizon. The Canadian S7 can also be unlocked as it uses an Exynos SoC, despite Canada normally being a Snapdragon region.
 
 **Be aware that unlocking a Samsung device will permanently trip Knox.** As a result, many Knox-based features will be broken. This includes, but not limited to: Samsung Pay, Pass, Flow, Health, Secure Folder, Secure Wi-Fi, Smart View. Furthermore, tripping Knox may serve as grounds for voiding your warranty.
 
-There have been hardware issues caused by unlocking the bootloader, but these have been fixed for some regions. See [here][1] and [here][2]. As of late 2023, Korean Galaxy Fold3 running OneUI 5 still got camera disabled after unlocking, while EU/CN variants had fixed the issue.
+There have been hardware issues caused by unlocking the bootloader, but these have been fixed for some regions. See [here][1] and [here][2]. As of late 2023, the Korean Galaxy Fold3 running OneUI 5 still disables the camera after unlocking, while EU/CN variants had fixed the issue.
 
-As of September 2025, Galaxy Z Fold 5 also has a camera issue after unlocking the bootloader. After analyzing it, we found out it is a "Security Mechanism" to prevent the user from "taking photos" once they unlock the bootloader by providing a "black screen" in the viewfinder. (Fixable by re-locking the bootloader)
+As of September 2025, Galaxy Z Fold 5 also had the same camera disabling issue after unlocking the bootloader. After analyzing it, we found out it is a 'Security Mechanism' to prevent the user from 'taking photos' once they unlock the bootloader by providing a 'black screen' in the viewfinder. (Fixable by re-locking the bootloader)
 
 Some devices, such as the Galaxy S25, Galaxy Tab S6 Lite, require an internet connection before the bootloader can be unlocked.
 

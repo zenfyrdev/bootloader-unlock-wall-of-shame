@@ -1,6 +1,6 @@
 # LG
 
-- Verdict: **🍅 Just terrible!**
+- Verdict: **🍅 Just terrible!** (retired)
 - Verdict: **⛔ Avoid at all costs!** (Unisoc)
 - Verdict: **ℹ️ Safe for now** (Watches) :trollface:
 
@@ -24,7 +24,7 @@ Aside from the generic unofficial methods for devices with MediaTek and Unisoc S
 
 There are also some bootloader exploits such as [CVE-2020-12753] ([PoC]) ([Working example]) and [this][V30 bootloader unlock exploit] that allow bootloader unlock as well.
 
-Most Snapdragon 410-based LG phones, for example the LG Spirit, G4c and K10 do not check the signature for aboot, which lets you patch it to bypass image signature validation, which effectively unlocks your bootloader. Some examples can [be](https://xdaforums.com/t/bootloader-unlock-for-all-lg-spirit-phones.3673974) [found](https://xdaforums.com/t/fixed-guide-bootloader-unlocked-lg-g4c-bootloader-is-unlocked.3637105) [here](https://xdaforums.com/t/guide-bootloader-unlocked-qualcomm-bootloader-is-unlocked.3558810).
+Most Qualcomm Snapdragon 410-based LG phones, for example the LG Spirit, G4c and K10 do not check the signature for aboot, which lets you patch it to bypass image signature validation, which effectively unlocks your bootloader. Some examples can [be](https://xdaforums.com/t/bootloader-unlock-for-all-lg-spirit-phones.3673974) [found](https://xdaforums.com/t/fixed-guide-bootloader-unlocked-lg-g4c-bootloader-is-unlocked.3637105) [here](https://xdaforums.com/t/guide-bootloader-unlocked-qualcomm-bootloader-is-unlocked.3558810).
 
 
 ***

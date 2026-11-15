@@ -1,6 +1,6 @@
 # Micromax
 
-* Verdict **ℹ️ "Safe for now" :trollface:**
+* Verdict **ℹ️ "Safe for now" :trollface:** (retired)
 * Verdict: **🍅 Terrible!** (Unisoc/Spreadtrum)
 * [**🔓️ Unlock Guide**](../../misc/generic-unlock.md)
 

@@ -14,6 +14,9 @@ In 2024, an XDA user had their Zenfone 9 bricked following a borked update, Asus
 
 In addition, Chinese ROG phones sold under the Tecent ROG brand were never officially unlockable at all.
 
+## Unofficial unlocking
+
+Some ASUS phones released before 2023 can be unlocked using the [asuskey2 method][asuskey2]. Check the project's compatibility table for supported models and ABL (bootloader) versions.
 
 ***
 Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439).<br/>
@@ -22,3 +25,4 @@ Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439
 [lawsuit]:https://www.androidpolice.com/asus-removed-bootloader-unlock-from-phones/
 [not coming back]:https://zentalk.asus.com/t5/zenfone-8/will-asus-ever-re-enable-zenfone-8-bootloader-unlocking-server/m-p/492219
 [200 usd unlock]:https://xdaforums.com/t/asus-says-they-will-unlock-my-bootloader-for-money.4685488/
+[asuskey2]:https://github.com/transaero21/asuskey2-bootloader-unlock

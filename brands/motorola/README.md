@@ -35,7 +35,7 @@ So how do you know if your device is unlockable? Well...
 
 * [This page][Most Devices] says that "Most of our latest devices support our bootloader unlock program."
 * [This page][Some Devices] says only "Photon Q 4G LTE, DROID RAZR M(Developer Edition), DROID RAZR HD(Developer Edition CDMA-LTE), MOTOROLA RAZR HD (Rest of World -UMTS/LTE), MOTOROLA RAZR HD (Rogers Canada - UMTS/LTE) and MOTOROLA RAZR i are supported by the Bootloader Unlock site." -- Considering these devices are all over 13 years old, this is likely outdated.
-* [And from this conversation][turistu's post] [turistu](https://github.com/turistu) had with their support: "most of our E devices doesn't support bootloader unlock program. Please see below a list of devices that support the bootloader unlock program : g100, g51 , g71 , g200 , g52 , g82 , g42 , g62 , g32"
+* [And from this conversation][turistu's post] [turistu](https://github.com/turistu) had with their support: "most of our E devices doesn't support bootloader unlock program. Please see below a list of devices that support the bootloader unlock program : g100, g51 , g71 , g200 , g52 , g82 , g42 , g62 , g32", however, as mentioned, not all E series devices have no support when it comes to bootloader unlocking, being the case of the moto e7 plus (codenamed: guam), and other E series devices too.
 * There's also an unofficial way with CID to check if your device can be unlocked, check here: [xdaforums.com][CID check]
 * Generally, devices from the g3x series and higher can be unlocked, while G2x and lower (including E devices) cannot be unlocked *officially*.
 

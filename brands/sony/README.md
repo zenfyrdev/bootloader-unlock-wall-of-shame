@@ -1,11 +1,11 @@
 # Sony
 
-- Verdict: **⚠️ Proceed with caution!** (international Xperia)
+- Verdict: **⚠️ Proceed with caution!** (International Xperias)
 
-- Verdict: **🍅 Terrible!** (Japan Xperias, non-Xperia devices)
+- Verdict: **⛔ Avoid at all costs!** (Japan Xperias, non-Xperia devices)
 
 Sony has an open policy for software developers:
-- They are releasing AOSP sources under [Sony Open Devices Program].
+- They release AOSP sources under the [Sony Open Devices Program].
 - Jolla provides first-class support for installing [Sailfish OS] on select Xperias.
 
 Since Sony likes to ruin a perfect thing:
@@ -24,9 +24,9 @@ For devices made [before 2019][TA patch 2019], Sony devices have a partition cal
 
 Sony supports [Custom AVB](../../README.md#custom-avb-keys) since 2020.
 
-You also can't unlock Japanese carrier variants for some reason—Japanese factory-unlocked devices are unaffected.
+You also can't unlock Japanese carrier variants for some reason, Japanese factory-unlocked devices are unaffected.
 
-All Sony devices using the Snapdragon 835 and Snapdragon 845 can be unlocked via the [xperable exploit][xperable].
+All Sony devices using the Qualcomm Snapdragon 835 and  Qualcomm Snapdragon 845 can be unlocked via the [xperable exploit][xperable].
 
 ***
 Info about Japan devices provided by [madeline-yana](https://github.com/madeline-yana) and edited by [eepymeowers](https://github.com/eepymeowers)

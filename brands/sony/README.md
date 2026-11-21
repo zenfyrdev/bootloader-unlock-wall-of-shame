@@ -22,7 +22,7 @@ Additionally, only Xperia (Sony's main consumer phone/tablet line) is unlockable
 
 For devices made [before 2019][TA patch 2019], Sony devices have a partition called `TA`, which contains files needed for things such as enhanced camera image processing, DRM keys, and display enhancements. Upon unlocking the bootloader, this partition is wiped and these features are lost, even on re-locking. If running Android Marshmallow or earlier, you can [back up][TA backup] the partition. 
 
-Sony supports [Custom AVB](../../README.md#custom-avb-keys) since 2020.
+Sony supports [Custom AVB signing keys](../../README.md#custom-avb-keys) since 2020.
 
 You also can't unlock Japanese carrier variants for some reason, Japanese factory-unlocked devices are unaffected.
 

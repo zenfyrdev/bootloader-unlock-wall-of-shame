@@ -10,11 +10,11 @@ On some models (such as the Stylo 3 Plus and G6), the bootloader can still be of
 
 Older devices (prior to 2015) either do not have partition verification at all (on operating system versions made prior to 2015) or can be bootloader unlocked with [`adb reboot oem-unlock`](https://xdaforums.com/t/official-bootloader-unlock-procedure-from-lg-and-the-one-that-works-for-everyone.2224020/)(some devices prior to 2013) and assuming you have a root exploit (on the devices with no partition verification), you can just flash modified partitions with dd -- as recommended by some official LineageOS [install guides]. For older Android versions, you can also use [lglaf](https://github.com/Lekensteyn/lglaf).
 
-Newer LG budget phones (2018+) from the K and Stylo series typically do not have visible Fastboot.
+Newer LG budget phones (2018+) including devices from the K and Stylo series typically do not have Fastboot visible by default.
 
-On most LG devices with fastboot mode hidden, fastboot can usually be accessed by wiping LG Download mode otherwise known as LAF. It is usually wiped either with root (devices prior to 2015) or EDL (devices since 2015).
+On most LG devices with fastboot mode hidden, fastboot can usually be accessed by wiping LG Download mode otherwise known as LAF. It is usually wiped either with root (devices prior to 2015) or EDL (devices since 2015*).
 
-Most carrier branded LG devices (aside from T-Mobile branded devices made before 2018) also usually have hidden Fastboot as well.
+Most carrier branded LG devices (aside from T-Mobile branded devices made before 2018) also usually have Fastboot hidden by default as well.
 
 ## Watches
 All LG watches on Android Wear/Wear OS use the [standard unlock procedure](../../misc/generic-unlock.md) via fastboot.
@@ -24,7 +24,7 @@ Aside from the generic unofficial methods for devices with MediaTek and Unisoc S
 
 There are also some bootloader exploits such as [CVE-2020-12753] ([PoC]) ([Working example]) and [this][V30 bootloader unlock exploit] that allow bootloader unlock as well.
 
-Most Qualcomm Snapdragon 410-based LG phones, for example the LG Spirit, G4c and K10 do not check the signature for aboot, which lets you patch it to bypass image signature validation, which effectively unlocks your bootloader. Some examples can [be](https://xdaforums.com/t/bootloader-unlock-for-all-lg-spirit-phones.3673974) [found](https://xdaforums.com/t/fixed-guide-bootloader-unlocked-lg-g4c-bootloader-is-unlocked.3637105) [here](https://xdaforums.com/t/guide-bootloader-unlocked-qualcomm-bootloader-is-unlocked.3558810).
+Most Qualcomm Snapdragon 410-based LG phones, for example the LG Spirit, G4c and K10 do not check the signature for aboot, which lets you patch it to bypass image signature validation, which effectively unlocks your bootloader, similar to some older LG [Engineering bootloaders](https://xdaforums.com/t/guide-lg-g6-bootloader-unlock-2025.4772845/). Some examples can [be](https://xdaforums.com/t/bootloader-unlock-for-all-lg-spirit-phones.3673974) [found](https://xdaforums.com/t/fixed-guide-bootloader-unlocked-lg-g4c-bootloader-is-unlocked.3637105) [here](https://xdaforums.com/t/guide-bootloader-unlocked-qualcomm-bootloader-is-unlocked.3558810).
 
 
 ***

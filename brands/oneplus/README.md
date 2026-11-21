@@ -1,7 +1,7 @@
 # OnePlus
 
 * Verdict **⚠️ Proceed with caution!**
-* Global phones (except OnePlus 10T on late firmware) or Chinese phones released with ColorOS 15 or older: [**🔓️ Unlock Guide**](../../misc/generic-unlock.md)
+* Global phones (except the OnePlus 10T on later firmware) or Chinese phones released with ColorOS 15 or older: [**🔓️ Unlock Guide**](../../misc/generic-unlock.md)
 
 ## Global phones and older Chinese models
 All OnePlus phones on the global market, and any Chinese models that were initially released with ColorOS 15 or older, can be easily unlocked using the [standard procedure](../../misc/generic-unlock.md). This includes devices that have since updated to ColorOS 16.0 or newer.
@@ -13,7 +13,8 @@ According to the [OnePlus forum](https://bbs.oneplus.com/thread/1926504022886318
 - No application submitted in the past 30 days  
 - Device is not a corporate or carrier-customized model  
 
-Note that starting September, 2026, OnePlus has made the "Deep Testing" program much harder ([link to OnePlus forum](https://bbs.oneplus.com/thread/2175833961601695750)). Note that this only applies to devices running ColorOS 16 or newer. It now requires:
+Note since September 2026, OnePlus has made the "Deep Testing" program much harder ([link to OnePlus forum](https://bbs.oneplus.com/thread/2175833961601695750)). Note that this only applies to devices running ColorOS 16 or newer. 
+It now requires:
 - your real name
 - face verification
 - 7-day account login requirement

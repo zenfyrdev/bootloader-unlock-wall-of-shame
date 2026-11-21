@@ -30,7 +30,7 @@ Most Qualcomm Snapdragon 410-based LG phones, for example the LG Spirit, G4c and
 ***
 Authored by [Ivy / Lost-Entrepreneur439](https://github.com/Lost-Entrepreneur439), [DiabloSat](https://github.com/progzone122), [TheEnby](https://github.com/TheEnby)<br/>
 
-Snapdragon 410 info added by [Eggmanplant](https://github.com/Eggmanplant)<br/>
+Qualcomm Snapdragon 410 info added by [Eggmanplant](https://github.com/Eggmanplant)<br/>
 
 [announcement-archive]:https://www.reddit.com/r/LineageOS/comments/r961u3/termination_of_lg_mobile_developer_website/
 [t-mobile-unlock]:https://xdaforums.com/t/unlock-bootloader-tmo.3578099/

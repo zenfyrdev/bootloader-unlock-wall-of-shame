@@ -22,9 +22,9 @@ All LG watches on Android Wear/Wear OS use the [standard unlock procedure](../..
 ## Unofficial methods
 Aside from the generic unofficial methods for devices with MediaTek and Unisoc SoCs and Devinfo (for some Qualcomm SoCs), some of their devices with Qualcomm SoCs have leaked [engineering bootloaders][SDM845 ENG Boot] available, for example the LG G7.
 
-There are also some bootloader exploits such as [CVE-2020-12753] ([PoC]) ([Working example]) and [this][V30 bootloader unlock exploit] that allow bootloader unlock as well.
+There are also some bootloader exploits such as [CVE-2020-12753] ([PoC]) ([Working example]) and [this][LG V30 bootloader unlock exploit] that allow bootloader unlock as well.
 
-Most Qualcomm Snapdragon 410-based LG phones, for example the LG Spirit, G4c and K10 do not check the signature for aboot, which lets you patch it to bypass image signature validation, which effectively unlocks your bootloader, similar to some older LG [Engineering bootloaders](https://xdaforums.com/t/guide-lg-g6-bootloader-unlock-2025.4772845/). Some examples can [be](https://xdaforums.com/t/bootloader-unlock-for-all-lg-spirit-phones.3673974) [found](https://xdaforums.com/t/fixed-guide-bootloader-unlocked-lg-g4c-bootloader-is-unlocked.3637105) [here](https://xdaforums.com/t/guide-bootloader-unlocked-qualcomm-bootloader-is-unlocked.3558810).
+Most Qualcomm Snapdragon 410-based LG phones, for example the LG Spirit, G4c and K10 do not check the signature for aboot, which lets you patch it to bypass image signature validation, which effectively unlocks your bootloader, similar to some older LG [engineering bootloaders](https://xdaforums.com/t/guide-lg-g6-bootloader-unlock-2025.4772845/). Some examples can [be](https://xdaforums.com/t/bootloader-unlock-for-all-lg-spirit-phones.3673974) [found](https://xdaforums.com/t/fixed-guide-bootloader-unlocked-lg-g4c-bootloader-is-unlocked.3637105) [here](https://xdaforums.com/t/guide-bootloader-unlocked-qualcomm-bootloader-is-unlocked.3558810).
 
 
 ***
@@ -48,6 +48,6 @@ Snapdragon 410 info added by [Eggmanplant](https://github.com/Eggmanplant)<br/>
 
 [Working example]:https://xdaforums.com/t/rle888-bootloader-unlock-exploit-for-the-lg-g5.4792237/
 
-[V30 bootloader unlock exploit]:https://xdaforums.com/t/lg-v30-v30-v30s-bootloader-unlock-root-method-with-clear-instructions.3790500/
+[LG V30 bootloader unlock exploit]:https://xdaforums.com/t/lg-v30-v30-v30s-bootloader-unlock-root-method-with-clear-instructions.3790500/
 
 [SDM845 ENG Boot]:https://xdaforums.com/t/guide-guide-to-unlock-bootloader-for-every-lg-sdm845-except-g710tm-with-photos.4168771/
